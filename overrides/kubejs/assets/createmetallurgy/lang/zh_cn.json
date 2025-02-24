@@ -1,0 +1,11 @@
+{
+  "advancement.createmetallurgy.graphite_molds": "黄铜铸模",
+  "advancement.createmetallurgy.graphite_molds.desc": "获得任意一种黄铜铸模",
+  "createmetallurgy.ponder.casting_blocks.text_3": "而铸造台使用黄铜铸模铸造物品",
+  "item.createmetallurgy.graphite_blank_mold": "黄铜坯模",
+  "item.createmetallurgy.graphite_ingot_mold": "锭黄铜铸模",
+  "item.createmetallurgy.graphite_nugget_mold": "粒黄铜铸模",
+  "item.createmetallurgy.graphite_plate_mold": "板黄铜铸模",
+  "item.createmetallurgy.graphite_rod_mold": "杆黄铜铸模",
+  "item.createmetallurgy.graphite_gear_mold": "齿轮黄铜铸模"
+}

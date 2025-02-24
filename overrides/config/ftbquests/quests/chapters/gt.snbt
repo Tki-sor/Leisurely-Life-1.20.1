@@ -1,0 +1,124 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "gt"
+	group: "4766A265AF2DA856"
+	icon: "gtceu:ev_vanadium_battery"
+	id: "3789F2FFB4919479"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"格雷科技的电能不同于其他mod所使用的电。格雷的电叫做EU，其他mod的是FE，区别是什么呢？"
+				""
+				"FE，只有能量这个概念，你不需要考虑应该输入多少，只要考虑尽可能喂饱机械就可以。"
+				""
+				"而EU，类似于现实中的电，那么...来点初中物理知识：P=VI。"
+				""
+				"嗯，相比你已经明白了，GT的电有&c电压（V）&r和&c电流（I）&r，这二者相乘才是功率。"
+				""
+				"也就是 功率=电压x电流， 能量=功率x时间"
+				""
+				"当然，这是理想情况，现实中还有电阻，但是毕竟是游戏...所以GT的电阻就很简单了，是直接对功率的损耗，是P-R（当然现实中可不是这样的哦...）。"
+				""
+				"然后呢，格雷科技对这些的定义："
+				"EU：能量的单位"
+				"EU/t：功率"
+				"A（安培）：电流"
+				"V（伏特）：电压"
+				""
+				"嗯...是不是很简单？"
+			]
+			icon: "gtceu:lv_cadmium_battery"
+			id: "4BB2174A68D469CD"
+			subtitle: "说这么多不就是现实的交流电"
+			tasks: [{
+				id: "5BC764121DEF90E8"
+				type: "checkmark"
+			}]
+			title: "EU？电能？"
+			x: -5.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"既然GT的能量系统是参考现实来设计的，那么如果给用电器过高的电压会...嗯，会爆炸，字面意义的爆炸。"
+				""
+				"同样的，不要让你的导线超负荷运作，也会“爆炸”的。"
+			]
+			icon: "gtceu:dynamite"
+			id: "49091F6C029D97A7"
+			subtitle: "你敢给你的电脑接高压电吗"
+			tasks: [{
+				id: "32A50E3A2C8433F3"
+				type: "checkmark"
+			}]
+			title: "小心爆炸！"
+			x: -3.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"你可能会想，那能不能让电变更高的电压，或者变低压呢？"
+				""
+				"那很简单，做变压器便是了。"
+				""
+				"至于怎么用嘛...懒得写啦~"
+			]
+			icon: "gtceu:mv_transformer_1a"
+			id: "3166AEEC83EE172B"
+			subtitle: "那我降压不就好了"
+			tasks: [{
+				id: "5722D862CB38E218"
+				type: "checkmark"
+			}]
+			title: "变压"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"本整合包有多种能量，分别为："
+				"EU（交流电），FE（通量），J（焦耳）"
+				""
+				"他们的换算是：1EU=4FE=10J"
+				""
+				"其中，J在这里可以忽略。EU在这里并不是IC2（工业时代2）的EU，而是GTEU。"
+				""
+				"什么？两个发电机你不知道哪个发电更高？换算成统一的单位比较一下就好了。"
+				""
+				"使用&3能量转换器&r可以将EU和FE安全转换。"
+			]
+			icon: "gtceu:luv_vanadium_battery"
+			id: "1C5983D4397DA1DB"
+			subtitle: "EU？FE？傻傻分不清"
+			tasks: [{
+				id: "1F5B79EAC7ACEA32"
+				type: "checkmark"
+			}]
+			title: "能量转换"
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			description: [
+				"正常情况下，GT的部分设备理应会产生污染，毕竟是工业设备..."
+				""
+				"但是，考虑到也许你是第一次玩格雷科技mod，污染这个设定已经被关掉了哦。"
+				""
+				"{\"text\":\"但是，你仍然需要\",\"color\":\"white\",\"extra\":[{\"text\":\"消声仓\", \"underlined\": \"true\", \"color\":\"dark_aqua\",\"clickEvent\":{ \"action\": \"change_page\", \"value\": \"5C56B9118B74B43A\" } },{\"text\":\"，这是用来排放污染的装置，虽然没有污染设定了，但你仍然需要这个。\",\"color\":\"white\"}]}"
+			]
+			icon: "gtceu:ash_dust"
+			id: "6DA519AF8411FACD"
+			tasks: [{
+				id: "5294FD0E47672961"
+				type: "checkmark"
+			}]
+			title: "污染？"
+			x: -7.5d
+			y: 1.5d
+		}
+	]
+	title: "GT基本设定"
+}

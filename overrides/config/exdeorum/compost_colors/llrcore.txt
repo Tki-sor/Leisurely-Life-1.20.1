@@ -1,0 +1,3 @@
+// Compost colors for llrcore. You may add your own colors, change existing ones, or remove colors that aren't needed.
+cobble_breaker, #ffffff
+cobble_smasher, #ffffff

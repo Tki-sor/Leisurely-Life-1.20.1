@@ -1,0 +1,3 @@
+// Compost colors for heracles. You may add your own colors, change existing ones, or remove colors that aren't needed.
+barrier, #33ab2f
+quest_book, #7d6b46

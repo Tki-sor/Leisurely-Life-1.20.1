@@ -1,0 +1,53 @@
+{
+  "dependencies": [],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "translate": "不知道该怎么玩吗？"
+    },
+    "description": [
+      "不知道要做什么那就...",
+      "",
+      " 首先，你要打开你的背包，点任务书，就打开任务书啦。",
+      "",
+      " 然后呢，你需要什么就做什么（废话）。",
+      "",
+      " 在这个阶段，你主要需要做的是：",
+      "    - 收集资源，如泥土（你可以利用好你的木漏斗）",
+      "    - 建造刷石机（圆石破坏者能帮助你更快的刷石头）",
+      "    - 制造筛子（用来获取各种矿物）",
+      "    - 制造焦炉（为了制作箱子）",
+      "    - &&e建造冶炼炉",
+      "",
+      "当有了冶炼炉之后，你就可以将金属冶炼成矿物。"
+    ],
+    "groups": {
+      "在蒸汽时代前要干什么": {
+        "position": [
+          -113,
+          -35
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:map",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "1.开局要干什么"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

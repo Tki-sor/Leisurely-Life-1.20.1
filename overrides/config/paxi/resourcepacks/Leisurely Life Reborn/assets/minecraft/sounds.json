@@ -1,0 +1,11 @@
+{
+  "music.menu": {
+    "replace": true,
+    "sounds": [
+      {
+        "name": "minecraft:music/menu/m1-pam_dinosaur-twilight",
+        "stream": true
+      }
+    ]
+  }
+}

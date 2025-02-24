@@ -1,0 +1,16 @@
+{
+  "name": "制作凝乳酶",
+  "icon": "growthcraft_milk:rennet_fluid_bucket",
+  "category": "growthcraft:milk",
+  "sortnum": 8,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "凝乳酶是制作奶酪的基础。凝乳酶可以通过在酿酒锅中煮沸蘑菇、牛胃或蓟来制作。$(br2)生产的凝乳酶数量取决于所用的材料。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "$(br2)棕色或红色蘑菇$(li)125mb 凝乳酶$(br2)牛胃$(li)1000mb 凝乳酶$(br2)蓟$(li)125mb 凝乳酶"
+    }
+  ]
+}

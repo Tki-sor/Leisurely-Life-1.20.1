@@ -1,0 +1,353 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "218EC969E0CC47C9"
+	group: "1144603E4C79C305"
+	icon: "ae2:controller"
+	id: "218EC969E0CC47C9"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["782FADE177582406"]
+			description: ["现代化的起点"]
+			icon_scale: 2.0d
+			id: "562CB487DA7201F9"
+			rewards: [
+				{
+					id: "15B2A413BB09490D"
+					item: "ae2:controller"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "7665961ED9BC3D38"
+					item: "ae2:fluix_glass_cable"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "68A18C7F958CAC20"
+					item: "ae2:item_storage_cell_64k"
+					type: "item"
+				}
+				{
+					id: "337F4F577E124638"
+					item: "ae2:crafting_terminal"
+					type: "item"
+				}
+				{
+					id: "077F65D1FF9981D5"
+					item: "ae2:pattern_encoding_terminal"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "715725C9919A253D"
+					item: "ae2:blank_pattern"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "55F8CA9DD25F6532"
+					item: "ae2:pattern_provider"
+					type: "item"
+				}
+				{
+					id: "13781D2FEDD4C30C"
+					item: "ae2:crafting_accelerator"
+					type: "item"
+				}
+				{
+					id: "711CA1CDAB6739C8"
+					item: "ae2:64k_crafting_storage"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1B8816B599F6CA5E"
+					item: "ae2:molecular_assembler"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				id: "79630B67F83CD804"
+				item: "ae2:controller"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["562CB487DA7201F9"]
+			id: "5CD1811BE2502991"
+			tasks: [{
+				id: "4ADA2A095BFC20F4"
+				item: "ae2:fluix_glass_cable"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5CD1811BE2502991"]
+			id: "4D238BF35A50D9F2"
+			tasks: [{
+				id: "0F02181C08F3EA8A"
+				item: "ae2:drive"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["562CB487DA7201F9"]
+			id: "77134F6206EF3B99"
+			tasks: [{
+				id: "054A2AA986CE7878"
+				item: "ae2:cell_component_1k"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["562CB487DA7201F9"]
+			id: "327ED3841B0A92C9"
+			tasks: [
+				{
+					id: "1FA9437C606158FC"
+					item: "ae2:formation_core"
+					type: "item"
+				}
+				{
+					id: "045B3F3B0F69FD7A"
+					item: "ae2:annihilation_core"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["327ED3841B0A92C9"]
+			id: "14CEFE0C53488A2C"
+			tasks: [{
+				id: "7A34858B5EED67B7"
+				item: "ae2:semi_dark_monitor"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["14CEFE0C53488A2C"]
+			id: "7B06C6D9FF16FE23"
+			tasks: [{
+				id: "705CE3B554E62B69"
+				item: "ae2:terminal"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7B06C6D9FF16FE23"]
+			id: "7E4FD072C82E887F"
+			tasks: [{
+				id: "2984CF2A3532D60F"
+				item: "ae2:crafting_terminal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7E4FD072C82E887F"]
+			id: "4DA32F963A424255"
+			tasks: [{
+				id: "13C6DC9AC404E58C"
+				item: "ae2:pattern_encoding_terminal"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["14CEFE0C53488A2C"]
+			id: "74FEEFE885770517"
+			tasks: [{
+				id: "2533BDB394335BE8"
+				item: "ae2:pattern_access_terminal"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["74FEEFE885770517"]
+			id: "18F44D11AA506322"
+			tasks: [{
+				id: "59D1D241CF0232A8"
+				item: "expatternprovider:ex_pattern_access_part"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["327ED3841B0A92C9"]
+			id: "58D58BB6609EDA61"
+			tasks: [{
+				id: "36B2C572A38F8203"
+				item: "ae2:molecular_assembler"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["58D58BB6609EDA61"]
+			id: "57967EA91744811B"
+			tasks: [{
+				id: "7C68AFBFD6B2F732"
+				item: "expatternprovider:ex_molecular_assembler"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["327ED3841B0A92C9"]
+			id: "2A03FF4BAD0292F3"
+			tasks: [{
+				id: "7CA7468374B62907"
+				item: "ae2:pattern_provider"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2A03FF4BAD0292F3"]
+			id: "3542F4CD310FD473"
+			tasks: [{
+				id: "57125BDF03B127F1"
+				item: "expatternprovider:ex_pattern_provider"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4D238BF35A50D9F2"]
+			id: "5FEEF967EB8E3019"
+			tasks: [{
+				id: "2368F1932C59DD0A"
+				item: "expatternprovider:ex_drive"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["77134F6206EF3B99"]
+			description: ["只要你做了无限水，送你一个无限圆石"]
+			icon: {
+				Count: 1
+				id: "expatternprovider:infinity_cell"
+				tag: {
+					record: {
+						"#c": "ae2:f"
+						id: "minecraft:water"
+					}
+				}
+			}
+			icon_scale: 2.0d
+			id: "02AA58C894622D95"
+			rewards: [{
+				id: "264AEF4E192D7761"
+				item: {
+					Count: 1
+					id: "expatternprovider:infinity_cell"
+					tag: {
+						record: {
+							"#c": "ae2:i"
+							id: "minecraft:cobblestone"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "58F2B399BFF964B6"
+				item: {
+					Count: 1
+					id: "expatternprovider:infinity_cell"
+					tag: {
+						record: {
+							"#c": "ae2:f"
+							id: "minecraft:water"
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["77134F6206EF3B99"]
+			icon: "ae2:crafting_unit"
+			id: "7599AD456833748F"
+			tasks: [{
+				id: "0E9EAB1588BA0F4E"
+				item: "ae2:crafting_unit"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["562CB487DA7201F9"]
+			id: "51F3433956AF3455"
+			subtitle: "这真的够用吗"
+			tasks: [{
+				id: "63804807AEC287B0"
+				item: "ae2:crafting_accelerator"
+				type: "item"
+			}]
+			title: "单核处理器"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["51F3433956AF3455"]
+			id: "547C193AB0691909"
+			subtitle: "勉强能用"
+			tasks: [{
+				id: "323E8B28E9BAAABC"
+				item: "bigger_ae2:4_core_crafting_accelerator"
+				type: "item"
+			}]
+			title: "四核处理器"
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["547C193AB0691909"]
+			id: "33CBC111D0D2B70D"
+			subtitle: "这真让人惊叹"
+			tasks: [{
+				id: "1231D5B57A75F54C"
+				item: "bigger_ae2:1024_core_crafting_accelerator"
+				type: "item"
+			}]
+			title: "4x epyc 9754?"
+			x: -1.0d
+			y: 4.0d
+		}
+	]
+	title: "量子存储？"
+}

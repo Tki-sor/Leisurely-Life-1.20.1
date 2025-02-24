@@ -1,0 +1,42 @@
+{
+  "name": "苹果木木工",
+  "icon": "growthcraft_apples:apple_wood_log",
+  "category": "growthcraft:apples",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "使用苹果木，你可以制作所有标准的香草木材产品。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "growthcraft_apples:textures/patchouli/screenshots/apple_blocks.png"
+      ]
+    },
+    {
+      "type": "crafting",
+      "recipe": "growthcraft_apples:apple_plank",
+      "recipe2": "growthcraft_apples:apple_plank_button"
+    },
+    {
+      "type": "crafting",
+      "recipe": "growthcraft_apples:apple_plank_slab",
+      "recipe2": "growthcraft_apples:apple_plank_stairs"
+    },
+    {
+      "type": "crafting",
+      "recipe": "growthcraft_apples:apple_plank_fence",
+      "recipe2": "growthcraft_apples:apple_plank_fence_gate"
+    },
+    {
+      "type": "crafting",
+      "recipe": "growthcraft_apples:apple_plank_door",
+      "recipe2": "growthcraft_apples:apple_plank_trapdoor"
+    },
+    {
+      "type": "text",
+      "text": " "
+    }
+  ]
+}

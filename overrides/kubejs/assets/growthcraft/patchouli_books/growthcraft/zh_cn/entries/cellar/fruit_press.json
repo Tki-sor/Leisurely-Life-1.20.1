@@ -1,0 +1,17 @@
+{
+  "name": "果汁压榨机",
+  "icon": "growthcraft_cellar:fruit_press",
+  "category": "growthcraft:cellar",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft_cellar:fruit_press",
+      "text": "果汁压榨机主要用于从葡萄或苹果中制作 $(o)果汁$()，这些果汁随后可以发酵成 $(l:cellar/wines_and_ciders)葡萄酒和苹果酒$()。$(br2)使用红石信号（通常通过在顶部连接一个杠杆）激活活塞顶部，观察排水粒子直到完成。$(br2)通常需要 4 个水果才能生产 1 桶果汁。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "growthcraft_cellar:fruit_press"
+    }
+  ]
+}

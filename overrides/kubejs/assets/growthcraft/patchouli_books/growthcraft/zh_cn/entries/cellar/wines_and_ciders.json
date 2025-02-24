@@ -1,0 +1,30 @@
+{
+  "name": "葡萄酒和苹果酒",
+  "icon": "growthcraft_cellar:potion_wine",
+  "category": "growthcraft:cellar",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "葡萄酒和苹果酒由不同的水果制成，但使用相同的整体过程：$(br2)1. 种植葡萄或苹果。$(br)2. 将水果放入 $(l:cellar/fruit_press)果汁压榨机$() 中制作果汁。$(br)3. 将果汁放入 $(l:cellar/ferment_barrel)发酵桶$() 中，并加入 $(6)巴亚纳斯酵母$()。$(br)4. 使用玻璃瓶提取发酵后的葡萄酒。$(br)5. 享受效果！"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft_cellar:potion_wine",
+      "title": "葡萄酒",
+      "text": "葡萄酒由 $(5)葡萄汁$() 和 $(6)巴亚纳斯酵母$() 制成。葡萄酒的种类包括：$(br2)$(bold)紫葡萄酒$()$(li)吸收 II（1:00）$(br2)$(bold)红葡萄酒$()$(li)生命 II（1:00）$(br2)$(bold)白葡萄酒$()$(li)饱和 II（1:00）"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft_cellar:potion_wine",
+      "title": "苹果酒",
+      "text": "苹果酒由 $(4)苹果汁$() 和 $(6)巴亚纳斯酵母$() 制成。$(br2)$(bold)苹果酒$()$(li)饱和 II（1:00）"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft_cellar:potion_wine",
+      "title": "米酒",
+      "text": "$(bold)米酒$() 和 $(bold)清酒$() 是用米而不是水果制作的，使用稍有不同的过程，详见 $(l:rice/fermenting_rice)这里$()。"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "type": "tconstruct:ore_melting",
+  "byproducts": [
+    {
+      "amount": 144,
+      "fluid": "gtceu:iron"
+    }
+  ],
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:raw_materials/osmium"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:raw_materials/osmium"
+  },
+  "rate": "metal",
+  "result": {
+    "amount": 144,
+    "fluid": "gtceu:osmium"
+  },
+  "temperature": 975,
+  "time": 98
+}

@@ -1,0 +1,14 @@
+// Compost colors for ironchests. You may add your own colors, change existing ones, or remove colors that aren't needed.
+blank_chest_upgrade, #f7e4c9
+copper_chest_upgrade, #98663e
+crystal_chest_upgrade, #caffff
+diamond_chest_upgrade, #ffffca
+diamond_dolly, #ffffff
+gold_chest_upgrade, #fff2dd
+iron_chest_upgrade, #ffdecf
+iron_dolly, #ffffff
+key, #393c4d
+key_ring, #bcc5cd
+lock, #ffffee
+netherite_chest_upgrade, #b9faf5
+obsidian_chest_upgrade, #b9faf5

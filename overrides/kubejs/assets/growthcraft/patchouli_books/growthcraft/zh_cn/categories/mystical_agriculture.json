@@ -1,0 +1,7 @@
+{
+  "name": "神秘农业",
+  "flag": "mod:mysticalagriculture",
+  "description": "我们注意到你拥有神秘农业。因此，你可以种植你的 Growthcraft 资源！",
+  "icon": "mysticalagriculture:textures/item/guide_book.png",
+  "sortnum": 8
+}

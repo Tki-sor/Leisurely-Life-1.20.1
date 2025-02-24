@@ -1,0 +1,36 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "389B8316B7DE6453"
+	group: "3F8CCFD303D2A5E6"
+	id: "389B8316B7DE6453"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		description: ["{image:llr_quest:textures/img/create_stone.png width:160 height:90 align:center}"]
+		icon: "minecraft:cobblestone"
+		id: "3AA430ECE9B68FED"
+		tasks: [
+			{
+				count: 1024L
+				id: "284AFF781F554E0F"
+				item: { Count: 1024, id: "minecraft:cobblestone" }
+				type: "item"
+			}
+			{
+				id: "657886BD0C633DA3"
+				item: "create:mechanical_bearing"
+				type: "item"
+			}
+			{
+				id: "24937CAEEB703ED4"
+				item: "minecraft:observer"
+				type: "item"
+			}
+		]
+		title: "挤压式刷石机"
+		x: -1.5d
+		y: 0.0d
+	}]
+	title: "奇械挑战"
+}

@@ -1,0 +1,13 @@
+{
+  "advancement.createmetallurgy.graphite_molds": "Brass Molds",
+  "advancement.createmetallurgy.graphite_molds.desc": "Obtain any Brass Molds",
+
+  "createmetallurgy.ponder.casting_blocks.text_3": "While the Casting Table is used to cast Items using Brass Molds",
+
+  "item.createmetallurgy.graphite_blank_mold": "Brass Blank Mold",
+  "item.createmetallurgy.graphite_ingot_mold": "Brass Ingot Mold",
+  "item.createmetallurgy.graphite_nugget_mold": "Brass Nugget Mold",
+  "item.createmetallurgy.graphite_plate_mold": "Brass Plate Mold",
+  "item.createmetallurgy.graphite_rod_mold": "Brass Rod Mold",
+  "item.createmetallurgy.graphite_gear_mold": "Brass Gear Mold"
+}

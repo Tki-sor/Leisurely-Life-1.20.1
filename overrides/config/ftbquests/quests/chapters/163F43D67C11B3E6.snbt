@@ -1,0 +1,345 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "163F43D67C11B3E6"
+	group: "5AB2213217E85A15"
+	id: "163F43D67C11B3E6"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["572B45696B557FE2"]
+			icon: "barbequesdelight:grill"
+			id: "38566E9A65F5A912"
+			tasks: [
+				{
+					id: "51682D4E9920CBD0"
+					item: "barbequesdelight:grill"
+					type: "item"
+				}
+				{
+					id: "7A2CE6CE957E550F"
+					item: "barbequesdelight:basin"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6C42A2460A48BEC9"
+					item: "barbequesdelight:tray"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"1EC963A5B9736ACF"
+				"572B45696B557FE2"
+			]
+			icon: "cuisinedelight:spatula"
+			id: "46FFF3F2E337A688"
+			tasks: [
+				{
+					id: "5670AF2B00792E08"
+					item: {
+						Count: 1
+						id: "cuisinedelight:cuisine_skillet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "34950ADE58339C07"
+					item: "cuisinedelight:spatula"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3E3031E6619BCFF9"
+					item: "cuisinedelight:plate"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["572B45696B557FE2"]
+			id: "1EC963A5B9736ACF"
+			tasks: [{
+				id: "13E3E320AED6C0FF"
+				item: {
+					Count: 1
+					id: "farmersdelight:skillet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			id: "46856366D6CB8147"
+			tasks: [{
+				id: "6681F779E4A9A04E"
+				item: "farmersdelight:stove"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 4.0d
+		}
+		{
+			icon: "farmersdelight:cutting_board"
+			id: "3F666CD3498A145F"
+			tasks: [
+				{
+					id: "26D4183E871B50B2"
+					item: "farmersdelight:cutting_board"
+					type: "item"
+				}
+				{
+					id: "29C62EE52197F514"
+					item: {
+						Count: 1
+						id: "farmersdelight:diamond_knife"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["46856366D6CB8147"]
+			id: "203CD0F73D1B61AA"
+			tasks: [{
+				id: "1D4184ABA49FD225"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			id: "22657B28B5E0F05E"
+			tasks: [{
+				id: "62B232F061DCA876"
+				item: "farm_and_charm:stove"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["22657B28B5E0F05E"]
+			icon: "candlelight:cooking_pot"
+			id: "570D5C40BF03B930"
+			tasks: [
+				{
+					id: "4448F27010EFF5E0"
+					item: "candlelight:cooking_pot"
+					type: "item"
+				}
+				{
+					id: "244F846F15403917"
+					item: {
+						Count: 1
+						id: "candlelight:cooking_pan"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			description: ["有很多样式的可选，不局限于任务给的这些。"]
+			icon: "bakery:kitchen_sink"
+			id: "13945D2F75EB5616"
+			tasks: [
+				{
+					id: "3DA01E60B084F894"
+					item: "bakery:kitchen_sink"
+					type: "item"
+				}
+				{
+					id: "6DC321265D6F1A6A"
+					item: "bakery:cabinet"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2044FBB323120907"
+					item: "bakery:brick_counter"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0F555245EECC497F"
+					item: "bakery:drawer"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "10747D1BBE607931"
+					item: "bakery:wall_cabinet"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "厨具？橱柜"
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			description: ["只要将蛋糕面团放在上面就可以开始做蛋糕了"]
+			icon: "bakery:baker_station"
+			id: "01E5B83BE07FFC92"
+			tasks: [
+				{
+					id: "5B7EE4B8771E4E25"
+					item: "bakery:baker_station"
+					type: "item"
+				}
+				{
+					id: "3BA2F326486DE8CA"
+					item: "bakery:cake_display"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "031CCEFD914FB615"
+					item: "bakery:wall_display"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "47C84616E7BD872D"
+					item: "bakery:cupcake_display"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "53C9A79A8C8ABB4A"
+					item: "bakery:cake_stand"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			id: "5F1A80DA5771D7FC"
+			tasks: [{
+				id: "0C3ECB0E23B13ADE"
+				item: "farmingforblockheads:market"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			id: "6449F743DB4C6275"
+			tasks: [{
+				id: "103E1ABCC2C23794"
+				item: {
+					Count: 1
+					id: "candlelight:cooking_pan"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.0d
+		}
+		{
+			icon: "candlelight:bowl"
+			id: "533BB5F80EB8570B"
+			tasks: [
+				{
+					id: "056CDF919284A5A1"
+					item: "candlelight:cloche"
+					type: "item"
+				}
+				{
+					id: "42DB9A5D96CE5F9D"
+					item: "candlelight:bowl"
+					type: "item"
+				}
+				{
+					id: "5872A008A0593BD5"
+					item: "candlelight:plate"
+					type: "item"
+				}
+				{
+					id: "0FA050CB01D341C0"
+					item: "candlelight:glass"
+					type: "item"
+				}
+				{
+					id: "1EAB3434A72779D1"
+					item: "candlelight:wine_glass"
+					type: "item"
+				}
+				{
+					id: "76AB0F3092342AA7"
+					item: "candlelight:dinner_bell"
+					type: "item"
+				}
+				{
+					id: "40F9E55535823811"
+					item: "candlelight:napkin"
+					type: "item"
+				}
+			]
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["46856366D6CB8147"]
+			id: "762163CF2EDA6A49"
+			tasks: [{
+				id: "43CF0633005A7EFC"
+				item: {
+					Count: 1
+					id: "bakery:small_cooking_pot"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			description: ["用来做巧克力的。"]
+			icon: "cacao:silicon_mold"
+			id: "7088AF83A39B7750"
+			tasks: [{
+				id: "14345ABC2F11A1B4"
+				item: "cacao:silicon_mold"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.0d
+		}
+	]
+	title: "闲暇的时光"
+}

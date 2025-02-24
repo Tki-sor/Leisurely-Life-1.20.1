@@ -1,0 +1,5 @@
+// Compost colors for steampowered. You may add your own colors, change existing ones, or remove colors that aren't needed.
+bronze_sheet, #f0d29b
+pressurized_gas_container, #e4c5bc
+pressurized_steam_container, #fae6e1
+steam_bucket, #fbfbfb

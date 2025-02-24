@@ -1,0 +1,9 @@
+{
+  "type": "tconstruct:material_melting",
+  "input": "tconstruct:cobalt",
+  "result": {
+    "amount": 144,
+    "fluid": "gtceu:cobalt"
+  },
+  "temperature": 950
+}

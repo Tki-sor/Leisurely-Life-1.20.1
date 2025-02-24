@@ -1,0 +1,19 @@
+{
+  "type": "tconstruct:ore_melting",
+  "byproducts": [
+    {
+      "amount": 144,
+      "fluid": "gtceu:iron"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:raw_materials/cobalt"
+  },
+  "rate": "metal",
+  "result": {
+    "amount": 144,
+    "fluid": "gtceu:cobalt"
+  },
+  "temperature": 950,
+  "time": 97
+}

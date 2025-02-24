@@ -1,0 +1,18 @@
+// Compost colors for oceanworld. You may add your own colors, change existing ones, or remove colors that aren't needed.
+black_brick, #b2e0d0
+black_pearl, #ffffff
+black_pearl_bracelet, #f4daff
+black_pearl_necklace, #b691cc
+blacklip_oyster_bucket, #eeeefa
+cooked_oyster_meat, #fffff5
+golden_brick, #f7fc8d
+golden_pearl, #ffffff
+golden_pearl_bracelet, #ffffff
+golden_pearl_necklace, #ffffe7
+oyster_meat, #ffffff
+red_clay_ball, #ffffff
+sea_cucumber, #725f58
+white_pearl, #ffffff
+white_pearl_bracelet, #ffffff
+white_pearl_necklace, #ffffff
+whitelip_oyster_bucket, #feffff

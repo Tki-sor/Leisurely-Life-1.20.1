@@ -1,0 +1,27 @@
+{
+  "type": "tconstruct:alloy",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ingots/silver"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "amount": 144,
+      "tag": "forge:gold"
+    },
+    {
+      "amount": 144,
+      "tag": "forge:silver"
+    }
+  ],
+  "result": {
+    "amount": 288,
+    "fluid": "gtceu:electrum"
+  },
+  "temperature": 760
+}

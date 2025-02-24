@@ -1,0 +1,7 @@
+{
+
+  "block.createaddition.alternator": "通量发电机",
+
+  "createaddition.ponder.alternator.header": "使用通量发电机发电",
+  "createaddition.ponder.alternator.text_1": "通量发电机需要至少 32 rpm 的转速才能工作"
+}

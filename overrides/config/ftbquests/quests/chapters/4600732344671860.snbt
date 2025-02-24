@@ -1,0 +1,680 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4600732344671860"
+	group: "22AB940A6CF0C6B8"
+	id: "4600732344671860"
+	images: [
+		{
+			height: 12.0d
+			image: "llr_quest:textures/pic/sel.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: 2.0d
+			y: 3.5d
+		}
+		{
+			height: 4.0d
+			image: "llr_quest:textures/pic/ene.png"
+			rotation: 0.0d
+			width: 9.6d
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			height: 8.5d
+			image: "llr_quest:textures/pic/cy.png"
+			rotation: 0.0d
+			width: 10.0d
+			x: -8.0d
+			y: 5.0d
+		}
+	]
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["49616B8E9773EDA8"]
+			description: [
+				"制作一个基板，在上面按特定的方式放好元器件，连好导线，电阻..."
+				""
+				"也许这个小东西能带来一场革命？"
+			]
+			hide_dependent_lines: true
+			id: "09C664A44B1EFC32"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "也许会带来革命"
+			tasks: [{
+				id: "249F65D1A8C8AFAA"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			description: [
+				"可以帮助你将一些粉末或流体混合到一起。"
+				""
+				"你也不想身上总是带着研钵然后用手混合吧。"
+			]
+			id: "5789A61FAED3AFF9"
+			tasks: [{
+				id: "4D406860E50B02AE"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["69C07EE9591130C9"]
+			description: [
+				"集成电路的进步是什么，更先进的工艺和先进架构，密度上升性能也会有所上升。"
+				""
+				"也许可以用它做更复杂的事情了。"
+			]
+			id: "782FADE177582406"
+			shape: "gear"
+			size: 1.5d
+			subtitle: "更先进，更快"
+			tasks: [{
+				id: "1C8801EDCCA9751E"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			description: ["机器越来越复杂了，只凭用手来制造已经无法满足高精度需求了。"]
+			id: "69C07EE9591130C9"
+			tasks: [{
+				id: "5CEE2DE9E2ED8E10"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			description: ["用电的熔炉？"]
+			id: "25C58C8F6BD03126"
+			tasks: [{
+				id: "2BCC46A014C2AFE8"
+				item: "gtceu:lv_electric_furnace"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "4E15F2D27143A9BF"
+			tasks: [{
+				id: "32BA0E80883874C9"
+				item: "gtceu:lv_arc_furnace"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "1BBFA51CDEF0E4D8"
+			tasks: [{
+				id: "68D4E21347C434D3"
+				item: "gtceu:lv_autoclave"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			description: ["一个锭就能做一个板？这可真是好事..."]
+			id: "0E6741248D8084E2"
+			tasks: [{
+				id: "3FC4743C9E6D3C6F"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "32C1B390C3D26928"
+			tasks: [{
+				id: "3680AFB190DE55C7"
+				item: "gtceu:lv_brewery"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "11EADFC885331B0D"
+			tasks: [{
+				id: "367F2D97D20C7FDF"
+				item: "gtceu:lv_canner"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "25315B4706D8D6FA"
+			tasks: [{
+				id: "136EE7B08A2855B4"
+				item: "gtceu:lv_centrifuge"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "327FC10871E55BCE"
+			tasks: [{
+				id: "54A6A73A92CBA2AD"
+				item: "gtceu:lv_chemical_bath"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "342B4428EC8180D7"
+			tasks: [{
+				id: "4A893757BD7DF7DF"
+				item: "gtceu:lv_chemical_reactor"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			description: [
+				"切割机能做什么？"
+				""
+				"锯木头，锯金属块，锯..."
+			]
+			id: "48EDC13A9176E382"
+			tasks: [{
+				id: "32503AD284087D67"
+				item: "gtceu:lv_cutter"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "10B62F4780F3070B"
+			tasks: [{
+				id: "3AEB7FEBC62A3059"
+				item: "gtceu:lv_distillery"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "7B20A1FB7699ED52"
+			tasks: [{
+				id: "7844F24DD8A1110F"
+				item: "gtceu:lv_electrolyzer"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "71E3A1008144502A"
+			tasks: [{
+				id: "3AA55D2CD4D4138C"
+				item: "gtceu:lv_electromagnetic_separator"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			description: [
+				"造螺栓造杆...似乎没有他不会的..."
+				""
+				"这东西虽然可能好用，但不是现在该造的..."
+				""
+				"&7十娘：你想做我才不拦你呢qwq"
+			]
+			id: "4FEBCB8CB0316BCC"
+			tasks: [{
+				id: "6A7A6021EFCC6357"
+				item: "gtceu:lv_extruder"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "2D0D281D4591A9C7"
+			tasks: [{
+				id: "2195CA541096E537"
+				item: "gtceu:lv_fermenter"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "578F1655BF5C9F52"
+			tasks: [{
+				id: "2219CB09E3053557"
+				item: "gtceu:lv_fluid_heater"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "037E29027FEB9655"
+			tasks: [{
+				id: "3EB345C484D2817C"
+				item: "gtceu:lv_fluid_solidifier"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			description: ["这东西干什么用的来着？"]
+			id: "03963E5787C1548C"
+			tasks: [{
+				id: "5D4E6E0A98DE4082"
+				item: "gtceu:lv_forming_press"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			description: [
+				"可以更高效的制造金属杆。"
+				""
+				"从此不再需要锉。"
+			]
+			id: "799752BC68612E58"
+			tasks: [{
+				id: "4D80112AF0B0F077"
+				item: "gtceu:lv_lathe"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "6DB7C7547FFA49CE"
+			tasks: [{
+				id: "087340B1BE5290C9"
+				item: "gtceu:lv_ore_washer"
+				type: "item"
+			}]
+			x: -15.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "56B04C5E5E6D12AE"
+			tasks: [{
+				id: "11CF4A2E218D9CA8"
+				item: "gtceu:lv_packer"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "0FFEE7DDC08424A9"
+			tasks: [{
+				id: "0B52567E8D3EE4B2"
+				item: "gtceu:lv_polarizer"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "0DE67BE8DAAB9C9E"
+			tasks: [{
+				id: "56CE63BBA33EF192"
+				item: "gtceu:lv_laser_engraver"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "330D7CA0735E17B8"
+			tasks: [{
+				id: "03C6337E4FD256E1"
+				item: "gtceu:lv_sifter"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "0670F6B488B11D77"
+			tasks: [{
+				id: "0E0CC312F92EAD1D"
+				item: "gtceu:lv_thermal_centrifuge"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			description: ["所以说，把金属放进去就有电线了？还真是简单呢~"]
+			id: "1BD9BBF8895CED65"
+			tasks: [{
+				id: "3F6DCC1F39A6B8D6"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "1C3D84EDF6ABBC0C"
+			tasks: [{
+				id: "3219239A762F3AC6"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "2A4AEF30498D3946"
+			tasks: [{
+				id: "1AFC1357C25A5D09"
+				item: "gtceu:lv_gas_collector"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "403850BC76DC9608"
+			tasks: [{
+				id: "7E3893B8AB9FD129"
+				item: "gtceu:lv_air_scrubber"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			description: ["燃烧化学燃料来发电。"]
+			id: "769CB677EDB19C26"
+			tasks: [{
+				id: "49286286ED13E6FE"
+				item: "gtceu:lv_combustion"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			dependency_requirement: "one_completed"
+			description: ["消耗蒸汽发电。"]
+			id: "10E0F10749A7C6F1"
+			tasks: [{
+				id: "17D22FE8D32635D8"
+				item: "gtceu:lv_steam_turbine"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			description: ["消耗燃气发电（废话）。"]
+			id: "342E5F8CB1C06158"
+			tasks: [{
+				id: "24BA94A3E3E0A8C9"
+				item: "gtceu:lv_gas_turbine"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "3BCDAADCB9EE7A9F"
+			tasks: [{
+				id: "68DDDA3DA2C5F302"
+				item: "gtceu:lv_pump"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "3F0D1DB5C846AC8C"
+			tasks: [{
+				id: "3DA09542B5CF6858"
+				item: "gtceu:lv_fisher"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			description: ["我记得似乎在某个地方，这种东西是不费电的？"]
+			id: "7655DD1BEDE82D89"
+			tasks: [{
+				id: "14194B3BE3ED50F3"
+				item: "gtceu:lv_block_breaker"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "13BD2BBF16B9AB97"
+			tasks: [{
+				id: "38E08995441C1F64"
+				item: "gtceu:lv_world_accelerator"
+				type: "item"
+			}]
+			x: -15.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "022811F8DA239DC8"
+			tasks: [{
+				id: "5F5B3759AD8F9338"
+				item: "gtceu:lv_item_collector"
+				type: "item"
+			}]
+			x: -13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "7D56B0FA5B6557F3"
+			tasks: [{
+				id: "72E528DB8A7FCA44"
+				item: "gtceu:lv_buffer"
+				type: "item"
+			}]
+			x: -13.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			description: ["可以放入四节电池，有资源的话可以做更大的..."]
+			icon: "gtceu:lv_battery_buffer_4x"
+			id: "7FCD93EE43D6E5F2"
+			tasks: [
+				{
+					id: "2D660426C19BA708"
+					item: "gtceu:lv_battery_buffer_4x"
+					type: "item"
+				}
+				{
+					id: "0F3B6C8285AC6430"
+					item: "gtceu:lv_lithium_battery"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -5.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "5033ACB10DD0E392"
+			tasks: [{
+				id: "2DB3FD3AB86C44B5"
+				item: "mekanism:atomic_disassembler"
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			description: [
+				"工业化生产必须要高炉，更好的高炉可以制造更好的材料。"
+				""
+				"当然，这个电力高炉可以使用两个能源仓，将两个LV能源仓放上去供电，就可以使用MV级别的配方了。"
+				""
+				"继续升压也是同理，更高的电压能显著提高速度。更好的线圈也一样。"
+				""
+				"对着这种大型设备的控制器按U可以查看其构造，例如需要什么仓。"
+				""
+				"&7该开始烧铝了，然后进入MV阶段？"
+				""
+				"&7另外提醒一下呢，如果你发现到这里，你的矿物很紧张，建议先稍微处理好这个问题再进入MV。"
+				""
+				"不明白各种仓是什么作用？可以"
+				"{ \"text\": \"点击这里查看\", \"underlined\": \"true\", \"clickEvent\": { \"action\": \"change_page\", \"value\": \"5C56B9118B74B43A\" } }"
+				""
+				"还不明白，那你可以查看GTNH的wiki："
+				"{\"text\": \"点击这里访问\", \"clickEvent\": {\"action\":  \"open_url\", \"value\": \"https://gtnh.huijiwiki.com/p/117\"},\"color\": \"blue\", \"underlined\": \"true\"}"
+			]
+			icon: "gtceu:electric_blast_furnace"
+			icon_scale: 2.0d
+			id: "76119579FDBF9C6F"
+			rewards: [{
+				count: 8
+				id: "54392E4AE62B8885"
+				item: "gtceu:duct_tape"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "324C6910F4E05E47"
+					item: "gtceu:electric_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "01AE6588C22A4FCF"
+					item: { Count: 16, id: "gtceu:cupronickel_coil_block" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -3.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["76119579FDBF9C6F"]
+			icon: "gtceu:aluminium_ingot"
+			id: "4D0A7AEB7956DDD1"
+			tasks: [{
+				id: "22A25754F6DC9BA1"
+				item: "gtceu:aluminium_ingot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["09C664A44B1EFC32"]
+			id: "17DA839D4B6F362A"
+			tasks: [{
+				id: "2D5D0F38D3EE51F4"
+				item: "gtceu:lv_rock_crusher"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["69C07EE9591130C9"]
+			description: [
+				"需要更多的资源，这些材料已经无法维持现在的发展了。"
+				""
+				"该将筛子也大型化了，也许这对现在来说颇有挑战。"
+			]
+			icon_scale: 2.0d
+			id: "0C893269CE548BBC"
+			tasks: [{
+				id: "241F5E2FB5753106"
+				item: "llrcore:sifter_factory"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			id: "26888F66CE5F3301"
+			tasks: [{
+				id: "726654646DA904C3"
+				item: "gtceu:energetic_alloy_single_wire"
+				type: "item"
+			}]
+			title: "LV最便宜的超导？"
+			x: -3.0d
+			y: -4.5d
+		}
+	]
+	title: "[LV]是电，我们有救啦！"
+}

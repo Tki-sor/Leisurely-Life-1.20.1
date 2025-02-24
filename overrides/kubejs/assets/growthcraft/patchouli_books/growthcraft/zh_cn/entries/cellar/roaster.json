@@ -1,0 +1,30 @@
+{
+  "name": "烘烤器",
+  "icon": "growthcraft_cellar:roaster",
+  "category": "growthcraft:cellar",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "spotlight",
+      "item": "growthcraft_cellar:roaster",
+      "text": "烘烤器用于烘烤谷物和食物项。$(br2)使用扳手调整烘烤水平，烘烤器将烘烤整整一堆物品。$(br2)烘烤器下方还需要一个热源。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "growthcraft:textures/patchouli/blocks/roaster_smoke.png"
+      ],
+      "text": "当烘烤器内有有效物品时，它将开始冒烟。"
+    },
+    {
+      "title": "烘烤时间",
+      "type": "text",
+      "text": "烘烤等级 1（30 秒）$(li)淡金谷物$(br2)烘烤等级 2（60 秒）$(li)金谷物$(li)鸡肉、牛肉$(br2)烘烤等级 3（1分30秒）$(li)琥珀谷物$(br2)烘烤等级 4（2 分钟）$(li)深琥珀谷物"
+    },
+    {
+      "title": "烘烤时间",
+      "type": "text",
+      "text": "烘烤等级 5（2分30秒）$(li)铜谷物$(br2)烘烤等级 6（3分钟）$(li)深铜谷物$(br2)烘烤等级 7（3分30秒）$(li)棕色谷物$(br2)烘烤等级 8（4分钟）$(li)黑色谷物"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "蜜酒指南",
+  "icon": "growthcraft_cellar:fermentation_barrel_oak",
+  "category": "growthcraft:apiary",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "text",
+      "text": "蜂蜜可以用于制作各种有益的药水。$(br2)我们的酿酒大师们一直在努力工作，已经完善了蜜酒的配方，并愿意与您分享。"
+    },
+    {
+      "type": "text",
+      "text": "要开始制作蜜酒，您需要在酿酒锅中放入四个装满蜂巢和一桶水，以生产一桶蜜酒原料。这个过程不会花费太长时间。$(br2)接下来，取出你的蜜酒原料和一个巴亚纳斯酵母，将它们放入发酵桶中。在酵母发酵蜜酒原料后，使用玻璃瓶或酒瓶从桶中提取新鲜的蜜酒。$(br2)发酵桶最多可以容纳四桶蜜酒原料。如果您想发酵四桶，您将需要四个巴亚纳斯酵母。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft_cellar:potion_wine",
+      "title": "蜜酒",
+      "text": "$(bold)蜂蜜蜜酒$()$(li)巴亚纳斯酵母$(li)健康提升 II (3:00)"
+    }
+  ]
+}

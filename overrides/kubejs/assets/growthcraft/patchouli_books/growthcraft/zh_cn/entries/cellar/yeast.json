@@ -1,0 +1,32 @@
+{
+  "name": "酵母与培养",
+  "icon": "growthcraft_cellar:textures/item/yeast_brewers.png",
+  "category": "growthcraft:cellar",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "酵母由 $(l:cellar/ferment_barrel)发酵桶$() 用于发酵液体。每种发酵液体需要不同的酵母。$(br2)酵母可以通过 $(l:cellar/culture_jar)培养罐$() 进行繁殖。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft_cellar:yeast_bayanus",
+      "text": "$(bold)巴亚纳斯酵母$() - 此酵母用于发酵葡萄酒。$(br2)$(bold)来源$() - 可以通过收获草找到巴亚纳斯酵母。$(br2)$(bold)培养$() - 需要红色、紫色或白色葡萄汁。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft_cellar:yeast_brewers",
+      "text": "$(bold)酿酒酵母$() - 酿酒酵母用于发酵艾尔。$(br2)$(bold)来源$() - 可以通过收获草找到酿酒酵母。$(br2)$(bold)培养$() - 需要小麦的通用麦汁。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft_cellar:yeast_lager",
+      "text": "$(bold)拉格酵母$() - 拉格酵母用于发酵拉格。$(br2)$(bold)来源$() - 可以通过在雪地生物群落中收获雪找到拉格酵母。$(br2)$(bold)培养$() - 需要小麦的通用麦汁。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft_cellar:yeast_ethereal",
+      "text": "$(bold)虚无酵母$() - 这些是魔法版本的酵母，目前还没有用途。$(br2)$(bold)来源$() - 虚无酵母在世界中目前不可获得。$(br2)$(bold)培养$() - 需要小麦的通用麦汁。"
+    }
+  ]
+}

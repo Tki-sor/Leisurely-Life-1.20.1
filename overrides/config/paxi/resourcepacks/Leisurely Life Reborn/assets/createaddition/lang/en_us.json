@@ -1,0 +1,6 @@
+{
+	"block.createaddition.alternator": "FE Generator",
+
+	"createaddition.ponder.alternator.header": "Generating Electric energy using an FE Generator",
+	"createaddition.ponder.alternator.text_1": "The FE Generator requires at least 32 RPM to operate"
+}

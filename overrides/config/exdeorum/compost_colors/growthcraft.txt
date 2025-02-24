@@ -1,0 +1,20 @@
+// Compost colors for growthcraft. You may add your own colors, change existing ones, or remove colors that aren't needed.
+crowbar_black, #ffffff
+crowbar_blue, #ffffff
+crowbar_brown, #ffffff
+crowbar_cyan, #ffffff
+crowbar_gray, #ffffff
+crowbar_green, #ffffff
+crowbar_light_blue, #ffffff
+crowbar_light_gray, #ffffff
+crowbar_lime, #ffffff
+crowbar_magenta, #ffffff
+crowbar_orange, #ffffff
+crowbar_pink, #ffffff
+crowbar_purple, #ffffff
+crowbar_red, #ffffff
+crowbar_white, #ffffff
+crowbar_yellow, #ffffff
+rope_linen, #ebd4b4
+salt, #ffffff
+wrench, #c5c5c5

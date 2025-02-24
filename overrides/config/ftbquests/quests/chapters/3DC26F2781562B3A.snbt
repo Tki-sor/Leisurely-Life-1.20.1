@@ -1,0 +1,38 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3DC26F2781562B3A"
+	group: "3D4C99710DE84F64"
+	id: "3DC26F2781562B3A"
+	order_index: 0
+	quest_links: [ ]
+	quests: [{
+		description: [
+			"这里终归不是自己的家，总有一天是要回去的。"
+			""
+			"但面对大海，作为船长的我深知有一艘坚固的船是多么的重要。"
+			""
+			"而此行不知道要多久，需要很大的一艘船来存放物资以备不时之需。"
+			""
+			"当你有能力做出这样的船，也许可以尝试去做，然后，去找到自己的家。"
+			""
+			"&3[结局1] 你做出了一艘帆船，尝试回到你的家，也许真的找到了呢？"
+			"&7完成本任务算是完成了毕业目标其中一个，你可以视作通关，或者，继续挑战其他目标？"
+		]
+		icon: "alekiships:sloop_icon_only"
+		icon_scale: 2.0d
+		id: "083FA900DFC9A8FB"
+		shape: "gear"
+		size: 2.0d
+		tasks: [{
+			advancement: "alekiships:sloop_completed"
+			criterion: ""
+			id: "4CC2B3EC99A68F16"
+			type: "advancement"
+		}]
+		title: "杨帆，启航"
+		x: 0.0d
+		y: 0.0d
+	}]
+	title: "终要归家"
+}

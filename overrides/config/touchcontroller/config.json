@@ -1,0 +1,107 @@
+{
+  "disableCrosshair": false,
+  "disableHotBarKey": true,
+  "usableItems": {
+    "whitelist": [
+      {
+        "id": "minecraft:fishing_rod",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:spyglass",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:map",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:shield",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:knowledge_book",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:writable_book",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:written_book",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:ender_eye",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:ender_pearl",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:potion",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:snowball",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:egg",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:splash_potion",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:lingering_potion",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:experience_bottle",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:trident",
+        "metadata": null
+      }
+    ],
+    "subclasses": [
+      "RangedWeaponItem",
+      "ArmorItem",
+      "BundleItem"
+    ],
+    "components": [
+      "touchcontroller:food"
+    ]
+  },
+  "showCrosshairItems": {
+    "whitelist": [
+      {
+        "id": "minecraft:egg",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:splash_potion",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:lingering_potion",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:experience_bottle",
+        "metadata": null
+      },
+      {
+        "id": "minecraft:trident",
+        "metadata": null
+      }
+    ],
+    "subclasses": [
+      "RangedWeaponItem"
+    ]
+  }
+}

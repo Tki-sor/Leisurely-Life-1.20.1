@@ -1,0 +1,6 @@
+{
+  "name": "Growthcraft 竹子",
+  "description": "竹子是世界上生长最快的植物之一，因其独特的根茎依赖系统。$(br2)竹子的强度与重量比类似于木材，是一种良好的可再生建筑材料。",
+  "icon": "minecraft:textures/item/bamboo.png",
+  "sortnum": 3
+}

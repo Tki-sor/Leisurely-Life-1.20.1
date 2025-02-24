@@ -1,0 +1,37 @@
+{
+  "name": "耕作的农田",
+  "icon": "growthcraft_rice:cultivated_farmland",
+  "category": "growthcraft:rice",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "耕作农田的历史见证了人类的智慧以及其适应和利用地球资源以获得生存的能力。农业的起源可以追溯到1万多年前，古代文明如苏美尔人、埃及人和中国人首次驯化和种植野生植物和谷物。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "     ",
+      "text": "$(br)新石器革命标志着一个关键时刻，人类从游牧狩猎和采集转向定居农业，导致永久定居点的发展和早期文明的成长。几千年来，农业实践不断演变，犁和灌溉系统等创新提升了农业"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "     ",
+      "text": "生产力。农业革命促进了人口增长、贸易以及复杂社会的出现，最终塑造了人类历史的进程，为我们今天所知的现代农业奠定了基础。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "growthcraft_rice:cultivator",
+      "text": "要将您的农田转变为耕作的农田，您必须首先制作耕作工具。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft_rice:cultivated_farmland",
+      "text": "现在您拥有了耕作工具，可以在农田上使用它，将其转换为耕作的农田。耕作的农田必须靠近水源，以便自然淹没并准备好种植水稻。如果您不耐烦，可以用水桶立即淹没它。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft_rice:rice_stalk",
+      "text": "一旦您看到农田上有一层水，就可以种植需要耕作农田的作物。$(br2)水稻的生长速度与小麦大致相同。"
+    }
+  ]
+}

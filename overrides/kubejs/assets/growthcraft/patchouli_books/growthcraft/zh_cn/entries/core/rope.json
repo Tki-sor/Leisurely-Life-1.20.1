@@ -1,0 +1,32 @@
+{
+  "name": "绳索",
+  "icon": "growthcraft:rope_linen",
+  "category": "growthcraft:core",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft:rope_linen",
+      "text": "绳索常用于种植葡萄和啤酒花。$(br2)绳索最初是通过将牵引绳与线结合制作而成。向现有的绳索添加更多的线可以延长其长度。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "growthcraft:rope_linen",
+      "recipe2": "growthcraft:rope_linen_lengthen"
+    },
+    {
+      "type": "image",
+      "images": [
+        "growthcraft:textures/patchouli/blocks/rope_fence_connected.png"
+      ],
+      "text": "绳索可以放置在任何原版围栏上。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "growthcraft:textures/patchouli/blocks/rope_connected.png"
+      ],
+      "text": "绳索也可以连接到自身。这对于种植葡萄和啤酒花是必需的。"
+    }
+  ]
+}

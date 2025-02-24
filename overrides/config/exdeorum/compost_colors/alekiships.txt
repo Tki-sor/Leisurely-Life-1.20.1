@@ -1,0 +1,7 @@
+// Compost colors for alekiships. You may add your own colors, change existing ones, or remove colors that aren't needed.
+cannonball, #ffffff
+cleat, #ddd0ca
+music_disc_pirate_crafting, #2576aa
+oarlock, #c2bfbe
+rowboat_icon_only, #e3be9b
+sloop_icon_only, #fffff5

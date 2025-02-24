@@ -1,0 +1,52 @@
+{
+  "dependencies": [],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "有太多的东西需要做啦！",
+      "",
+      "但是你肯定会想解放双手吧？通过不同部件的组合可以实现不同的功能。",
+      "",
+      "例如：",
+      "    - 自动树场",
+      "    - 自动农田",
+      "    - 自动刷石机",
+      "    ...",
+      "",
+      "尽管在本整合包中，机械动力最高转速被削弱了，但做这些基础的事情的效率还是相差不大的。",
+      "如果你还没了解过机械动力，建议可以参考下别人的示例。",
+      "另外，机械动力在这里只是方便进行各种自动化的，并非主要的mod，能帮助你解放双手。"
+    ],
+    "groups": {
+      "在蒸汽时代前要干什么": {
+        "position": [
+          -40,
+          -36
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:map",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "2.机械动力？能干什么用"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

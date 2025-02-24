@@ -1,0 +1,15 @@
+
+["Homing Xp Orb Config"]
+	#The max distance at which the Xp Orb can detect players.
+	#Range: 0.0 ~ 128.0
+	maxHomingDistance = 64.0
+	#If enabled, Xp orbs will fly towards the player in the vanilla way, which is gaining an acceleration vector constantly towards the player. This makes the Xp Orbs' movement smoother, but when the player is too far away, the xp orb will be unable to adjust the flight direction in time.
+	#If disabled, the velocity vector of Xp orbs will continue pointing toward the player, which might not move smoothly enough though.
+	accelerationMode = true
+	#Acceleration Multiplier if acceleration mode is enabled, in case that xp orbs become too fast.
+	#Range: 0.0 ~ 1.0
+	accelerationMultiplier = 0.5
+	#The constant flying speed of xp orbs if acceleration mode is disabled.
+	#Range: 0.0 ~ 8.0
+	constantSpeed = 0.5
+

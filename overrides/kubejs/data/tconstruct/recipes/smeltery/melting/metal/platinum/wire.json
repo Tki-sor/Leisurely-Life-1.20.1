@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:wires/platinum"
+      }
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:wires/platinum"
+  },
+  "result": {
+    "amount": 72,
+    "fluid": "gtceu:platinum"
+  },
+  "temperature": 970,
+  "time": 13
+}

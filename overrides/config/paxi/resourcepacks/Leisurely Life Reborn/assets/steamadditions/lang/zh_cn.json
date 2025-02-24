@@ -1,0 +1,6 @@
+{
+  "block.steamadditions.steam_foundry": "蒸汽铸造厂",
+  "block.steamadditions.steam_separator": "蒸汽离心机",
+  "block.steamadditions.steam_foundry.tooltip" : "注意不要与多重冶炼炉混淆",
+  "block.steamadditions.steam_separator.tooltip" : "助你充分利用矿物粉尘的效能"
+}

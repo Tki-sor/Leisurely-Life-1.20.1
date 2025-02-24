@@ -1,0 +1,24 @@
+
+[bottles_in_loot_chest]
+	#Percentage chance you'll find a few bottles of wine in villager home chest.
+	#Range: 0 ~ 100
+	loot_chance_village = 0
+	#Percentage chance you'll find a few bottles of wine in buried beach chest.
+	#Range: 0 ~ 100
+	loot_chance_beach_treasure = 0
+	#Percentage chance you'll find a few bottles of lager in woodland mansion chest.
+	#Range: 0 ~ 100
+	loot_chance_dark_forest_mansion = 15
+	#Percentage chance you'll find a few bottles of wine in stronghold chest.
+	#Range: 0 ~ 100
+	loot_chance_stronghold = 0
+	#Percentage chance you'll find a few bottles of mead in pillager tower chest. Number here seems high but that bum place has only one chest and this fits the theme.
+	#Range: 0 ~ 100
+	loot_chance_pillager_outpost = 90
+	#Percentage chance you'll find a few bottles of ale in shipwreck chest.
+	#Range: 0 ~ 100
+	loot_chance_shipwreck = 60
+	#Percentage chance you'll find a few bottles of wine in underwater ruin chest. Default of 10% is not low because ruins will have half a dozen chests.
+	#Range: 0 ~ 100
+	loot_chance_underwater_ruins = 10
+

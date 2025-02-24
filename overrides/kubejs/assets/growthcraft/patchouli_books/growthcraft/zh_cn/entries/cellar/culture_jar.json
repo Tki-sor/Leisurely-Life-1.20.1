@@ -1,0 +1,17 @@
+{
+  "name": "培养罐",
+  "icon": "growthcraft_cellar:culture_jar",
+  "category": "growthcraft:cellar",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft_cellar:culture_jar",
+      "text": "培养罐主要用于繁殖酵母。$(br2)将一种酵母放入 $(bold)培养罐$() 中，并加入其 $(l:cellar/yeast)相应的液体$()，提供一个附近的热源，它将会繁殖出额外的酵母。$(br2)培养罐还用于培养 $(bold)发酵母种$()，以用于 $(l:milk/making_cheese)制作奶酪$()。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "growthcraft_cellar:culture_jar"
+    }
+  ]
+}

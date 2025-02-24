@@ -1,0 +1,280 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "563823CDD91D1FA8"
+	group: "4766A265AF2DA856"
+	icon: "thermal:wrench"
+	id: "563823CDD91D1FA8"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"手上的工具太多了？这是个烦恼呢..."
+				""
+				"因为我也不喜欢拿着太多的工具。"
+				""
+				"所以可以做个工具皮带，把工具挂在上面呢。"
+				""
+				"当然，只能放两个工具肯定不够用的吧，在铁砧上用&3皮带袋&f来升级它就可以哦。"
+			]
+			icon: "toolbelt:belt"
+			id: "6428E24B83B5D53A"
+			tasks: [{
+				id: "5EDDE8410B418090"
+				item: "toolbelt:belt"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"修理不同的工具当然要用到不同的东西啦..."
+				""
+				"调整齿轮要用扳手，调整管道要用另外一个扳手..."
+				""
+				"这么麻烦，也许可以做一把自适应的工具？"
+				""
+				"&7由于gt有很多工具，这个变形工具无法充分识别，所以效果其实没那么好，还是建议&3工具皮带&7。但是这个放个gt的扳手还是可以的。"
+				"&7将变形工具与想要融合的工具合成，即可融合进变形工具中。"
+				"&c放入有耐久的物品，耐久消耗完之后会破碎！"
+			]
+			icon: "morphtool:tool"
+			id: "79D5116194690243"
+			tasks: [{
+				id: "390B899E97C90A38"
+				item: "morphtool:tool"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"这些机器转的太快了，根本看不清！"
+				""
+				"那这时候就需要做一个护目镜，能让你更好的看清机器的运作，也不必担心会伤害到你的眼睛。"
+			]
+			icon: "create:goggles"
+			id: "1F462D7721B5C077"
+			rewards: [{
+				id: "005FCE70D1E64F5B"
+				item: "create:goggles"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "47EB274CD9B32AC6"
+					item: "create:goggles"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "38EC291345B5B2B2"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"这个框架要...铁板...铜板...要很多橡胶...到底要多少材料..."
+				""
+				"脑算这些真的很麻烦，如果有一个计算器..."
+			]
+			icon: "jecalculation:item_calculator_craft"
+			id: "3E3A28CD7D96CC15"
+			rewards: [{
+				id: "785B3A3F49D855B3"
+				item: "jecalculation:item_calculator_craft"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "639E3DF1D00075A4"
+					item: "jecalculation:item_calculator_craft"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "483E46E0B5E21891"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			icon: "pipe_connector:pipe_connector"
+			id: "1FA2D5D73E26803C"
+			rewards: [{
+				id: "27B8ABA2AFED5873"
+				item: "pipe_connector:pipe_connector"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "79905A456E0B3E29"
+					item: "pipe_connector:pipe_connector"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5A430329712495E3"
+					type: "checkmark"
+				}
+			]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"也许你不喜欢身上放一堆工具？那么工具箱也许是个好选择。"
+				""
+				"在里面放上你常用的工具，在需要时顺手从工具箱里面拿出来就好。"
+				""
+				"&7默认长按Alt可以在附近的工具箱替换工具。"
+			]
+			icon: "create:brown_toolbox"
+			id: "0E976243E7248D30"
+			tasks: [{
+				id: "2156FB650C940EC3"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "create:toolboxes"
+					}
+				}
+				title: "Any #create:toolboxes"
+				type: "item"
+			}]
+			title: "工具箱"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"什么？挖石头太麻烦了？不妨试试这个原石破坏者。"
+				""
+				"当检测到&c疑似&r刷石机的结构时，挖掘圆石，不会破坏掉圆石，会直接给予圆石。"
+				""
+				"从此再也不用担心圆石掉落到熔岩中了。"
+				""
+				"也许他们有一些昂贵，但是也许后面会修改。"
+				""
+				"&7它实际无法破坏任何东西，非常安全。"
+				""
+				"&7为什么不去试试圆石粉碎者。"
+			]
+			icon: "llrcore:cobble_breaker"
+			id: "15192C64D39F3A7B"
+			tasks: [{
+				id: "537714893FED0A8A"
+				item: "llrcore:cobble_breaker"
+				type: "item"
+			}]
+			title: "圆石破坏者"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			icon: "thermal:device_nullifier"
+			id: "782B7AEC204862D9"
+			tasks: [{
+				id: "7B1B23AD5F6CB04E"
+				item: "thermal:device_nullifier"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			description: ["快速建造gt的多方块机器"]
+			icon: "gtceu:terminal"
+			id: "70777358A67D84C0"
+			rewards: [{
+				id: "262993594E81CE37"
+				item: "gtceu:terminal"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "26AF3254089522B0"
+					item: "gtceu:terminal"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "02F7621A25EE3999"
+					type: "checkmark"
+				}
+			]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			description: ["排水神器，点击即送。"]
+			icon: {
+				Count: 1
+				id: "simplesponge:energized_sponge_on_a_stick"
+				tag: {
+					Energy: 500000
+				}
+			}
+			id: "3AB649DF86FA7D40"
+			rewards: [{
+				id: "270E763BDE20ADCD"
+				item: {
+					Count: 1
+					id: "simplesponge:energized_sponge_on_a_stick"
+					tag: {
+						Energy: 500000
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "3167F288302DA314"
+				type: "checkmark"
+			}]
+			title: "充能海绵棒"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			description: ["铺地真是个麻烦事，但如果有了它..."]
+			icon: {
+				Count: 1
+				id: "constructionwand:diamond_wand"
+				tag: {
+					Damage: 0
+					wand_options: { }
+				}
+			}
+			id: "7A47397EA4CE391B"
+			rewards: [{
+				id: "6C36393101F07608"
+				item: {
+					Count: 1
+					id: "constructionwand:diamond_wand"
+					tag: {
+						Damage: 0
+						wand_options: { }
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "061626F0877E64DF"
+				type: "checkmark"
+			}]
+			title: "建筑手杖"
+			x: -2.0d
+			y: 4.0d
+		}
+	]
+	title: "一些好用的东西"
+}

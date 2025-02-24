@@ -1,0 +1,16 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "06983C4F4BCD2686"
+	group: "22AB940A6CF0C6B8"
+	id: "06983C4F4BCD2686"
+	order_index: 5
+	quest_links: [{
+		id: "41FD528C89D2AEB8"
+		linked_quest: "1568CEB9E1F5CFD4"
+		x: -0.5d
+		y: 0.0d
+	}]
+	quests: [ ]
+	title: "[HV]科技顶点？"
+}

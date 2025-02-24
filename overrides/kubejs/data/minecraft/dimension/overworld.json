@@ -1,0 +1,552 @@
+{
+  "type": "minecraft:overworld",
+  "generator": {
+    "type": "minecraft:noise",
+    "settings": "minecraft:overworld",
+    "biome_source": {
+      "type": "minecraft:multi_noise",
+      "biomes": [
+        {
+          "biome": "minecraft:deep_frozen_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              -0.45
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1.2,
+              0
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:deep_cold_ocean",
+          "parameters": {
+            "temperature": [
+              -0.45,
+              -0.15
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1.2,
+              0
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:deep_ocean",
+          "parameters": {
+            "temperature": [
+              -0.15,
+              0.2
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1.2,
+              0
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:deep_lukewarm_ocean",
+          "parameters": {
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1.2,
+              0
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:warm_ocean",
+          "parameters": {
+            "temperature": [
+              0.55,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1.2,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:frozen_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              -0.45
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:cold_ocean",
+          "parameters": {
+            "temperature": [
+              -0.45,
+              -0.15
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:ocean",
+          "parameters": {
+            "temperature": [
+              -0.15,
+              0.2
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:lukewarm_ocean",
+          "parameters": {
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              -0.2,
+              0
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:deep_frozen_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              -0.45
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1.2,
+              0
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              1,
+              1.2
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:deep_cold_ocean",
+          "parameters": {
+            "temperature": [
+              -0.45,
+              -0.15
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1.2,
+              0
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              1,
+              1.2
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:deep_ocean",
+          "parameters": {
+            "temperature": [
+              -0.15,
+              0.2
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1.2,
+              0
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              1,
+              1.2
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:deep_lukewarm_ocean",
+          "parameters": {
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1.2,
+              0
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              1,
+              1.2
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:warm_ocean",
+          "parameters": {
+            "temperature": [
+              0.55,
+              1
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              -1.2,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              1,
+              1.2
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:frozen_ocean",
+          "parameters": {
+            "temperature": [
+              -1,
+              -0.45
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              1,
+              1.2
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:cold_ocean",
+          "parameters": {
+            "temperature": [
+              -0.45,
+              -0.15
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              1,
+              1.2
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:ocean",
+          "parameters": {
+            "temperature": [
+              -0.15,
+              0.2
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              1,
+              1.2
+            ],
+            "offset": 0
+          }
+        },
+        {
+          "biome": "minecraft:lukewarm_ocean",
+          "parameters": {
+            "temperature": [
+              0.2,
+              0.55
+            ],
+            "humidity": [
+              -1,
+              1
+            ],
+            "continentalness": [
+              0,
+              1
+            ],
+            "erosion": [
+              -1,
+              1
+            ],
+            "weirdness": [
+              -1,
+              1
+            ],
+            "depth": [
+              1,
+              1.2
+            ],
+            "offset": 0
+          }
+        }
+      ]
+    }
+  }
+}

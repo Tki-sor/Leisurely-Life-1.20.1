@@ -1,0 +1,17 @@
+{
+  "name": "酿造锅",
+  "icon": "growthcraft_cellar:brew_kettle",
+  "category": "growthcraft:cellar",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft_cellar:brew_kettle",
+      "text": "酿造锅主要用于从水和谷物中制作 $(o)麦芽汁$()，然后可以用来制作 $(l:cellar/ales_and_lagers)艾尔和拉格啤酒$()。$(br2)它还可以制作 $(o)果汁$() 用于制作 $(l:apiary/honey_mead)蜜酒$()，以及 $(l:milk/making_rennet)$(o)凝乳酶$() 用于制作 $(l:milk/making_cheese)奶酪$()。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "growthcraft_cellar:brew_kettle"
+    }
+  ]
+}

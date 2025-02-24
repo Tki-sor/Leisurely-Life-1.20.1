@@ -1,0 +1,6 @@
+// Compost colors for realistictorches. You may add your own colors, change existing ones, or remove colors that aren't needed.
+glowstone_crystal, #ffe7b4
+glowstone_paste, #ffffe1
+lit_torch, #ffffff
+matchbox, #ffe8e8
+unlit_torch, #ffffff

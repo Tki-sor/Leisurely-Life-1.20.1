@@ -1,0 +1,22 @@
+{
+  "name": "工具",
+  "icon": "growthcraft:wrench",
+  "category": "growthcraft:core",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft:wrench",
+      "text": "扳手可用于调整Growthcraft中的某些方块。$(br2)在烘烤器上使用时，可以调整烟囱，以控制烘烤器的加工时间。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "growthcraft:wrench"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft:crowbar_green",
+      "text": "撬棍可以制作成16种不同颜色。它曾用于破坏方块并保留其内容。目前仅作为装饰用途。"
+    }
+  ]
+}

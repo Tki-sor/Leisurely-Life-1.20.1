@@ -1,0 +1,29 @@
+{
+  "name": "养蜂",
+  "icon": "growthcraft_apiary:bee",
+  "category": "growthcraft:apiary",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "为了捕捉蜜蜂，你必须打破一个蜂巢，有四分之一的机会掉落蜜蜂。$(br2)一旦你得到了第一只蜜蜂，你需要制作一个蜜蜂箱。"
+    },
+    {
+      "type": "image",
+      "images": [
+        "growthcraft:textures/patchouli/blocks/bee_box_flowers.png"
+      ],
+      "text": "确保在蜜蜂箱周围放置花朵。"
+    },
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft_apiary:bee_box_oak",
+      "text": "当蜜蜂产生蜂巢时，它们需要蜜蜂箱附近有花朵。它们还会复制任何在范围内的花朵。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "growthcraft_apiary:bee_box_oak",
+      "recipe2": "growthcraft_apiary:bee_box_spruce"
+    }
+  ]
+}

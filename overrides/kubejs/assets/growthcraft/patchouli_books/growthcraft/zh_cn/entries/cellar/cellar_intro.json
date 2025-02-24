@@ -1,0 +1,21 @@
+{
+  "name": "发酵入门",
+  "icon": "growthcraft_cellar:fermentation_barrel_oak",
+  "category": "growthcraft:cellar",
+  "sortnum": 0,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "发酵饮料分为三类：$(li)$(bold)艾尔和拉格$() 从烘烤的谷物开始，酿成麦芽汁$(li)$(bold)葡萄酒和苹果酒$() 从水果压榨成汁开始$(li)$(bold)蜜酒$() 从蜂巢酿制成果汁开始。"
+    },
+    {
+      "type": "patchouli:relations",
+      "entries": [
+        "growthcraft:cellar/ales_and_lagers",
+        "growthcraft:cellar/wines_and_ciders"
+      ],
+      "title": "开始入门",
+      "text": "$(br2)在 $(l:apiary)$(bold)蜂房$() 部分有一份单独的 $(l:apiary/honey_mead)蜜酒指南$()。"
+    }
+  ]
+}

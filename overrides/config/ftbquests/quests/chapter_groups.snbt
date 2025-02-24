@@ -1,0 +1,11 @@
+{
+	chapter_groups: [
+		{ id: "4766A265AF2DA856", title: "第一部分 虚无" }
+		{ id: "3F8CCFD303D2A5E6", title: "第二部分 动力与机械" }
+		{ id: "5AB2213217E85A15", title: "第三部分 农牧业" }
+		{ id: "22AB940A6CF0C6B8", title: "第四部分 科技与能源" }
+		{ id: "0532FB50AC58CCCF", title: "第五部分 森林之歌" }
+		{ id: "1144603E4C79C305", title: "第六部分 存储与管理技术" }
+		{ id: "3D4C99710DE84F64", title: "第七部分 不同的归宿" }
+	]
+}

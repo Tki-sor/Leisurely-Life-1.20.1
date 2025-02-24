@@ -1,0 +1,18 @@
+{
+  "name": "搅拌器",
+  "icon": "growthcraft_milk:churn",
+  "category": "growthcraft:milk",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "搅拌器用于制作黄油和黄油乳。$(br2)目前这两者没有用途，但至少你仍然可以制作它们。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "growthcraft_milk:churn",
+      "title": "    ",
+      "text": "将牛奶放入搅拌器中，右键单击搅拌器激活搅拌器的活塞。你会看到活塞上下移动。完成后，你可以从该方块中获取黄油乳和黄油。"
+    }
+  ]
+}

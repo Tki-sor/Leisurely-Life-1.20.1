@@ -1,0 +1,18 @@
+{
+  "name": "世界生成",
+  "icon": "growthcraft:salt_ore",
+  "category": "growthcraft:core",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft:salt_ore",
+      "text": "盐主要用于制作奶酪的过程。$(br2)要获得盐，你需要在y轴0到64之间开采，矿脉可达9块。"
+    },
+    {
+      "type": "crafting",
+      "recipe": "growthcraft:salt_block",
+      "recipe2": "growthcraft:salt"
+    }
+  ]
+}

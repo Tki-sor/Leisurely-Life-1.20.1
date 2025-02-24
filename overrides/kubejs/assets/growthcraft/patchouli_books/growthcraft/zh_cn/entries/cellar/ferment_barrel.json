@@ -1,0 +1,20 @@
+{
+  "name": "发酵桶",
+  "icon": "growthcraft_cellar:fermentation_barrel_oak",
+  "category": "growthcraft:cellar",
+  "sortnum": 2,
+  "pages": [
+    {
+      "type": "patchouli:spotlight",
+      "item": "growthcraft_cellar:fermentation_barrel_oak",
+      "title": "发酵桶",
+      "text": "发酵桶用于发酵艾尔、拉格、葡萄酒、苹果酒和蜜酒。这些饮料在饮用时会产生不同的效果。$(br2)将基础液体与适当的酵母放入桶中，以生产发酵产品。$(br)完成的产品可以使用玻璃瓶提取。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "growthcraft_cellar:fermentation_barrel_oak",
+      "title": " ",
+      "text": "发酵桶最多可以容纳四桶液体，但液体越多，处理时间越长。"
+    }
+  ]
+}

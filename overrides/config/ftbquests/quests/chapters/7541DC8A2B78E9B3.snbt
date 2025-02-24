@@ -1,0 +1,936 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "7541DC8A2B78E9B3"
+	group: "0532FB50AC58CCCF"
+	icon: "botania:lexicon"
+	id: "7541DC8A2B78E9B3"
+	images: [
+		{
+			height: 7.0d
+			image: "llr_quest:textures/pic/bot_gnh1.png"
+			rotation: 0.0d
+			width: 11.200000000000001d
+			x: -2.5d
+			y: 4.0d
+		}
+		{
+			height: 9.0d
+			image: "llr_quest:textures/pic/bot_gjcn.png"
+			rotation: 0.0d
+			width: 13.5d
+			x: 8.817857142857157d
+			y: 4.833333333333357d
+		}
+		{
+			height: 13.333333333333334d
+			image: "llr_quest:textures/pic/bot_gjgnh.png"
+			rotation: 0.0d
+			width: 16.0d
+			x: 21.889285714285712d
+			y: 6.619047619047642d
+		}
+	]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["2A7B2F2E3CD28955"]
+			description: [
+				"我曾做过这样一个梦。"
+				""
+				"在梦中，我和精灵为伴，是很好的朋友。虽然仅仅是梦..."
+				""
+				"但当我醒来时，我的枕边却多出来了一本书。"
+				""
+				"也许真的有所谓的魔法吧，在我与其他岛屿上的土著交流时他们也这么觉得。但无论是否存在魔法，我仍然相信一定有的，并且是有迹可循的。"
+			]
+			icon: "botania:lexicon"
+			id: "3ED9C1CFB15235CF"
+			rewards: [{
+				id: "18643D146BAC4C68"
+				item: "botania:lexicon"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "1252FF9E6BFF1B11"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			title: "于梦中的邂逅"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["45CBA49DDE7DFAF6"]
+			description: [
+				"在这里的原住民告诉我，想要和精灵沟通，需要先学会使用植物的力量。"
+				""
+				"只要遵循等价交换的原则，就可以做出更强大的植物。"
+			]
+			icon: "botania:apothecary_default"
+			id: "142CB756D1878741"
+			tasks: [{
+				id: "0D3EDA7E7BDC01A3"
+				item: "botania:apothecary_default"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3ED9C1CFB15235CF"]
+			description: ["可以种出神秘花。"]
+			icon: "botania:fertilizer"
+			id: "45CBA49DDE7DFAF6"
+			tasks: [{
+				id: "69C6B12EE75D450D"
+				item: "botania:fertilizer"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["142CB756D1878741"]
+			id: "2F5D217237E0266A"
+			tasks: [{
+				id: "74503FBF4B4126DB"
+				item: "botania:pure_daisy"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2F5D217237E0266A"]
+			id: "4C12E011C3B90CF2"
+			tasks: [{
+				id: "6FDC0A09520E7179"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			x: 3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2F5D217237E0266A"]
+			icon: "botania:livingrock"
+			id: "4634A86D88061FC9"
+			tasks: [{
+				id: "00F55C5A0D1DDD54"
+				item: "botania:livingrock"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4C12E011C3B90CF2"]
+			icon: "botania:mana_spreader"
+			id: "3A9075D917CE15DA"
+			tasks: [
+				{
+					id: "7B8D886D74BB15C4"
+					item: "botania:mana_spreader"
+					type: "item"
+				}
+				{
+					id: "4A6908826CE7BBAB"
+					item: "botania:redstone_spreader"
+					type: "item"
+				}
+				{
+					id: "6CEE01F5C688C6CD"
+					item: "botania:elven_spreader"
+					type: "item"
+				}
+				{
+					id: "2DE2B72C2DD3E2C6"
+					item: "botania:gaia_spreader"
+					type: "item"
+				}
+			]
+			x: 3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["4C12E011C3B90CF2"]
+			id: "518E22101F11CA88"
+			tasks: [{
+				id: "24E99696EBFF7458"
+				item: "botania:mana_bomb"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4634A86D88061FC9"]
+			icon: "botania:mana_pool"
+			id: "0D01249EA7546F0B"
+			tasks: [
+				{
+					id: "5FD35DFF762C9CD3"
+					item: "botania:mana_pool"
+					type: "item"
+				}
+				{
+					id: "3F0DBBCD4EC002A8"
+					item: "botania:diluted_pool"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "12FDA4A81935FD55"
+					item: "botania:fabulous_pool"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4C12E011C3B90CF2"]
+			id: "5C52F1A6E6720AA9"
+			tasks: [{
+				id: "0EDB7822F2E22116"
+				item: "botania:livingwood_planks"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["5C52F1A6E6720AA9"]
+			id: "11F1845CD639E2F0"
+			tasks: [{
+				id: "2943426C66768228"
+				item: "botania:livingwood_twig"
+				type: "item"
+			}]
+			x: 7.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["11F1845CD639E2F0"]
+			id: "6C31AEDA447126A5"
+			tasks: [{
+				id: "780594FDDD5937CC"
+				item: {
+					Count: 1
+					id: "botania:twig_wand"
+					tag: {
+						color1: 0
+						color2: 0
+					}
+				}
+				match_nbt: false
+				type: "item"
+			}]
+			x: 9.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0D01249EA7546F0B"]
+			id: "7B6964CA9395A3D5"
+			tasks: [{
+				id: "02C0F4A9EAC0AABC"
+				item: "botania:mana_diamond"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7B6964CA9395A3D5"]
+			icon: "botania:runic_altar"
+			id: "0DDA54B4C52C95BA"
+			tasks: [{
+				id: "1ED0A52FBD4A16CD"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			x: 11.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4102FA83D50209E6"]
+			icon: "botania:alfheim_portal"
+			id: "65856C023A164ED4"
+			tasks: [
+				{
+					id: "3BDD070FF8C305BC"
+					item: "botania:alfheim_portal"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "517E6A6A5FCE85C6"
+					item: { Count: 8, id: "botania:livingwood" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "244EFCE1A60AE3FE"
+					item: { Count: 3, id: "botania:glimmering_livingwood" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0763134FA8BBCD25"
+					item: { Count: 2, id: "botania:natura_pylon" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "40E9C0D7760BF2AD"
+					item: { Count: 2, id: "botania:mana_pool" }
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 13.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["0DDA54B4C52C95BA"]
+			icon: "botania:terra_plate"
+			id: "4102FA83D50209E6"
+			tasks: [{
+				id: "02B3B2B4C444733F"
+				item: "botania:terra_plate"
+				type: "item"
+			}]
+			x: 13.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["65856C023A164ED4"]
+			id: "1E1FA43D1ED2057A"
+			tasks: [{
+				id: "1AA56F492C03E4FF"
+				item: "botania:dragonstone"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["65856C023A164ED4"]
+			id: "2CF5972C15E9FA6D"
+			tasks: [{
+				id: "763BABE5B7D758A4"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			x: 17.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2CF5972C15E9FA6D"]
+			id: "7043AD75B886185F"
+			tasks: [{
+				id: "76C7148BD36A09BA"
+				item: "botania:elven_spreader"
+				type: "item"
+			}]
+			x: 17.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1E1FA43D1ED2057A"]
+			id: "302B53B569823147"
+			tasks: [{
+				id: "3D23669365E600AF"
+				item: "botania:gaia_spreader"
+				type: "item"
+			}]
+			x: 15.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4102FA83D50209E6"]
+			id: "615961426CCC9F72"
+			tasks: [{
+				id: "74FE8BD0CBA0A0ED"
+				item: "botania:terrasteel_ingot"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			description: ["吞噬树叶产生魔力。"]
+			id: "3209E7C93BAE2858"
+			tasks: [{
+				id: "6F92424ACB262988"
+				item: "botania:munchdew"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["142CB756D1878741"]
+			description: ["可以检测魔力池魔力的增加/减少情况"]
+			hide_dependency_lines: true
+			icon: "botania:manastar"
+			id: "7FAA090A103ACA6B"
+			tasks: [{
+				id: "0BC928C84AA108C3"
+				item: "botania:manastar"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["142CB756D1878741"]
+			description: ["消耗水源生产魔力"]
+			icon: "botania:hydroangeas"
+			id: "2270C03B3F74E3BE"
+			tasks: [{
+				id: "70EA031476E26A74"
+				item: "botania:hydroangeas"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["142CB756D1878741"]
+			description: ["消耗燃料生产魔力"]
+			id: "6531CBD7FCC39892"
+			tasks: [{
+				id: "758285CAF37416F1"
+				item: "botania:endoflame"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "1738243ABD79E15C"
+			tasks: [{
+				id: "4262FE6E30EB8054"
+				item: "botania:thermalily"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "6B843CCA42E96BE9"
+			tasks: [{
+				id: "31C165DE38EA9F70"
+				item: "botania:rosa_arcana"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			description: ["吸收tnt爆炸生产魔力。"]
+			id: "648190DE04385E7F"
+			tasks: [{
+				id: "3673B81E4DDE156E"
+				item: "botania:entropinnyum"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			description: ["吃蛋糕生产魔力。"]
+			id: "67EE41FF9194168B"
+			tasks: [{
+				id: "4E86D5479C90FE43"
+				item: "botania:kekimurus"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			description: [
+				"吃食物生产魔力。"
+				""
+				"同样的食物连续投喂效率会减少。"
+			]
+			id: "0D53B34B98A8832B"
+			tasks: [{
+				id: "26676763A41F60DF"
+				item: "botania:gourmaryllis"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "778C70E56F91AFA4"
+			tasks: [{
+				id: "0BF8182A219F52DD"
+				item: "botania:narslimmus"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			description: ["按顺序消耗特定的羊毛生产魔力。"]
+			id: "059D0AF0F0C9987A"
+			tasks: [{
+				id: "4D3FDCB3C427FC7D"
+				item: "botania:spectrolus"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "54CBA74A1087DB72"
+			tasks: [{
+				id: "036A030B70B8E360"
+				item: "botania:dandelifeon"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			description: ["吃被动产能花生产魔力。"]
+			id: "1F3E128847908DA8"
+			tasks: [{
+				id: "075797292AC0A62B"
+				item: "botania:rafflowsia"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "3E85F7E5AE698F1F"
+			tasks: [{
+				id: "496D050F42AFF077"
+				item: "botania:shulk_me_not"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["142CB756D1878741"]
+			description: ["消耗魔力杀伤生物"]
+			hide_dependency_lines: true
+			id: "308B428868815338"
+			tasks: [{
+				id: "77A73B5D39E15F3C"
+				item: "botania:bellethorn"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["142CB756D1878741"]
+			description: [
+				"让声音减半"
+				"让号角和鼓不影响周围"
+			]
+			hide_dependency_lines: true
+			id: "6CD382412C44B5A9"
+			tasks: [{
+				id: "53AADBB26953BFFC"
+				item: "botania:bergamute"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["142CB756D1878741"]
+			description: ["消耗魔力伤害动物"]
+			hide_dependency_lines: true
+			id: "69B2AD807C615499"
+			tasks: [{
+				id: "208894C8810996AF"
+				item: "botania:dreadthorn"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "09E336CFAFEBCC4D"
+			tasks: [{
+				id: "4B07825028A39671"
+				item: "botania:heisei_dream"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "534037026A6C437A"
+			tasks: [{
+				id: "1207D17952058712"
+				item: "botania:tigerseye"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "3D221EA386567461"
+			tasks: [{
+				id: "3420919CEED76089"
+				item: "botania:jaded_amaranthus"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "2C01525ADDEB8316"
+			tasks: [{
+				id: "147B2AC99E30B14F"
+				item: "botania:orechid"
+				type: "item"
+			}]
+			x: 25.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "37CE434109B2E8C1"
+			tasks: [{
+				id: "6E76F0D391BBF362"
+				item: "botania:fallen_kanade"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "23CFBAD4DE4DF812"
+			tasks: [{
+				id: "33188A62B644DB95"
+				item: "botania:exoflame"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "0EBCE75678ED5C1A"
+			tasks: [{
+				id: "0F205314C91E6BC6"
+				item: "botania:agricarnation"
+				type: "item"
+			}]
+			x: 25.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "010AE6BF93FFF7BC"
+			tasks: [{
+				id: "5D63E43BF358A56E"
+				item: "botania:hopperhock"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "591D43A1210D4DEA"
+			tasks: [{
+				id: "6662875D60074A6F"
+				item: "botania:tangleberrie"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "3D0A3E59FFC29E44"
+			tasks: [{
+				id: "14578CDE49769FF4"
+				item: "botania:jiyuulia"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "431B28D988B79EE2"
+			tasks: [{
+				id: "523AFB7A1D3E5D03"
+				item: "botania:rannuncarpus"
+				type: "item"
+			}]
+			x: 25.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "4E709126547EFD35"
+			tasks: [{
+				id: "0E7C2DED188AC12F"
+				item: "botania:hyacidus"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "2E71A6ED2E566D59"
+			tasks: [{
+				id: "19F6368E029D4163"
+				item: "botania:pollidisiac"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "09ED1CC4F1369EFB"
+			tasks: [{
+				id: "019BCDA7D0599590"
+				item: "botania:clayconia"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "07CB5BFB5546A00F"
+			tasks: [{
+				id: "3C1F7F15F525E06A"
+				item: "botania:loonium"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "325603C4036CDEEC"
+			tasks: [{
+				id: "69FE466C429C2175"
+				item: "botania:daffomill"
+				type: "item"
+			}]
+			x: 27.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "29C658025181418F"
+			tasks: [{
+				id: "4C88C5E6659AB02C"
+				item: "botania:vinculotus"
+				type: "item"
+			}]
+			x: 27.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "55AC875FA086128B"
+			tasks: [{
+				id: "7312D1D05ED98D56"
+				item: "botania:spectranthemum"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "08FD7E91F64106E9"
+			tasks: [{
+				id: "3D1266993D9FD367"
+				item: "botania:medumone"
+				type: "item"
+			}]
+			x: 25.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "03E4136F250C66F3"
+			tasks: [{
+				id: "5202D1F743411E1C"
+				item: "botania:marimorphosis"
+				type: "item"
+			}]
+			x: 27.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "7307106BDBC48D56"
+			tasks: [{
+				id: "0B25DF276D6643F5"
+				item: "botania:bubbell"
+				type: "item"
+			}]
+			x: 25.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["142CB756D1878741"]
+			description: ["阻止磁力戒指的效果"]
+			hide_dependency_lines: true
+			id: "795EAB0D054683B7"
+			tasks: [{
+				id: "5FA5365B37F3FBBA"
+				item: "botania:solegnolia"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "1B938CE83BFB07AA"
+			tasks: [{
+				id: "68FBEBA6844332A8"
+				item: "botania:orechid_ignem"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "0896654457308882"
+			tasks: [{
+				id: "78E7692E5740B322"
+				item: "botania:labellia"
+				type: "item"
+			}]
+			x: 17.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "573ABDEEA2AA8691"
+			tasks: [{
+				id: "088B1E523DD04F2C"
+				item: "mythicbotany:exoblaze"
+				type: "item"
+			}]
+			x: 27.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "752E525D7DEDAEF6"
+			tasks: [{
+				id: "46C31B0A401DA1DA"
+				item: "mythicbotany:wither_aconite"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["142CB756D1878741"]
+			description: ["消耗魔力给容器装水"]
+			hide_dependency_lines: true
+			id: "011323037EFA5B4E"
+			tasks: [{
+				id: "4E2254F340F6EA4D"
+				item: "mythicbotany:aquapanthus"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "27409CAB8F31E50A"
+			tasks: [{
+				id: "580CD49608ED0B86"
+				item: "mythicbotany:hellebore"
+				type: "item"
+			}]
+			x: 23.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "5CB038FAE5363AA0"
+			tasks: [{
+				id: "328921A7C8C6997F"
+				item: "mythicbotany:raindeletia"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["03CA93FE4B3C27DD"]
+			id: "3ACCECAA3660EF90"
+			tasks: [{
+				id: "73F1DD1B460ECA08"
+				item: "mythicbotany:petrunia"
+				type: "item"
+			}]
+			x: 19.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["0DDA54B4C52C95BA"]
+			hide_dependent_lines: true
+			icon: "botania:rune_water"
+			id: "03CA93FE4B3C27DD"
+			tasks: [{
+				id: "2DBFC908FAD8A324"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "botania:runes"
+					}
+				}
+				title: "Any #botania:runes"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 0.0d
+		}
+	]
+	title: "神秘植物"
+}
