@@ -34,7 +34,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-artifact@v4  # 升级至v4版本
       with:
-        name: modpack-build-${{ github.run_id }}  # 添加唯一ID防止覆盖
+        name: Leisurely-Life-build-${{ github.run_id }}  # 添加唯一ID防止覆盖
         path: |
           builds/*.zip
           builds/*.md5

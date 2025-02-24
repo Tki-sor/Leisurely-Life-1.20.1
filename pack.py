@@ -69,12 +69,13 @@ class ModpackPackager:
                     print(f"添加文件: {file}")
 
                 # 递归添加overrides目录
+                print("添加overrides文件夹")
                 for root, _, files in os.walk('overrides'):
                     for file in files:
                         path = Path(root) / file
                         arcname = path.relative_to('overrides')
                         zipf.write(path, arcname=Path('overrides') / arcname)
-                        print(f"添加目录文件: {path}")
+                        # print(f"添加目录文件: {path}")
 
             print(f"\n成功创建压缩包: {zip_name}")
             
