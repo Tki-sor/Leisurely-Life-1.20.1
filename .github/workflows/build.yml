@@ -13,14 +13,14 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4  # 升级至最新checkout版本
+      uses: actions/checkout@v4
 
     - name: Set up Python
-      uses: actions/setup-python@v5  # 升级至最新Python设置版本
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.12'      # 建议使用最新Python版本
-        cache: 'pip'               # 添加依赖缓存
-        cache-dependency-path: 'requirements.txt'
+        python-version: '3.12'
+        cache: 'pip'
+        # cache-dependency-path: 'requirements.txt'
 
     - name: Install dependencies
       run: |
@@ -32,12 +32,12 @@ jobs:
         python pack.py
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v4  # 升级至v4版本
+      uses: actions/upload-artifact@v4
       with:
-        name: Leisurely-Life-build-${{ github.run_id }}  # 添加唯一ID防止覆盖
+        name: Leisurely-Life-build-${{ github.run_id }}
         path: |
           builds/*.zip
           builds/*.md5
           builds/*.sha1
-        retention-days: 7  # 设置自动清理时间
-        if-no-files-found: error  # 严格模式
+        retention-days: 7
+        if-no-files-found: error
