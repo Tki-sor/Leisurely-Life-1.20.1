@@ -13,12 +13,14 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v4  # 升级至最新checkout版本
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5  # 升级至最新Python设置版本
       with:
-        python-version: '3.10'
+        python-version: '3.12'      # 建议使用最新Python版本
+        cache: 'pip'               # 添加依赖缓存
+        cache-dependency-path: 'requirements.txt'
 
     - name: Install dependencies
       run: |
@@ -30,10 +32,12 @@ jobs:
         python pack.py
 
     - name: Upload artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4  # 升级至v4版本
       with:
-        name: modpack-build
+        name: modpack-build-${{ github.run_id }}  # 添加唯一ID防止覆盖
         path: |
           builds/*.zip
           builds/*.md5
           builds/*.sha1
+        retention-days: 7  # 设置自动清理时间
+        if-no-files-found: error  # 严格模式
