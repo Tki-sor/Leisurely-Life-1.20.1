@@ -37,9 +37,9 @@ jobs:
       with:
         name: Leisurely-Life-Client-${{ github.run_id }}
         path: |
-          builds/Leisurely Life Client 1.20.1-*.zip
-          builds/Leisurely Life Client 1.20.1-*.md5
-          builds/Leisurely Life Client 1.20.1-*.sha1
+          builds/Leisurely Life 1.20.1-*.zip
+          builds/Leisurely Life 1.20.1-*.md5
+          builds/Leisurely Life 1.20.1-*.sha1
         retention-days: 7
         if-no-files-found: error
     - name: Upload Server Artifact
