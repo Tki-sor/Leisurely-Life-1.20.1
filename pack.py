@@ -18,7 +18,7 @@ class ModpackPackager:
             },
             'server': {
                 'pack_name': 'Leisurely Life Server 1.20.1',
-                'source_dir': Path('.server'),
+                'source_dir': Path('server'),
                 'output_dir': Path('builds'),
                 # 排除规则配置
                 'exclude': {
