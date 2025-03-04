@@ -31,14 +31,15 @@ jobs:
       run: |
         python pack.py
 
-    - name: Upload artifact
+   
+    - name: Upload Client Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: Leisurely-Life-build-${{ github.run_id }}
+        name: Leisurely-Life-Client-${{ github.run_id }}
         path: |
-          builds/*.zip
-          builds/*.md5
-          builds/*.sha1
+          builds/Leisurely Life Client 1.20.1-*.zip
+          builds/Leisurely Life Client 1.20.1-*.md5
+          builds/Leisurely Life Client 1.20.1-*.sha1
         retention-days: 7
         if-no-files-found: error
     - name: Upload Server Artifact
@@ -49,5 +50,15 @@ jobs:
           builds/Leisurely Life Server 1.20.1-*.zip
           builds/Leisurely Life Server 1.20.1-*.md5
           builds/Leisurely Life Server 1.20.1-*.sha1
+        retention-days: 7
+        if-no-files-found: error
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: Leisurely-Life-All-${{ github.run_id }}
+        path: |
+          builds/*.zip
+          builds/*.md5
+          builds/*.sha1
         retention-days: 7
         if-no-files-found: error
