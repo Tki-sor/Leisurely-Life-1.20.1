@@ -1,0 +1,16 @@
+filename = 'barbequesdelight-1.0.5.jar'
+name = "Barbeque's Delight [Forge/NeoForge]"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'e3fe166ccb3947d3c2cadcf58bdf104cf354bb0a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5848042
+project-id = 1007788

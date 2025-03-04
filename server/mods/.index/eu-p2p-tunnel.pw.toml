@@ -1,0 +1,16 @@
+filename = 'eup2p-1.0.1.jar'
+name = 'EU P2P Tunnel'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'fd38f85a88627c1e1630afc5ee4ab2bfa4f0e95e'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5544886
+project-id = 1065433

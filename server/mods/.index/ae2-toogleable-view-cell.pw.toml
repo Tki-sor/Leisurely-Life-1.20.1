@@ -1,0 +1,16 @@
+filename = 'AE2ToggleableViewCell-1.20.1-1.0.1-all.jar'
+name = 'AE2 Toogleable View Cell'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '72f3a3dfa6db7f5e336576e5e4dcec8202bc7c42'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6013292
+project-id = 1141472

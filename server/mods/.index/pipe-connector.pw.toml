@@ -1,0 +1,16 @@
+filename = 'pipe_connector-1.20.1-0.3.9.jar'
+name = 'Pipe Connector'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '0b512814ad68ae47f8602cb0bb2e61af0ec4acdf'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5887276
+project-id = 846168

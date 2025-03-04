@@ -1,0 +1,16 @@
+filename = 'maidsoulkitchen-1.20.1-beta-v0.1.2.jar'
+name = 'Maidsoul Kitchen'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = '87714dfaa4427e14d02c4419c53ba2f92835559f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6175210
+project-id = 1162577

@@ -1,0 +1,16 @@
+filename = 'touhoulittlemaid-1.20.1-release-1.1.14.jar'
+name = 'Touhou Little Maid'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '2fe034536f080a79b6550390e53c6d89bfbd324d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6120178
+project-id = 355044

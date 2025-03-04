@@ -1,0 +1,16 @@
+filename = 'Aquaculture-1.20.1-2.5.4.jar'
+name = 'Aquaculture 2'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'b9b08176ced2545a76aeec670391538f57f4de7c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6236166
+project-id = 60028

@@ -1,0 +1,16 @@
+filename = 'bucketlib-1.20.1-2.3.5.3.jar'
+name = 'BucketLib'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '56ebdeb1d4bfbd69572f21525eee45ba76c6017f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6221102
+project-id = 560156

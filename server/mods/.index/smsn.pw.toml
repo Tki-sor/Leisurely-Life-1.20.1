@@ -1,0 +1,16 @@
+filename = 'smsn-forge-1.1.3+mc1.20.1.jar'
+name = 'Save My Shit Network'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'bb8b32dbad938a140159dfbb490555e74c045c9d'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6209658
+project-id = 1129397

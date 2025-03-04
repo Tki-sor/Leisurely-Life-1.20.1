@@ -1,0 +1,16 @@
+filename = 'thinkbeforedrop-2.1-1.20.1.jar'
+name = 'Think before Drop'
+side = 'client'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '7b8bf4182997b20396a02847d0141bfb3e792ad6'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5503530
+project-id = 1057081

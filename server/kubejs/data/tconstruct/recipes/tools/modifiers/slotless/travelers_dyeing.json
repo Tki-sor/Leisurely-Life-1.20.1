@@ -1,0 +1,6 @@
+{
+  "type": "tconstruct:armor_dyeing_modifier",
+  "tools": {
+    "tag": "tconstruct:modifiable/dyeable"
+  }
+}

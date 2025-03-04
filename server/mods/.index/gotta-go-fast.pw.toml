@@ -1,0 +1,16 @@
+filename = 'gottagofast-1.20.x-lexforge-2.0.1.jar'
+name = 'Gotta Go Fast'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.2', '1.20.3', '1.20.4' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'd5c5bc88b1b5d8b40d168834ea55c51953fe2dee'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5011406
+project-id = 282064

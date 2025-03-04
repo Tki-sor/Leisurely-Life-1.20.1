@@ -1,0 +1,45 @@
+{
+  "dependencies": [],
+  "tasks": {},
+  "rewards": {},
+  "display": {
+    "subtitle": {
+      "text": ""
+    },
+    "description": [
+      "如你所见，遗忘之海重制版是入门包（真的吗）。",
+      "",
+      "为了确保不合理的情况出现，会禁用掉一些原版特性，例如，刷铁轨，刷TNT...",
+      "&&7(或者可以选择使用/gamerule llr_  tab补全，来重新启用这些特性)",
+      "  ",
+      "如果你觉得某一部分太难，也许你可以考虑下发展其他的东西来帮助摆脱困境？"
+    ],
+    "groups": {
+      "在蒸汽时代前要干什么": {
+        "position": [
+          -196,
+          -34
+        ]
+      }
+    },
+    "icon": {
+      "item": {
+        "id": "minecraft:map",
+        "count": 1
+      },
+      "type": "heracles:item"
+    },
+    "icon_background": "heracles:textures/gui/quest_backgrounds/default.png",
+    "title": {
+      "translate": "0.入门包当然不好逃课啦"
+    }
+  },
+  "settings": {
+    "showDependencyArrow": true,
+    "repeatable": false,
+    "autoClaimRewards": false,
+    "individual_progress": false,
+    "hidden": "LOCKED",
+    "unlockNotification": false
+  }
+}

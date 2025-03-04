@@ -1,0 +1,12 @@
+{
+  "name": "开发者的说明",
+  "icon": "minecraft:stripped_bamboo_block",
+  "category": "growthcraft:bamboo",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "$(o)Growthcraft 模组在原版 Minecraft 之前就向玩家提供了竹子。$(br2)现在，原版 Minecraft（自 1.20 版本起）也包括了竹子，因此 Growthcraft 的竹子内容被转化为资源包。要激活它，请前往 $(n)主菜单$()$(o)，然后选择 $(n)选项$()$(o)，接着选择 $(n)资源包$()。"
+    }
+  ]
+}

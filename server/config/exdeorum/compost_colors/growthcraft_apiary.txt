@@ -1,0 +1,24 @@
+// Compost colors for growthcraft_apiary. You may add your own colors, change existing ones, or remove colors that aren't needed.
+bee, #dcf2c5
+bees_wax, #fffff5
+bees_wax_black, #fbfbfb
+bees_wax_blue, #f5ffff
+bees_wax_brown, #ffffea
+bees_wax_cyan, #e6ffff
+bees_wax_gray, #ffffff
+bees_wax_green, #e6ffe7
+bees_wax_light_blue, #fcffff
+bees_wax_light_gray, #ffffff
+bees_wax_lime, #fffffc
+bees_wax_magenta, #ffe6ff
+bees_wax_orange, #ffffe4
+bees_wax_pink, #fff5ff
+bees_wax_purple, #f5e6ff
+bees_wax_red, #fffff5
+bees_wax_white, #ffffff
+bees_wax_yellow, #fffff5
+honey_comb_empty, #dcc054
+honey_comb_full, #fff465
+honey_fluid_bucket, #fafafa
+honey_mead_fluid_bucket, #fafafa
+honey_mead_must_fluid_bucket, #fafafa

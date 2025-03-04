@@ -1,0 +1,220 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "47919AE4AC9ED63D"
+	group: "22AB940A6CF0C6B8"
+	icon: "integrateddynamics:cable"
+	id: "47919AE4AC9ED63D"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3D08BE82BB7C203A"]
+			description: [""]
+			id: "045685F3D3213F7D"
+			tasks: [{
+				id: "131B23F66B4BCEF8"
+				item: "gtceu:menril_alloy_ingot"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["045685F3D3213F7D"]
+			id: "54776E0C0D2C5422"
+			tasks: [{
+				id: "0B3836D2BBD400C1"
+				item: "integrateddynamics:cable"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["045685F3D3213F7D"]
+			id: "42DA038401EDB37E"
+			tasks: [{
+				id: "063689D2A9119377"
+				item: "integrateddynamics:variable"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["42DA038401EDB37E"]
+			id: "739617D67FB9EDA3"
+			tasks: [{
+				id: "4288C2458E7FD563"
+				item: "integrateddynamics:variablestore"
+				type: "item"
+			}]
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["045685F3D3213F7D"]
+			description: [
+				"动态联合是专注于自动化管理的mod。"
+				""
+				"其类似于编程，"
+			]
+			icon: "integrateddynamics:portable_logic_programmer"
+			icon_scale: 2.0d
+			id: "4F0812912A079868"
+			rewards: [{
+				id: "5E293C011966BCB1"
+				item: "integrateddynamics:portable_logic_programmer"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FD0D211209B8E50"
+				type: "checkmark"
+			}]
+			title: "论动态联合"
+			x: -3.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["045685F3D3213F7D"]
+			id: "7EB379BFC3C7B6B8"
+			tasks: [{
+				id: "56740BC585AA6D89"
+				item: "integrateddynamics:materializer"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["045685F3D3213F7D"]
+			id: "21A46F2D44C06621"
+			tasks: [{
+				id: "643B1294AD1E7296"
+				item: "integrateddynamics:proxy"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			id: "4E67928CE7E0298B"
+			tasks: [{
+				id: "47BA6CAD3C41BE3F"
+				item: "integrateddynamics:part_block_reader"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			id: "33AAC387E2DD2F69"
+			tasks: [{
+				id: "00552A3B26B0553D"
+				item: "integratedtunnels:part_importer_world_block"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 4.0d
+		}
+		{
+			id: "5C17459F5ECF8B97"
+			tasks: [{
+				id: "39402200F3F178EE"
+				item: "integratedtunnels:part_exporter_world_block"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			id: "228430568355F02A"
+			tasks: [{
+				id: "3ACD607D171D65E3"
+				item: "integratedtunnels:part_player_simulator"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			id: "171CFE86EBD0B243"
+			tasks: [{
+				id: "1B2575EDF242B7A3"
+				item: "integratedtunnels:part_interface_item"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.0d
+		}
+		{
+			id: "5DF584FB75961339"
+			tasks: [{
+				id: "0DD0A7AFF0945DA7"
+				item: "integratedtunnels:part_interface_filter_item"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			id: "3D9FFC353A5026D0"
+			tasks: [{
+				id: "4FA230246385DE86"
+				item: "integratedtunnels:part_importer_item"
+				type: "item"
+			}]
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			id: "1A47AD016CD3034D"
+			tasks: [{
+				id: "2A9DC4C804210513"
+				item: "integratedscripting:scripting_drive"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			id: "2F630F7DF418CF7B"
+			tasks: [{
+				id: "0A407AB04817DC8D"
+				item: "integratedscripting:scripting_disk"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["045685F3D3213F7D"]
+			description: [
+				"利用存储接口和存储终端，可以实现类似于AE那样的存储系统。"
+				""
+				"什么？硬盘？不需要那样的东西，你的大箱子更好用。"
+			]
+			icon: "ae2:controller"
+			id: "23AB5F5A0F41948E"
+			shape: "gear"
+			subtitle: "真的是这样吗？"
+			tasks: [
+				{
+					id: "5A3432C08CD019AD"
+					item: "integratedtunnels:part_interface_item"
+					type: "item"
+				}
+				{
+					id: "4CEF20573219ED52"
+					item: "integratedterminals:part_terminal_storage"
+					type: "item"
+				}
+			]
+			title: "自动化？..."
+			x: 3.0d
+			y: 0.0d
+		}
+	]
+	title: "集成管理"
+}

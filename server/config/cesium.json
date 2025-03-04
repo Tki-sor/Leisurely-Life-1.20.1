@@ -1,0 +1,26 @@
+{
+  "log_map_grows": {
+    "value": false,
+    "comment": "Log when a database map is being resized."
+  },
+  "show_debug_info": {
+    "value": false,
+    "comment": "Display information on the debug screen."
+  },
+  "zstd_compression_level": {
+    "value": 8,
+    "comment": "The zstd library supports compression levels from 1 to 22. The lower the level, the faster the speed (at the cost of compression)."
+  },
+  "zstd_use_dictionary": {
+    "value": true,
+    "comment": "The compression ratio achievable can be highly improved using the built-in dictionary."
+  },
+  "disable_compression": {
+    "value": false,
+    "comment": "HERE BE DRAGONS!! Forcefully disable all compression. A different database is used for uncompressed data, you can\u0027t have compressed and uncompressed worlds at the same time. Compressed worlds have to be reimported."
+  },
+  "force_save_after_tick": {
+    "value": false,
+    "comment": "HERE BE DRAGONS!! Forces the (internal) to save all player and chunk data after each server tick. This option can slow down your server."
+  }
+}

@@ -1,0 +1,178 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "261AFB972A6D6711"
+	group: "22AB940A6CF0C6B8"
+	icon: "gtceu:sulfuric_acid_bucket"
+	id: "261AFB972A6D6711"
+	order_index: 7
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "gtceu:oxygen_bucket"
+			id: "2BF0718FA2E22AB3"
+			tasks: [
+				{
+					amount: 1000L
+					fluid: "gtceu:oxygen"
+					id: "6A7AFB3194697F10"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "0983C5CCED62F981"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2340CC0125C547FF"]
+			icon: "gtceu:sulfuric_acid_bucket"
+			id: "6FF288D2692C924F"
+			tasks: [
+				{
+					amount: 1000L
+					fluid: "gtceu:sulfuric_acid"
+					id: "0B808D5A1452C5BC"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "29D26A9FC1FE2C96"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["479F333F379CE43A"]
+			icon: "gtceu:sulfur_trioxide_bucket"
+			id: "2340CC0125C547FF"
+			tasks: [
+				{
+					amount: 1000L
+					fluid: "gtceu:sulfur_trioxide"
+					id: "7C5FC3E2B962DF0C"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "23B767D4C8431C99"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"2BF0718FA2E22AB3"
+				"4803734432E1182C"
+			]
+			dependency_requirement: "one_completed"
+			icon: "gtceu:sulfur_dioxide_bucket"
+			id: "479F333F379CE43A"
+			tasks: [
+				{
+					amount: 1000L
+					fluid: "gtceu:sulfur_dioxide"
+					id: "072591082F94315A"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "5BB7694DB77B1088"
+					type: "checkmark"
+				}
+			]
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			icon: "gtceu:sulfur_dust"
+			id: "4803734432E1182C"
+			tasks: [
+				{
+					id: "54B388F0F64C56EA"
+					item: "gtceu:sulfur_dust"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "69C0DDC5B34C11B6"
+					type: "checkmark"
+				}
+			]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"42B85859449D78AC"
+				"6FF288D2692C924F"
+			]
+			icon: "gtceu:polyethylene_bucket"
+			id: "1507DC83DD7ACAE8"
+			tasks: [
+				{
+					amount: 1000L
+					fluid: "gtceu:polyethylene"
+					id: "7420723A175A5B18"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "0D549F2D8519B7FE"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			description: ["酿造室制取"]
+			icon: "gtceu:biomass_bucket"
+			id: "7582373B56086691"
+			tasks: [
+				{
+					amount: 1000L
+					fluid: "gtceu:biomass"
+					id: "324184FA2E852538"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "6581C35319108EF0"
+					type: "checkmark"
+				}
+			]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7582373B56086691"]
+			description: ["蒸馏制取"]
+			icon: "gtceu:ethanol_bucket"
+			id: "42B85859449D78AC"
+			tasks: [
+				{
+					amount: 1000L
+					fluid: "gtceu:ethanol"
+					id: "3692B6B76E4228EA"
+					optional_task: true
+					type: "fluid"
+				}
+				{
+					id: "7E0A388521D0B963"
+					type: "checkmark"
+				}
+			]
+			x: 2.0d
+			y: -1.5d
+		}
+	]
+	title: "化学反应"
+}

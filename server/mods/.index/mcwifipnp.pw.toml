@@ -1,0 +1,16 @@
+filename = 'mcwifipnp-1.7.3-1.20.1-forge.jar'
+name = 'LAN World Plug-n-Play'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '1ef8fce48561bc45b31a955fd82eaff2c47296d7'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5646517
+project-id = 450250

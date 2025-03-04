@@ -1,0 +1,4 @@
+// Compost colors for solclassic. You may add your own colors, change existing ones, or remove colors that aren't needed.
+basket, #fffae6
+large_basket, #ffe6c0
+wicker_basket, #fffed7

@@ -1,0 +1,55 @@
+
+[oceanworld-common-config]
+
+	[oceanworld-common-config.biomes-generation]
+		#The following values will determine whether the corresponding biomes can be generated ( = true) or not ( = false).
+		GENERATE_CORAL_OCEAN = true
+		GENERATE_DEPOSIT_OCEAN = true
+		GENERATE_GLACIER = true
+		GENERATE_ICY_OCEAN = true
+		GENERATE_POLLUTED_OCEAN = true
+		GENERATE_REEF_OCEAN = true
+		GENERATE_SEAGRASS_MEADOW = true
+		GENERATE_VOLCANIC_OCEAN = true
+		GENERATE_FROZEN_ISLAND = true
+		GENERATE_ISLAND = true
+		GENERATE_TROPICAL_ISLAND = true
+		GENERATE_MAGICAL_ISLAND = true
+		#The following values will affect the probability of corresponding biomes. The bigger it is, the less possible the biome will appears. Range (-0.25, 1.0) is recommended.
+		#Range: -1.0 ~ 4.0
+		SUPPRESS_CORAL_OCEAN = 0.05
+		#Range: -1.0 ~ 4.0
+		SUPPRESS_DEPOSIT_OCEAN = 0.0
+		#Range: -1.0 ~ 4.0
+		SUPPRESS_GLACIER = 0.0
+		#Range: -1.0 ~ 4.0
+		SUPPRESS_ICY_OCEAN = 0.05
+		#Range: -1.0 ~ 4.0
+		SUPPRESS_POLLUTED_OCEAN = 0.0
+		#Range: -1.0 ~ 4.0
+		SUPPRESS_REEF_OCEAN = 0.125
+		#Range: -1.0 ~ 4.0
+		SUPPRESS_SEAGRASS_MEADOW = -0.05
+		#Range: -1.0 ~ 4.0
+		SUPPRESS_VOLCANIC_OCEAN = 0.0625
+		#Range: -1.0 ~ 4.0
+		SUPPRESS_FROZEN_ISLAND = 0.0
+		#Range: -1.0 ~ 4.0
+		SUPPRESS_ISLAND = 0.0
+		#Range: -1.0 ~ 4.0
+		SUPPRESS_TROPICAL_ISLAND = 0.0
+		#Range: -1.0 ~ 4.0
+		SUPPRESS_MAGICAL_ISLAND = 0.225
+
+	[oceanworld-common-config.custom-spawners]
+		#If true, oceanologers will spawn as patrol on the oceans of overworld.
+		SPAWN_OCEAN_PATROL_OVERWORLD = true
+		#If true, oceanologers will spawn as patrol on the oceans of oceanworld.
+		SPAWN_OCEAN_PATROL_OCEANWORLD = true
+		#How many seconds (1 sec = 20 ticks) will ocean patrols spawn again after one try.
+		#Range: 60 ~ 72000
+		OCEAN_PATROL_SPAWN_INTERVAL = 600
+		#How likely (0 = never, 100 = always) will a try of spawning ocean patrols success.
+		#Range: 1 ~ 100
+		OCEAN_PATROL_SPAWN_CHANCE = 20
+

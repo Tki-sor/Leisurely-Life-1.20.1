@@ -1,0 +1,6 @@
+{
+  "name": "Growthcraft 牛奶",
+  "description": "欢迎来到奶制品 farming。作为一名奶农，你将能够制作奶酪、黄油、冰淇淋和酸奶等物品。$(br2)你需要熟悉混合桶、发酵器、奶酪压榨机和搅拌器，才能成为专家。",
+  "icon": "growthcraft_milk:textures/item/cheese/appenzeller_aged.png",
+  "sortnum": 5
+}

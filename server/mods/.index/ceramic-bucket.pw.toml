@@ -1,0 +1,16 @@
+filename = 'ceramicbucket-1.20.1-4.1.0.0.jar'
+name = 'Ceramic Bucket'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '5911cf8b6288689a95fdaef142513b0e23f55a5f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4690918
+project-id = 363799

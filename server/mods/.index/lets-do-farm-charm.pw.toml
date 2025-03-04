@@ -1,0 +1,16 @@
+filename = 'letsdo-farm_and_charm-forge-1.0.6.jar'
+name = "[Let's Do] Farm & Charm"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = 'bf2d6509b273ac052b5ab405a5295be4651b80b9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6195373
+project-id = 1038103

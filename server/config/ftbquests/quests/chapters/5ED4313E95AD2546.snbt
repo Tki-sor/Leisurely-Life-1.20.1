@@ -1,0 +1,184 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "5ED4313E95AD2546"
+	group: "5AB2213217E85A15"
+	icon: "minecraft:piglin_head"
+	id: "5ED4313E95AD2546"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			id: "7407779E5849A78F"
+			tasks: [{
+				id: "2DAD063F964E051E"
+				item: "excompressum:wolf_bait"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			id: "45CFA4469856EA4D"
+			tasks: [{
+				id: "7667FD63D9F1DE81"
+				item: "excompressum:ocelot_bait"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			id: "4A01B8C621D8C6AE"
+			tasks: [{
+				id: "1998B2819351B8DA"
+				item: "excompressum:cow_bait"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			id: "51E57A97D5761443"
+			tasks: [{
+				id: "54A7CB3833E888F9"
+				item: "excompressum:pig_bait"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			id: "752C13E57D422F28"
+			tasks: [{
+				id: "5A79C99A31EFB8FE"
+				item: "excompressum:chicken_bait"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			id: "08DE15849D26BC50"
+			tasks: [{
+				id: "3A9CBBB5AD71086C"
+				item: "excompressum:sheep_bait"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			id: "645D76FF7BDCF500"
+			tasks: [{
+				id: "2A95FF0E3D1E4560"
+				item: "excompressum:squid_bait"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			id: "28B0055313A177C2"
+			tasks: [{
+				id: "3CED4998F78C4E46"
+				item: "excompressum:rabbit_bait"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			id: "2C0C4FC6C0921024"
+			tasks: [{
+				id: "0638094D5A6E38AF"
+				item: "excompressum:horse_bait"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			id: "2F3738A639C637A4"
+			tasks: [{
+				id: "08EDE42E629FC4E7"
+				item: "excompressum:donkey_bait"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			id: "55C649B36BDC1B88"
+			tasks: [{
+				id: "7CF5FAC65BCD6233"
+				item: "excompressum:polar_bear_bait"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			id: "4B07541BC8392327"
+			tasks: [{
+				id: "39EE66FA82A3B856"
+				item: "excompressum:llama_bait"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			id: "3650606D18000BE1"
+			tasks: [{
+				id: "1310EFB25C0DA6FD"
+				item: "excompressum:parrot_bait"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			description: ["猫猫很温顺可爱，也许可以引诱过来一只。"]
+			id: "574BAA7F2B4FFD15"
+			tasks: [{
+				id: "74B7FAD9965BC855"
+				item: "excompressum:cat_bait"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			id: "04244976D66D4585"
+			tasks: [{
+				id: "1350E4FB80C3864C"
+				item: "excompressum:fox_bait"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.0d
+		}
+		{
+			id: "3D74C27D5291EE4A"
+			tasks: [{
+				id: "13F7628D4A6BB761"
+				item: "excompressum:turtle_bait"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			id: "696DDFFA669BAEEC"
+			tasks: [{
+				id: "319E2B769C0B4EF4"
+				item: "excompressum:mooshroom_bait"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.0d
+		}
+	]
+	title: "更多的伙伴"
+}

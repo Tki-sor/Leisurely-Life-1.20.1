@@ -1,0 +1,1463 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2ABB977D383B0F9F"
+	group: "4766A265AF2DA856"
+	icon: "minecraft:oak_sapling"
+	id: "2ABB977D383B0F9F"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3AA560642ACF8474"]
+			description: ["如果没记错的话，我们船内有一个专门走私植物的商人，他的行囊内可能会有一些来自天朝的一些名贵种子。祝你好运。"]
+			icon: "minecraft:oak_sapling"
+			id: "365DAB74E48B81FA"
+			rewards: [
+				{
+					id: "452A9217588250FC"
+					item: "tiab:time_in_a_bottle"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "6FA1BB9797A1B3DC"
+					table_id: 499531273959435687L
+					type: "choice"
+				}
+				{
+					id: "67575DE326A04688"
+					item: "exdeorum:wooden_watering_can"
+					type: "item"
+				}
+				{
+					id: "1299254C880B32AA"
+					item: {
+						Count: 1
+						id: "eccentrictome:tome"
+						tag: {
+							"eccentrictome:mods": {
+								botania: {
+									0: {
+										Count: 1b
+										id: "botania:lexicon"
+										tag: {
+											"botania:elven_unlock": 1b
+										}
+									}
+								}
+								ftbquests: {
+									0: {
+										Count: 1b
+										id: "ftbquests:book"
+									}
+								}
+								growthcraft: {
+									0: {
+										Count: 1b
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "growthcraft:growthcraft"
+										}
+									}
+								}
+								tconstruct: {
+									0: {
+										Count: 1b
+										id: "tconstruct:mighty_smelting"
+									}
+									1: {
+										Count: 1b
+										id: "tconstruct:tinkers_gadgetry"
+									}
+									2: {
+										Count: 1b
+										id: "tconstruct:fantastic_foundry"
+									}
+								}
+								touhou_little_maid: {
+									0: {
+										Count: 1b
+										id: "patchouli:guide_book"
+										tag: {
+											"patchouli:book": "touhou_little_maid:memorizable_gensokyo"
+										}
+									}
+								}
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "563D602A10A8BC98"
+					item: {
+						Count: 1
+						id: "thermal:flux_magnet"
+						tag: {
+							Energy: 50000
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "也许我来过这里？"
+			tasks: [{
+				id: "4A89679786ACDCC2"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "minecraft:saplings"
+					}
+				}
+				title: "任意 树苗x1"
+				type: "item"
+			}]
+			title: "植树"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["365DAB74E48B81FA"]
+			description: [
+				"在船上的生活有的时候是不好过的，可能会遇到风暴而长时间找不到陆地，因此在船上我们都会准备大量的桶，以便收集雨水净化后饮用。"
+				""
+				"但是我们也发现放在木桶的有机质经过微生物分解能够变成泥土，当然，桶不是万能的，尽管我觉得木桶是可以装岩浆的..."
+				""
+				"&7如果你真想这样做的话，或许你还需要更耐高温的桶。"
+			]
+			icon: "exdeorum:oak_barrel"
+			id: "49CA5B6AD4A83DD5"
+			subtitle: "我好像做过这样的事情"
+			tasks: [{
+				id: "1214DDA61310B7E3"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "exdeorum:wooden_barrels"
+					}
+				}
+				title: "Any #exdeorum:wooden_barrels"
+				type: "item"
+			}]
+			title: "木桶"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["365DAB74E48B81FA"]
+			description: [
+				"虽然用木桶是可以获得雨水与泥土，但是在没有雨水的时候又该怎么办呢?"
+				""
+				"在经历了几次严重的脱水之后我们的一名船员想到用树皮作为外壳，这样就不会导致有机质被分解，而是会将水沉积下来。"
+				""
+				"当然，这个东西是肯定装不进岩浆的，这很危险。"
+				""
+				"&7&m(当然你也装不进去)"
+			]
+			icon: "excompressum:oak_crucible"
+			id: "4D926F493198A3A5"
+			tasks: [{
+				id: "4CCBF1C1515018DE"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "excompressum:wooden_crucibles"
+					}
+				}
+				title: "任意 木坩埚x1"
+				type: "item"
+			}]
+			title: "木坩埚"
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4D926F493198A3A5"]
+			description: [
+				"没有铁，只有木头和泥土，哦对，还有一些石子..."
+				""
+				"也许可以想办法搞到一些原石，然后做一把锤子，然后...用锤子粉碎掉它。"
+				""
+				"然后？继续粉碎，直到粉末干净为止，可是之后还要干什么事情呢？"
+			]
+			icon: "minecraft:clay"
+			id: "0877689FFB07DF91"
+			rewards: [{
+				id: "513015D95E56A2F8"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			tasks: [{
+				id: "17A39D0F9F2A25F6"
+				item: "minecraft:clay"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7F37AFDE18EB7D74"]
+			description: [
+				"在船上的时候，也会有很多垃圾，但有些垃圾还是可以利用一下的。"
+				""
+				"例如一些没用的植物，可以放进船上的堆肥桶里，这样过段时间会变成有利于植物生长的肥料。"
+				""
+				"嗯...为什么需要这样的肥料？"
+				""
+				"在船上能吃上新鲜的蔬菜是种享受。"
+			]
+			id: "03D09BED63571201"
+			tasks: [{
+				id: "0499F01CA3D4C9E3"
+				item: "minecraft:composter"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7F37AFDE18EB7D74"]
+			description: [
+				"我们曾遇到过这样一个难题：怎样拿到树上的香蕉。"
+				""
+				"在我经历了长时间的苦思冥想，我想到了制作钩子来钩取香蕉。"
+				""
+				"我想对于树苗和苹果用钩子也是能有很好的效果吧。"
+				""
+				"&7除了木头好像还有一些材料可以制作钩子。"
+			]
+			id: "0231D886A528AA60"
+			subtitle: "我们是不是哪里见过？"
+			tasks: [{
+				id: "70F47ADA5CDF2706"
+				item: {
+					Count: 1
+					id: "exdeorum:crook"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0231D886A528AA60"]
+			description: [
+				"这是什么？从树叶里跑出来的奇怪生物。"
+				""
+				"记得在天朝好像称这种小东西为蚕？似乎把它放到树叶上，它会出于感谢将树叶转化为丝线。"
+				""
+				"&7蚕：我才不感谢你呢awa"
+			]
+			icon: "exdeorum:silk_worm"
+			id: "4F2D2C51D9086AA2"
+			rewards: [{
+				count: 8
+				id: "16F9D908D62CE2A2"
+				item: "exdeorum:silk_worm"
+				type: "item"
+			}]
+			subtitle: "把他放在树上就好了吧"
+			tasks: [{
+				id: "73BCD171A16E7C8E"
+				item: "exdeorum:silk_worm"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4F2D2C51D9086AA2"]
+			description: [
+				"在踏上我的船之前曾想过，如果有这么一段时间，很长很长的时间，例如一年，我们该如何在船上生存？"
+				""
+				"那么资源是很重要的，而我想到了泥土中有很多东西，例如树种，石子等。"
+				""
+				"而沙砾会有少量矿物。运气好的话或许能获得宝石？"
+				""
+				"根据以上的理论我想到了制作大量的筛子到船上，当初我的船员都因此笑话了我一番，但是有一次我们真的漂流了七个月..."
+				""
+				"依靠着木桶 坩埚 筛子等，我们成功的度过了七个月，并且生活水平得到了大幅度提高。"
+				""
+				"哦对了，值得一提的是并不是只有泥土。"
+				""
+				"&7提示:现在的筛子可以连起来同时使用，一次只能驱动一种筛网，并且同时驱动范围最大5*5。"
+				""
+				"&c筛网不止一种，提高筛网的品质来提高产率，最好通过JEI查询你需要的基础资源要什么筛网才可以！"
+			]
+			icon: "exdeorum:oak_sieve"
+			id: "7CA51B0DC0634AD8"
+			rewards: [
+				{
+					count: 64
+					id: "6A451583791F3173"
+					item: "minecraft:string"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4C3504D198E9BA9A"
+					item: "minecraft:chest"
+					type: "item"
+				}
+			]
+			subtitle: "我确信我曾来过这里"
+			tasks: [
+				{
+					id: "1C18B91101CD3EFD"
+					item: "exdeorum:oak_sieve"
+					type: "item"
+				}
+				{
+					id: "02F3903F31CE7275"
+					item: "exdeorum:string_mesh"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"7CA51B0DC0634AD8"
+				"5160CBF54AB6AA9B"
+			]
+			icon: "createsifter:sifter"
+			id: "5BEC60F5B7AD1D8E"
+			subtitle: "自动化！"
+			tasks: [{
+				id: "2C38034B6A959663"
+				item: "createsifter:sifter"
+				type: "item"
+			}]
+			title: "全自动筛矿"
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7CA51B0DC0634AD8"]
+			description: [
+				"当解决了如何获取资源的难题后，我又想到一个新的问题——没有足够的沙土可供筛选。"
+				""
+				"即便携带大量沙土也会被筛光，何况这样做的话，直接购买金属材料岂不更简单？"
+				""
+				"于是我想到要做一把锤子，用这把锤子来锤沙土，从而逐渐提纯沙土。"
+				""
+				"&7提示：圆石可锤成沙砾，沙砾可锤成沙子，沙子可锤成尘土……沙砾、沙子、尘土都能用筛子筛，泥土也可以筛。"
+			]
+			icon: {
+				Count: 1
+				id: "exdeorum:stone_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5B0FFCDC08AB56A6"
+			tasks: [{
+				id: "1CD7EA8A30BE254D"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "exdeorum:hammers"
+					}
+				}
+				title: "任意 锤x1"
+				type: "item"
+			}]
+			title: "统统粉碎"
+			x: 8.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["330BDADFC9707FA9"]
+			description: [
+				"用陶瓷做一个桶？"
+				""
+				"当没有金属材料时，我们会用瓷土制作一个桶的形状，烧制一下就能得到一个瓷桶。"
+				""
+				"这个桶非常耐用，不过装灼热的流体时还是会损坏。"
+			]
+			id: "7C8A2056B2219B2A"
+			tasks: [{
+				id: "33F9C77E4051415F"
+				item: "ceramicbucket:ceramic_bucket"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["330BDADFC9707FA9"]
+			description: [
+				"海上虽然水力资源丰富，但现在还不能很好地利用，只能作为动力来使用。"
+				""
+				"加热一些东西仍然很麻烦，不过只要通过高温融化圆石……"
+				""
+				"只需要一个耐高温的容器即可，而用瓷土制成的坩埚恰好满足这个要求。"
+				""
+				"&7无论是火把还是“点燃的火把”都可以作为热源。"
+			]
+			id: "69DEB669375837AE"
+			subtitle: "好烫，我需要一副手套"
+			tasks: [{
+				id: "26EF2B365C0EFE61"
+				item: "exdeorum:porcelain_crucible"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0877689FFB07DF91"]
+			description: [
+				"十分廉价的耐高温材料？说到这个，就不得不提到来自东方的一个神秘国度了。"
+				""
+				"那个国家自古以来就盛产瓷器，而他们制作的瓷器非常耐高温。"
+				""
+				"学习如何制作瓷土还是很有必要的。"
+			]
+			id: "330BDADFC9707FA9"
+			tasks: [{
+				id: "3B234C49AF22A3E7"
+				item: "exdeorum:porcelain_clay_ball"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7CA51B0DC0634AD8"]
+			description: [
+				"海里的沙砾有着很多的矿物，但是用肉眼来分辨是很不方便的。"
+				""
+				"用筛子来筛方便许多，但是其中所含的矿物是十分稀少的。"
+				""
+				"当然，你可以用冶炼炉来炼制熔点较低的金属，例如铜 锡之类。"
+			]
+			icon: "gtceu:crushed_iron_ore"
+			id: "572B45696B557FE2"
+			rewards: [{
+				count: 4
+				id: "1CA5D8EDB71BC953"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			subtitle: "有一些不一样"
+			tasks: [{
+				id: "53B66A449CA3302E"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "forge:crushed_ores"
+					}
+				}
+				title: "任意 粉碎矿石x1"
+				type: "item"
+			}]
+			title: "从无到有"
+			x: 10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["69DEB669375837AE"]
+			description: [
+				"在我周游列岛时，我了解到一种制造无限圆石的方法：水与岩浆接触就能生成圆石。这种方法获得的圆石是无限的。"
+				""
+				"&7提示：不会制作刷石机的请自行搜索，这是最基础的技巧。"
+				"&7可参阅：minecraft wiki 刷石机"
+			]
+			icon: "minecraft:cobblestone"
+			id: "5EB93835F36B5E36"
+			rewards: [
+				{
+					id: "5B807B603AE877A6"
+					item: "llrcore:cobble_breaker"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "4E6B2D6A74E57301"
+					item: "minecraft:chest"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "458E2267122D83D2"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			title: "刷石机"
+			x: 8.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["5EB93835F36B5E36"]
+			description: [
+				"在海上由于潮湿的缘故，木材可能会腐烂，尤其是在室内光照不到的位置，更容易发生腐烂。"
+				""
+				"不过解决这个问题非常简单，只要用油浸渍木板，就可以将其制成防腐木板。"
+				""
+				"然而，并不是所有油都适用，最理想的选择是杂酚油。"
+				""
+				"杂酚油成本低，且非常适合用于制作防腐木材。"
+				""
+				"只需建造一个焦炉就可以提取杂酚油。"
+				""
+				"当然，也可以制作焦炉仓，可以用来作为焦炉物品的输入输出，用于自动化生产。"
+				""
+				"&7需要 沙子x135 黏土x81，这对于前期略显困难，但也很容易。"
+				""
+				"如果没看懂焦炉是什么，可参考GTNH wiki："
+				"{\"text\": \"点击这里访问\", \"clickEvent\": {\"action\":  \"open_url\", \"value\": \"https://gtnh.huijiwiki.com/p/233\"},\"color\": \"blue\", \"underlined\": \"true\"}"
+			]
+			icon: "gtceu:coke_oven"
+			icon_scale: 2.0d
+			id: "3826EA4A19825BE4"
+			tasks: [
+				{
+					id: "78D391BA9613F622"
+					item: "gtceu:coke_oven"
+					type: "item"
+				}
+				{
+					count: 25L
+					id: "5BD57D8E930D3C4A"
+					item: { Count: 25, id: "gtceu:coke_oven_bricks" }
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "140B67A11CA984B6"
+					item: "gtceu:coke_oven_hatch"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["3826EA4A19825BE4"]
+			description: [
+				"普通的木板在海上无法长时间存储，会逐渐被腐蚀。"
+				""
+				"而用杂酚油浸泡的防腐木板没有这个问题，十分的耐用。"
+			]
+			id: "0C9E9AA51ED31A6F"
+			tasks: [{
+				id: "218478D41A65381D"
+				item: "gtceu:treated_wood_planks"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0C9E9AA51ED31A6F"]
+			description: [
+				"你确定真的需要这个东西吗？"
+				""
+				"&7海里这么多水还不够你用吗..."
+			]
+			icon: "gtceu:primitive_pump"
+			id: "0302F47CA86F4A32"
+			subtitle: "谁想用它"
+			tasks: [{
+				id: "550B18185823E546"
+				item: "gtceu:primitive_pump"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0C9E9AA51ED31A6F"]
+			icon: "minecraft:chest"
+			id: "19E8FAADDB3AB063"
+			tasks: [{
+				id: "1B965D755B6A6C6B"
+				item: "minecraft:chest"
+				type: "item"
+			}]
+			title: "箱子"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["5EB93835F36B5E36"]
+			description: [
+				"这个世界的黑暗之处会产生嗜杀的怪物，不过它们死亡后会掉落有用的物资。"
+				""
+				"因此，建造一个类似于塔的建筑来生成怪物，让它们从高处落下受到伤害，并通过某种方式将其杀死，就能轻松获得资源了。"
+				""
+				"当然，如果什么时候有足够的资源，也许可以在刷怪塔里面放一些风扇？"
+			]
+			icon: "minecraft:bone"
+			id: "18A9A7DB616E5743"
+			tasks: [{
+				id: "323407D8980A44B1"
+				type: "checkmark"
+			}]
+			title: "刷怪塔"
+			x: 10.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["365DAB74E48B81FA"]
+			description: ["现在的当务之急应该是做一把趁手的工具，我需要一个工作台来帮助我制造这些工具。"]
+			icon: "minecraft:crafting_table"
+			id: "7F37AFDE18EB7D74"
+			tasks: [{
+				id: "41C51D4E812C257D"
+				item: "minecraft:crafting_table"
+				type: "item"
+			}]
+			title: "要致富，先...做工作台"
+			x: -2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["365DAB74E48B81FA"]
+			description: ["为了制作一些工具，我需要制作一个软锤来进行辅助。"]
+			icon: {
+				Count: 1
+				id: "gtceu:wood_mallet"
+				tag: {
+					DisallowContainerItem: 0b
+					GT.Behaviours: { }
+					GT.Tool: {
+						Damage: 0
+						MaxDamage: 127
+					}
+					HideFlags: 2
+				}
+			}
+			id: "74DB95A939BFA594"
+			subtitle: "这是什么？"
+			tasks: [{
+				id: "18B10E050F5A0085"
+				item: {
+					Count: 1
+					id: "gtceu:wood_mallet"
+					tag: {
+						DisallowContainerItem: 0b
+						GT.Behaviours: { }
+						GT.Tool: {
+							Damage: 0
+							MaxDamage: 127
+						}
+						HideFlags: 2
+					}
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["49CA5B6AD4A83DD5"]
+			description: ["万物都需要土壤，需要这个的不是吗？"]
+			id: "753C8A4D128A7378"
+			tasks: [{
+				id: "3C2BA9AA31841267"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7C8A2056B2219B2A"]
+			description: ["瓷桶终究还是太容易破碎了，坚固的铁桶才是更好的选择。"]
+			id: "76043DAA0B934F5B"
+			tasks: [{
+				id: "5BB5A8C5A6E22C81"
+				item: "minecraft:bucket"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["572B45696B557FE2"]
+			description: [
+				"现在，我需要去制作一些机械了，但是以我目前的材料只能做出一些很原始的东西。"
+				""
+				"也许我有办法来制作更好的材料？"
+				""
+				"&7对应章节：第二部分 灵巧器械"
+			]
+			icon: "gtceu:andesite_alloy_ingot"
+			id: "2A7B2F2E3CD28955"
+			rewards: [{
+				count: 8
+				id: "331C265AEAFD00C6"
+				item: "gtceu:andesite_alloy_ingot"
+				type: "item"
+			}]
+			shape: "gear"
+			subtitle: "这是我没见过的东西"
+			tasks: [{
+				id: "0BDD8BFF69201F82"
+				item: "gtceu:andesite_alloy_ingot"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["18A9A7DB616E5743"]
+			description: [
+				"在与怪物的长期对抗中，我发现他们身上有很多有用的资源。"
+				""
+				"但如果让他们变得更加邪恶，他们的威胁会随之变大，但对应的，资源也更加丰厚。"
+				""
+				"而我在偶然中发现，用&3巫水&f便可以让他们稳定的变得更加邪恶。"
+				""
+				"而巫水的制作也很简单，将装有水的木桶放在菌丝土地上，等待一段时间，便可制作成功。"
+				""
+				"但注意的是，尽可能不要碰到巫水，这对你来说很危险。"
+				""
+				"&7可以将古代孢子直接放在装满水的木桶里制取巫水。"
+			]
+			icon: "exdeorum:witch_water_bucket"
+			id: "333EA09B41B8F69B"
+			tasks: [{
+				id: "764C225618F26B3B"
+				type: "checkmark"
+			}]
+			title: "巫水"
+			x: 12.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7F37AFDE18EB7D74"]
+			id: "02C043CEDB4B3F0D"
+			tasks: [{
+				id: "65B05D84D596425C"
+				item: "minecraft:furnace"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4D5C84E4CA07FC77"]
+			description: [
+				"暂时被禁止了哦，不要尝试去下界的啦..."
+				""
+				"如果非要去该怎么办呢？"
+				""
+				"&b不告诉你哦~"
+			]
+			id: "29E58D9263CDA287"
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "317B8CC7634DE0A7"
+				type: "dimension"
+			}]
+			title: "想要去下界？"
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["69DEB669375837AE"]
+			description: [
+				"在什么资源都难以获取的阶段，黑曜石也许是能比较轻松获取的最坚硬的东西了。"
+				""
+				"也许用这个来做工具会很好用？"
+			]
+			icon: "minecraft:obsidian"
+			id: "4D5C84E4CA07FC77"
+			tasks: [{
+				id: "36C1443A4603ABC9"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["44D4507668FC99B7"]
+			description: ["看到任务图标的水壶了吗，它可以让树木快速的生长，之后，懂了吧？"]
+			icon: "exdeorum:wooden_watering_can"
+			id: "226A61F9339155D7"
+			rewards: [{
+				id: "410D207D44259594"
+				item: "integrateddynamics:menril_berries"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "78B4469DBFA4A360"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			title: "不仅可以shift，也可以浇水"
+			x: -6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5B0FFCDC08AB56A6"]
+			description: [
+				"不知道谁和我说，把一堆锤子绑在一起更好用，你觉得我会信吗？"
+				""
+				"emm...可是好像还真好用..."
+			]
+			icon: {
+				Count: 1
+				id: "exdeorum:compressed_iron_hammer"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1089352E54E8146D"
+			tasks: [{
+				id: "00B8D520655B8D28"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "exdeorum:compressed_hammers"
+					}
+				}
+				title: "任意 压缩锤子x1"
+				type: "item"
+			}]
+			title: "这不符合第一定律"
+			x: 10.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5B0FFCDC08AB56A6"]
+			description: [
+				"以前一个船员和我吹nb，说他用他家的小鸡做了一把锤子。后来我遇见一个高人说小鸡可以做锤子，而且它很坚挺。我觉得我应该做一把这样的锤子。"
+				""
+				"&7提示:无限耐久的锤子哦，制作方法为，用木棍左击鸡，之后会发生什么我也不知道。"
+			]
+			id: "0B4E9167BFDD06FF"
+			tasks: [{
+				id: "3593C79DCF6BFDE5"
+				item: "excompressum:chicken_stick"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["0231D886A528AA60"]
+			id: "1367DD230DB90CA9"
+			subtitle: "谁教你这么用的"
+			tasks: [{
+				id: "285EBE57C9610237"
+				item: {
+					Count: 1
+					id: "excompressum:compressed_crook"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "一钩更比四钩强"
+			x: -4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["2A7B2F2E3CD28955"]
+			description: [
+				"你可能注意到了，有些物品会提示 按住[w]开始思索。"
+				""
+				"对着这样的物品长按w，可以查看关于该物品的提示。"
+			]
+			icon: "create:brass_hand"
+			id: "1455074F32131E8A"
+			tasks: [{
+				id: "69C10C39A124D5D4"
+				type: "checkmark"
+			}]
+			title: "我觉得是这样的"
+			x: 12.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7F37AFDE18EB7D74"]
+			id: "4A23BF21EE30722B"
+			tasks: [{
+				id: "6A2C1AFE0BEE5120"
+				item: "tconstruct:pattern"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4A23BF21EE30722B"]
+			id: "6B01644719BB37BF"
+			tasks: [{
+				id: "5F8301B51912BDFF"
+				item: "tconstruct:crafting_station"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4A23BF21EE30722B"]
+			id: "5F1D398F646681EE"
+			rewards: [{
+				id: "1AC68540DBDF0877"
+				item: "tconstruct:earth_slime_sapling"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2549EC9BC87742B3"
+				item: "tconstruct:part_builder"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4A23BF21EE30722B"]
+			id: "580DD1273620BE78"
+			rewards: [
+				{
+					id: "12CEF695EC019944"
+					item: "tconstruct:modifier_worktable"
+					type: "item"
+				}
+				{
+					id: "3117894275722060"
+					item: "tconstruct:earth_slime_dirt"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "298602BC41244CE0"
+				item: "tconstruct:tinker_station"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["753C8A4D128A7378"]
+			description: [
+				"它很脆弱，但是，也许你需要很多的有机物来生产泥土。"
+				""
+				"也许这是你前期最好的帮手？"
+			]
+			icon: {
+				Count: 1
+				id: "woodenshears:wooden_shears"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3F08152387543097"
+			tasks: [{
+				id: "2349CA45A671FC6E"
+				item: {
+					Count: 1
+					id: "woodenshears:wooden_shears"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			description: [
+				"你是一个平凡的游轮乘客，因为一次被安排好的\"事故\"，坠入了茫茫大海中......"
+				""
+				"醒来时，你发现自己没有死亡，并到了一个没有名字的小岛上。"
+				""
+				"\"奇怪啊，这个岛屿......没有在船长的航行路线图上？\""
+				""
+				"\"我......究竟到了哪里？我被与世隔绝了？我还能回到人间吗？\""
+				""
+				"贫瘠的小岛，有限的资源，黑暗的真相......"
+				""
+				"也许你能征服这片被世人所遗忘的海域？"
+			]
+			icon: "minecraft:writable_book"
+			id: "3AA560642ACF8474"
+			rewards: [{
+				id: "37711302F2C912AE"
+				item: "minecraft:torch"
+				type: "item"
+			}]
+			subtitle: "这是我熟悉的地方"
+			tasks: [{
+				icon: {
+					Count: 1
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:blast_protection"
+							lvl: 4s
+						}]
+					}
+				}
+				id: "453DEAEBE50AA75A"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			title: "背景故事"
+			x: -4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0C5FD76103B9C609"]
+			description: [
+				"JEI/EMI/REI，是在你背包界面右面显示的那一堆物品，左击对应物品可查看其合成以及信息(如果什么都没有那么不会显示)，右击可查看其用途。"
+				""
+				"另外，将光标对着你背包的物品按R键也可查看其合成，按U键可查看用途，这也适用于你背包右面那一堆物品。"
+				""
+				"A键可将物品收藏，你会在左面看到它们，可在此处快捷查看合成以及用途。当然，对着已收藏物品按A键会取消收藏。"
+				""
+				"&c界面上方有箭头可以翻页，找不到想要的合成可以翻一下。"
+				""
+				"有时你能开到某个物品的合成要求的类似于forge:ingot之类的，这个意思是，这个种类的物品都可以作为输入。"
+			]
+			icon: "minecraft:beacon"
+			id: "44873AF6B9F39530"
+			rewards: [{
+				id: "0D259BD46D8AEF58"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "求你啦用用JEI吧"
+			tasks: [{
+				id: "4E488D39CDDA01C2"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			title: "十娘离线希望你用好JEI，秋梨膏"
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["22C325D16213EBCD"]
+			description: [
+				"不知道用什么东西自动刷石？不知道有什么实用的东西？不知道你发展到哪里了？不知道......为什么你不多看看任务，包括其他章节的。"
+				""
+				"很多其他章节任务是不需要上个章节完全完成即可解锁的。"
+				""
+				"在问问题之前请先看相应的任务,或者,如果像是某些东西的使用方法之类，对着那个物品按“R”，你可以获取到提示。"
+				""
+				"（没有找到你想要的东西？请报告给作者....群号477410980，我会尽力满足要求）"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:enchanted_book"
+				tag: {
+					StoredEnchantments: [{
+						id: "minecraft:protection"
+						lvl: 4s
+					}]
+				}
+			}
+			id: "20ABED9C1A1D0522"
+			rewards: [{
+				id: "5167155315B2DB3B"
+				item: "minecraft:carrot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "不会玩很正常，可以求助的"
+			tasks: [{
+				id: "530CF685E7C6118C"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			title: "什么都不了解该怎么办？"
+			x: -6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["44873AF6B9F39530"]
+			description: [
+				"首先呢，经过考量过后，并没有选择什么，单纯的通用机械还是纯热力，这种经典的，而是机械动力+格雷的组合。当然，有通用机械。"
+				""
+				"毕竟当然要与时俱进的嘛..."
+				""
+				"当然，有GT不是代表我会改的很难，相反我会选择去照顾大多数玩家的体验，也就是难度会更低些。"
+				""
+				"但由于GT的合成配方错综复杂，玩遗忘之海肯定不是为了这个的吧，所以同样的，格雷的科技线也会进行简化。材料也是。"
+				""
+				"然后最后...一个人去想这怎么改是很费力的啦，如果有什么好的想法欢迎寻找作者。"
+			]
+			icon: "minecraft:sea_lantern"
+			id: "44D4507668FC99B7"
+			rewards: [{
+				id: "4C47ED6B3C6A0706"
+				item: "croptopia:apple_juice"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "可是一个人做真的好麻烦"
+			tasks: [{
+				id: "359EB8043C42321F"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			title: "整合包设计思路"
+			x: -6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3AA560642ACF8474"]
+			description: [
+				"请注意每个章节的“&3齿轮&f”形状的任务，那就是该章节最后一个任务。"
+				""
+				"再次说明，很多任务并不要求要上一章完成才可发展，只需完成对应的前置任务。"
+			]
+			icon: "minecraft:bedrock"
+			id: "0C5FD76103B9C609"
+			rewards: [{
+				id: "5DDFC450231717A6"
+				item: "minecraft:apple"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "没有规矩不成方圆"
+			tasks: [{
+				id: "378BCB5D8889454F"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			title: "每一章的终点在哪里？"
+			x: -6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0C5FD76103B9C609"]
+			description: [
+				"考虑到GT的难度对于大多数玩家过高，所以，有很多合成进行了简化。"
+				""
+				"对应的，某些过于简单的合成也稍微的复杂化了一点（例如机械动力的合成）。"
+				""
+				"什么？还有什么东西觉得过于难了？emm...那还是过来找十娘（指作者）吧，可以继续削减难度。"
+			]
+			icon: "minecraft:soul_campfire"
+			id: "22C325D16213EBCD"
+			rewards: [{
+				id: "3558C39360F1CD31"
+				item: "gtceu:tin_ingot"
+				type: "item"
+			}]
+			shape: "rsquare"
+			subtitle: "GregTech No Hard"
+			tasks: [{
+				id: "334C200810D68C46"
+				stat: "minecraft:play_time"
+				type: "stat"
+				value: 1
+			}]
+			title: "GT好难怎么玩啊！"
+			x: -6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["333EA09B41B8F69B"]
+			description: ["巫水和水的性质类似，但不同的是其与熔岩接触生成的是下界岩。那么..."]
+			icon: "minecraft:netherrack"
+			id: "45BFC5F0419577CC"
+			tasks: [{
+				id: "02A7BFD09E4B61B1"
+				type: "checkmark"
+			}]
+			title: "刷下界岩机"
+			x: 12.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7CA51B0DC0634AD8"]
+			icon: "exdeorum:oak_compressed_sieve"
+			id: "49B7FAFB0CDB5530"
+			tasks: [{
+				id: "015450ABC5F71B2C"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "excompressum:heavy_sieves"
+					}
+				}
+				title: "Any #excompressum:heavy_sieves"
+				type: "item"
+			}]
+			title: "更强更给力"
+			x: 4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4D926F493198A3A5"]
+			description: [
+				"居家旅行必备之神器。"
+				""
+				"合成简单，就是耐久有一点低。"
+			]
+			icon: {
+				Count: 1
+				id: "woodenshears:wooden_shears"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1ACC8C2888634A05"
+			tasks: [{
+				id: "04E635F6C4434E56"
+				item: {
+					Count: 1
+					id: "woodenshears:wooden_shears"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["0877689FFB07DF91"]
+			description: ["前期可以依靠这个实现简单的自动化。"]
+			icon: "woodenhopper:wooden_hopper"
+			id: "39928B58FE3F9DEA"
+			tasks: [{
+				id: "7292AB90FFD59094"
+				item: "woodenhopper:wooden_hopper"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["10C8EFB297743589"]
+			icon: "tconstruct:smeltery_controller"
+			id: "7BC5823B7366B1A3"
+			tasks: [
+				{
+					id: "619EBDE2B4A0E360"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "2D6C41211ADAA552"
+					item: "tconstruct:seared_bricks"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3F08CCAB375003D9"
+					item: "tconstruct:seared_fuel_tank"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 10.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5B0FFCDC08AB56A6"]
+			id: "10C8EFB297743589"
+			tasks: [{
+				id: "3F172F46A242BF7D"
+				item: "tconstruct:seared_brick"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7BC5823B7366B1A3"]
+			id: "18C1804CAB43FB3F"
+			tasks: [{
+				id: "710F131423FFCDB6"
+				item: "tconstruct:seared_drain"
+				type: "item"
+			}]
+			x: 12.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7BC5823B7366B1A3"]
+			description: [
+				"可以熔炼金属并确保不会形成合金。"
+				""
+				"一般来说也许你并不需要这个，我的意思是不建议做这个，但万一呢？"
+			]
+			id: "0018FD1835AC7D0C"
+			tasks: [{
+				id: "4C87F0DA2B8ED9A7"
+				item: "tconstruct:foundry_controller"
+				type: "item"
+			}]
+			x: 10.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7BD4E9F8769B2FF8"]
+			description: [
+				"既然要冶炼金属，那么金属熔化后怎么让它成型便是个问题了。"
+				""
+				"那么当然，是要做个铸模，而在资源紧缺的前提下，黄铜便是个好选择。"
+				""
+				"将锭放在铸造台上，浇筑黄铜，等到冷却后就能制作好铸模了。"
+			]
+			icon: "tconstruct:ingot_cast"
+			id: "2DF63E7714362141"
+			tasks: [{
+				id: "0BB883092D5012BF"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "tconstruct:casts"
+					}
+				}
+				title: "Any #tconstruct:casts"
+				type: "item"
+			}]
+			title: "冶炼"
+			x: 6.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["10C8EFB297743589"]
+			icon: "tconstruct:seared_table"
+			id: "7BD4E9F8769B2FF8"
+			tasks: [
+				{
+					id: "25A1B77F7878CACF"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+				{
+					id: "3BEA8447FD9E7491"
+					item: "tconstruct:seared_table"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "477E42B549EB5A97"
+					item: "tconstruct:seared_basin"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["580DD1273620BE78"]
+			icon: {
+				Count: 1
+				id: "tconstruct:tinkers_anvil"
+				tag: {
+					texture: "tconstruct:slimesteel_block"
+				}
+			}
+			id: "2D65D8FFB52F44ED"
+			tasks: [{
+				id: "1B6BA0D8FF2FC015"
+				item: {
+					Count: 1
+					id: "tconstruct:tinkers_anvil"
+					tag: {
+						texture: "tconstruct:slimesteel_block"
+					}
+				}
+				match_nbt: false
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 2.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["69DEB669375837AE"]
+			icon: "create:mechanical_pump"
+			id: "20A3ACA1FCCC6476"
+			tasks: [
+				{
+					id: "700F89270614512D"
+					item: "create:mechanical_pump"
+					type: "item"
+				}
+				{
+					id: "2318546A8EFFB622"
+					item: "create:fluid_pipe"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["3826EA4A19825BE4"]
+			description: [
+				"无论是用于防腐，还是作为燃料都是很好的。"
+				""
+				"&7来自十娘的提示：在以后可以用来烧蒸汽，然后蒸汽可以发电..."
+			]
+			id: "7DB5EBCCE511D894"
+			tasks: [{
+				amount: 1000L
+				fluid: "gtceu:creosote"
+				id: "7D0327863893D6B9"
+				type: "fluid"
+			}]
+			title: "杂酚油"
+			x: 10.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5EB93835F36B5E36"]
+			id: "3FF0BF3D119CA31F"
+			tasks: [{
+				id: "75E054A8591C9CD2"
+				item: "farmersdelight:basket"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5BEC60F5B7AD1D8E"]
+			id: "7831E8C5FD0FF048"
+			tasks: [{
+				id: "19632E0F8255AC07"
+				item: "createsifter:brass_sifter"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 2.5d
+		}
+	]
+	title: "故事的起点"
+}

@@ -1,0 +1,16 @@
+filename = 'everyxhotpot-2.0.0-pre1-1.20.1-TeaCon2023.jar'
+name = 'EveryXHotpot'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = '13ddb78cb851c48ba2e6af9f27ca036468533d5c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5855886
+project-id = 1130390

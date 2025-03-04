@@ -1,0 +1,6 @@
+{
+  "name": "Growthcraft 地窖",
+  "description": "欢迎来到酿造和发酵的过程。$(br2)使用 Growthcraft 地窖，你可以开始制作自己的啤酒、葡萄酒、蜜酒等。每一种都有其独特的效果。",
+  "icon": "growthcraft_cellar:textures/item/potion/pint_ale_icon.png",
+  "sortnum": 4
+}

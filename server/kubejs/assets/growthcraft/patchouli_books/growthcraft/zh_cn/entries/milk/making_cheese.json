@@ -1,0 +1,78 @@
+{
+  "name": "制作奶酪",
+  "icon": "growthcraft_milk:textures/item/cheese/appenzeller_aged.png",
+  "category": "growthcraft:milk",
+  "sortnum": 5,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "制作奶酪的艺术可以追溯到7000多年前。这个过程在历史上保持相对不变。"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "摘要",
+      "text": "$(br)1. 在混合罐中制作培养奶$(br2)2. 制作奶酪凝乳$(br2)3. 排水凝乳$(br2)4. 将凝乳压制成轮$(br2)5. 老化你的奶酪轮"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "培养奶",
+      "text": "为了制作培养奶，混合罐下方必须有一个热源。加热混合罐后，加入4桶牛奶、1桶凝乳和1个启动培养物。然后用木棍激活混合罐以开始过程。培养奶开发后，用桶取出凝乳。这将留在混合罐中4桶培养奶。"
+    },
+    {
+      "type": "image",
+      "title": "奶酪凝乳",
+      "border": true,
+      "images": [
+        "growthcraft:textures/patchouli/screenshots/cheese/cheddar_cheese_curds.png"
+      ],
+      "text": "接下来，加入成分以制作你所需奶酪的凝乳。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "growthcraft_milk:mixing_vat"
+    },
+    {
+      "title": "成分",
+      "type": "text",
+      "text": "切达奶酪$(li)1 盐$(li)1 橙色染料$(br2)戈贡佐拉奶酪$(li)1 盐$(li)1 葡萄$(br2)埃门塔尔奶酪$(li)1 盐$(li)1 小麦"
+    },
+    {
+      "title": "成分",
+      "type": "text",
+      "text": "阿彭策尔奶酪$(li)1 盐$(li)1 葡萄$(li)1 巴亚纳斯酵母$(br2)阿西亚戈奶酪$(li)1 盐$(li)1 盐$(li)1 黄色染料$(br2)帕尔马奶酪$(li)1 盐$(li)1 白色染料"
+    },
+    {
+      "title": "成分",
+      "type": "text",
+      "text": "蒙特雷奶酪$(li)1 盐$(li)1 红色染料$(br2)普罗沃洛奶酪$(li)1 盐$(li)1 黄色染料$(br2)高达奶酪$(li)1 盐$(li)1 灰色染料"
+    },
+    {
+      "type": "image",
+      "title": "排水凝乳",
+      "border": true,
+      "images": [
+        "growthcraft:textures/patchouli/screenshots/cheese/hanging_cheese_curds.png"
+      ],
+      "text": "现在你有了奶酪凝乳，将它们附在方块的底部以排水。"
+    },
+    {
+      "type": "image",
+      "title": "奶酪压榨机",
+      "border": true,
+      "images": [
+        "growthcraft:textures/patchouli/blocks/cheese_press_hanging_curds.png"
+      ],
+      "text": "最后，你需要将排干的凝乳放入$(l:milk/mixing_vat)奶酪压榨机$(/l)中。"
+    },
+    {
+      "title": "成分",
+      "type": "text",
+      "text": "卡苏马尔祖奶酪$(li)1 盐$(li)1 腐肉"
+    },
+    {
+      "type": "patchouli:text",
+      "title": "奶酪老化",
+      "text": "为了使奶酪可编辑，你需要对奶酪进行老化。只需将奶酪轮放下并等待它老化即可。$(br2)一旦奶酪轮变老，它的颜色将会改变。"
+    }
+  ]
+}

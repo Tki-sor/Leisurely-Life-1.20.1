@@ -1,0 +1,25 @@
+// Compost colors for barbequesdelight. You may add your own colors, change existing ones, or remove colors that aren't needed.
+burnt_skewer, #514839
+chili_powder, #9b3e15
+cumin_powder, #a56914
+grilled_beef_skewer, #8d7343
+grilled_chicken_skewer, #e19d61
+grilled_cod_skewer, #e78a5a
+grilled_lamb_skewer, #b87f61
+grilled_mushroom_skewer, #9e6436
+grilled_pork_sausage_skewer, #e07047
+grilled_potato_skewer, #be763c
+grilled_rabbit_skewer, #b99858
+grilled_salmon_skewer, #de684b
+kebab_sandwich, #bc8a33
+kebab_wrap, #eab665
+pepper_powder, #805823
+raw_beef_skewer, #c0754a
+raw_chicken_skewer, #eaac7c
+raw_cod_skewer, #d7876c
+raw_lamb_skewer, #de7665
+raw_mushroom_skewer, #ac7d5a
+raw_pork_sausage_skewer, #f1877f
+raw_potato_skewer, #cd8654
+raw_rabbit_skewer, #c5b984
+raw_salmon_skewer, #d66b4e

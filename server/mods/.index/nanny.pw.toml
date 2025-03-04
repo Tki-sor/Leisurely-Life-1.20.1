@@ -1,0 +1,16 @@
+filename = 'NaNny-1.0.1.jar'
+name = 'NaNny (Fix NaN Health / Absorption)'
+side = 'server'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '1e716311028b1c3147b569b89cd6697ccd5874d4'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4772710
+project-id = 634392

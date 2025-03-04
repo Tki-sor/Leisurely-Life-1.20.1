@@ -1,0 +1,27 @@
+{
+  "type": "tconstruct:alloy",
+  "conditions": [
+    {
+      "type": "forge:not",
+      "value": {
+        "type": "forge:tag_empty",
+        "tag": "forge:ingots/tin"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "amount": 432,
+      "tag": "forge:copper"
+    },
+    {
+      "amount": 144,
+      "tag": "forge:tin"
+    }
+  ],
+  "result": {
+    "amount": 576,
+    "fluid": "gtceu:bronze"
+  },
+  "temperature": 700
+}

@@ -1,0 +1,16 @@
+filename = 'woodenshears-1.20.1-1.5.0.0.jar'
+name = 'Wooden Shears'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1', '1.20.2' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '4ad60e5e1f57f16ba14e504d48c7f7849d175450'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4690898
+project-id = 443192

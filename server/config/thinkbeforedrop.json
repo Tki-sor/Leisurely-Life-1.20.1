@@ -1,0 +1,25 @@
+{
+  "enabled": true,
+  "time": {
+    "minSecond": 0.5,
+    "maxSecond": 5.0
+  },
+  "internal": {
+    "weapon": false,
+    "tool": false,
+    "shulkerBox": false,
+    "armor": false,
+    "disc": false,
+    "uncommon": false,
+    "rare": false,
+    "epic": false,
+    "enchanted": false,
+    "hasNbt": false,
+    "enchantedBook": false,
+    "book": false
+  },
+  "custom": {
+    "customItems": [],
+    "excludeItems": []
+  }
+}

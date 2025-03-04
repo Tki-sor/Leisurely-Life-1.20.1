@@ -1,0 +1,16 @@
+filename = 'excompressum-forge-1.20.1-20.1.8.jar'
+name = 'ExCompressum'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '0975fdfaae30e4b4873ca907307c39098072e14f'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6189556
+project-id = 241967

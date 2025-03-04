@@ -1,0 +1,16 @@
+filename = 'TiledCauldron-1.20-5.0.jar'
+name = 'Tiled Cauldron'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '5d27c7eb14fedb932f11afc3b20b0526da8fa131'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4631216
+project-id = 700713

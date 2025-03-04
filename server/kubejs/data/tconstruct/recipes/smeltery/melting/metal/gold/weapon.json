@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:damagable_melting",
+  "ingredient": [
+    {
+      "item": "minecraft:golden_sword"
+    },
+    {
+      "item": "minecraft:golden_hoe"
+    }
+  ],
+  "result": {
+    "amount": 288,
+    "fluid": "gtceu:gold",
+    "unit_size": 16
+  },
+  "temperature": 700,
+  "time": 80
+}

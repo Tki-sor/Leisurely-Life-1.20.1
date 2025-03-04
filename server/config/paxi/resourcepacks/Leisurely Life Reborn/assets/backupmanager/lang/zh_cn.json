@@ -1,0 +1,18 @@
+{
+  "backupmanager:gui.backups.title" : "世界备份",
+  "backupmanager:gui.backups.created" : "创建时间: %s",
+  "backupmanager:gui.backups.provider" : "备份提供者: %s",
+  "backupmanager:gui.backups.restore_name" : "请输入一个世界名称，恢复的世界将在世界选择屏幕中以此名称显示。",
+  "backupmanager:gui.backups.error_occurred" : "发生错误！\n\n%s",
+  "backupmanager:gui.backups.restored" : "备份恢复成功！",
+  "backupmanager:gui.backups.file_location" : "文件位置:",
+
+  "backupmanager:button.backups" : "备份",
+  "backupmanager:button.restore_backup" : "恢复备份为...",
+  "backupmanager:button.restore_backup.info" : "系统将提示你输入一个名称来恢复此备份。\n恢复备份时不会覆盖现有世界。",
+  "backupmanager:button.delete_backup" : "删除备份",
+  "backupmanager:button.backups_entry" : "管理世界备份",
+  "backupmanager:button.back_arrow" : "← 返回",
+  "backupmanager:button.ok" : "确定",
+  "backupmanager:button.cancel" : "取消"
+}

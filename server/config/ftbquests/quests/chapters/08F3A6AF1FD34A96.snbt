@@ -1,0 +1,195 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "08F3A6AF1FD34A96"
+	group: "1144603E4C79C305"
+	icon: "functionalstorage:oak_1"
+	id: "08F3A6AF1FD34A96"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["19E8FAADDB3AB063"]
+			id: "04969AF6DFBF6E1D"
+			tasks: [{
+				id: "218578053E02A74F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "Any #functionalstorage:drawer"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04969AF6DFBF6E1D"]
+			id: "4387EE6D1A402556"
+			tasks: [{
+				id: "3E8D224D53CF2F2D"
+				item: "functionalstorage:linking_tool"
+				type: "item"
+			}]
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["04969AF6DFBF6E1D"]
+			id: "50A5C402B4555861"
+			tasks: [{
+				id: "69776A063D7B12E3"
+				item: "functionalstorage:configuration_tool"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["04969AF6DFBF6E1D"]
+			id: "2B48E88F0CB00E65"
+			tasks: [{
+				id: "5484E34C1E1E190D"
+				item: "functionalstorage:copper_upgrade"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["2B48E88F0CB00E65"]
+			id: "422F62C9695020AA"
+			tasks: [{
+				id: "2B76F9FE9292904E"
+				item: "functionalstorage:gold_upgrade"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["422F62C9695020AA"]
+			id: "41174BDD6B3E0E15"
+			tasks: [{
+				id: "6CDACBC072DCD6A4"
+				item: "functionalstorage:diamond_upgrade"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["41174BDD6B3E0E15"]
+			id: "792AE228B4BE1332"
+			tasks: [{
+				id: "5B8C16BACE5618E8"
+				item: "functionalstorage:netherite_upgrade"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["04969AF6DFBF6E1D"]
+			id: "00B9FB7FDEC2DFDA"
+			tasks: [{
+				id: "638045F4A1643F88"
+				item: "functionalstorage:iron_downgrade"
+				type: "item"
+			}]
+			x: -3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["04969AF6DFBF6E1D"]
+			id: "6D2EC95DC3666BE8"
+			tasks: [{
+				id: "2A853DC9ECAFD188"
+				item: "functionalstorage:collector_upgrade"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["04969AF6DFBF6E1D"]
+			id: "0E2B69558DEE63CC"
+			tasks: [{
+				id: "46ADEAB32EEC9C67"
+				item: "functionalstorage:puller_upgrade"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["04969AF6DFBF6E1D"]
+			id: "6AE9B00E207E17F9"
+			tasks: [{
+				id: "45212462B5659639"
+				item: "functionalstorage:ender_drawer"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04969AF6DFBF6E1D"]
+			id: "7759655054F964DC"
+			tasks: [{
+				id: "6EC118E26E9B741F"
+				item: "functionalstorage:redstone_upgrade"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["04969AF6DFBF6E1D"]
+			icon: "functionalstorage:storage_controller"
+			id: "44413B6E66F5C649"
+			tasks: [
+				{
+					id: "47B63ADA0BC315F2"
+					item: "functionalstorage:storage_controller"
+					type: "item"
+				}
+				{
+					id: "58D092C9B02C3096"
+					item: "functionalstorage:controller_extension"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["04969AF6DFBF6E1D"]
+			icon: "functionalstorage:fluid_1"
+			id: "2C64AE6A82DD79DA"
+			tasks: [{
+				id: "4C3DD119C944445D"
+				item: "functionalstorage:fluid_1"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["04969AF6DFBF6E1D"]
+			id: "5D6C741F8D70C414"
+			tasks: [{
+				id: "29453146B566F2C2"
+				item: "functionalstorage:compacting_drawer"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+	]
+	title: "抽屉"
+}

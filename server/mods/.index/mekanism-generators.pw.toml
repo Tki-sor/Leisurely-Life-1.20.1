@@ -1,0 +1,16 @@
+filename = 'MekanismGenerators-1.20.1-10.4.15.75.jar'
+name = 'Mekanism: Generators'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'df617fca36358b26b2dd3531ceac365b0311d3a8'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6258799
+project-id = 268566

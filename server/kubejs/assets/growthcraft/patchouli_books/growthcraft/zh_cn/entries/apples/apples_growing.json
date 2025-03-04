@@ -1,0 +1,33 @@
+{
+  "name": "种植苹果",
+  "icon": "growthcraft_apples:apple_tree_sapling",
+  "category": "growthcraft:apples",
+  "pages": [
+    {
+      "type": "text",
+      "title": "种植苹果",
+      "text": "要开始种植自己的苹果，您需要保存一些苹果的种子。$(br2)将苹果种子种在泥土上，它会长成一个苹果树苗。$(br2)在适当的光照条件下，您的树苗会长成一棵完整的树，并开始结出苹果。"
+    },
+    {
+      "type": "crafting",
+      "title": "苹果种子",
+      "recipe": "growthcraft_apples:apple_seeds"
+    },
+    {
+      "type": "image",
+      "border": true,
+      "images": [
+        "growthcraft_apples:textures/patchouli/screenshots/apple_tree_sapling.png"
+      ],
+      "text": "苹果树的生长方式与其他树木相同。"
+    },
+    {
+      "type": "image",
+      "border": true,
+      "images": [
+        "growthcraft_apples:textures/patchouli/screenshots/apple_tree_fullgrown.png"
+      ],
+      "text": "当苹果变红时，您可以进行收获。"
+    }
+  ]
+}

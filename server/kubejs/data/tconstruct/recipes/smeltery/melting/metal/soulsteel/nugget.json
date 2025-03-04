@@ -1,0 +1,12 @@
+{
+  "type": "tconstruct:melting",
+  "ingredient": {
+    "tag": "forge:nuggets/soulsteel"
+  },
+  "result": {
+    "amount": 16,
+    "fluid": "tconstruct:molten_soulsteel"
+  },
+  "temperature": 1200,
+  "time": 24
+}

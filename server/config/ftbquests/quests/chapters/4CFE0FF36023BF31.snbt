@@ -1,0 +1,129 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4CFE0FF36023BF31"
+	group: "22AB940A6CF0C6B8"
+	icon: "gtceu:electric_blast_furnace"
+	id: "4CFE0FF36023BF31"
+	order_index: 6
+	quest_links: [
+		{
+			id: "7EA919A50CCAD69A"
+			linked_quest: "76119579FDBF9C6F"
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			id: "442B340227EDCC1F"
+			linked_quest: "0573815E888D1020"
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			id: "54BEA5AE5024C61E"
+			linked_quest: "3BBDFE8B56E6D1CB"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			id: "4E15C6AD26436B6C"
+			linked_quest: "79D0E6F195D64103"
+			x: -1.0d
+			y: 4.0d
+		}
+	]
+	quests: [
+		{
+			description: [
+				"输入仓：顾名思义，输入流体用的，有些机器的部分配方需要流体（哪里能顾名思义了喂）"
+				""
+				"输出仓：明显是输入仓的反向版本"
+				""
+				"输入总线：输入物品用的"
+				""
+				"输出总线：十娘懒得解释"
+				""
+				"维护仓：机器刚开始要检修，运行久了会有故障很合理吧，准备好你的扳手螺丝刀之类的，来维修你的机器吧"
+				""
+				"消声仓：机器运行时会产生污染，污染是不好的...所以本整合包并没有启用污染，但即便这样，你也需要消声仓"
+				""
+				"能源仓：机器运行时需要能量..."
+			]
+			icon: "gtceu:mv_input_hatch"
+			id: "5C56B9118B74B43A"
+			tasks: [
+				{
+					id: "25F64CAF38F9E451"
+					item: "gtceu:mv_input_hatch"
+					type: "item"
+				}
+				{
+					id: "764F462AABA874CC"
+					item: "gtceu:mv_output_hatch"
+					type: "item"
+				}
+				{
+					id: "688E7614E0553938"
+					item: "gtceu:mv_input_bus"
+					type: "item"
+				}
+				{
+					id: "2DFB6C62A8B6F9E8"
+					item: "gtceu:mv_output_bus"
+					type: "item"
+				}
+				{
+					id: "08594E097AB79273"
+					item: "gtceu:maintenance_hatch"
+					type: "item"
+				}
+				{
+					id: "62676F2B50CB24E8"
+					item: "gtceu:mv_muffler_hatch"
+					type: "item"
+				}
+				{
+					id: "2B2EB02F66E9D612"
+					item: "gtceu:mv_energy_input_hatch"
+					type: "item"
+				}
+			]
+			title: "各种仓都是干什么用的？"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["76119579FDBF9C6F"]
+			id: "0B1660533574B9A4"
+			tasks: [{
+				id: "540D8A213683006C"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["79D0E6F195D64103"]
+			id: "1C4C414B74AA2E08"
+			tasks: [{
+				id: "477F2293F2C129FC"
+				item: "gtceu:rtm_alloy_coil_block"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			id: "24AD6399D594334F"
+			tasks: [{
+				id: "59276583C41978E0"
+				item: "gtceu:bronze_large_boiler"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+	]
+	title: "多方块结构"
+}

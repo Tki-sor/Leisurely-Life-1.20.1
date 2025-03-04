@@ -1,0 +1,16 @@
+
+#General settings
+[general]
+	#path
+	world_spawn = "config/llrskyblock/structures/world_spawn.nbt"
+	#xyz
+	world_spawn_xyz = [0, 149, 0]
+	#path
+	player_spawn = "config/llrskyblock/structures/player_spawn.nbt"
+	#spacing
+	#Range: > 5000
+	player_spawn_spacing = 10000
+	#spacing
+	#Range: -64 ~ 328
+	player_spawn_height = 147
+

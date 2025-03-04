@@ -1,0 +1,482 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "232BBF85CF5A09FF"
+	group: "22AB940A6CF0C6B8"
+	icon: "gtceu:lp_steam_solid_boiler"
+	id: "232BBF85CF5A09FF"
+	order_index: 0
+	quest_links: [{
+		id: "7E33B71DDD87D1C1"
+		linked_quest: "09C664A44B1EFC32"
+		shape: "gear"
+		x: 16.5d
+		y: 2.0d
+	}]
+	quests: [
+		{
+			description: [
+				"当有了足够的资源，也许该发展科技了。"
+				""
+				"第一次工业革命是，利用蒸汽来驱动机器，也许是时候制作能够承受住蒸汽这种比较高压的外壳了。"
+				""
+				"当然，如果你没有足够多的材料，可以先发展一下基础的哦。"
+			]
+			icon: "gtceu:steam_machine_casing"
+			id: "6977067EDEE085C7"
+			shape: "diamond"
+			subtitle: "也许你不该这么快就来这里"
+			tasks: [{
+				id: "01BFF80E6F3F5328"
+				item: "gtceu:steam_machine_casing"
+				type: "item"
+			}]
+			title: "蒸汽，能源，动力"
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6977067EDEE085C7"]
+			description: [
+				"&7&m科技只是换着法子烧开水。"
+				""
+				"蒸汽的力量可以让机械运动起来，那么..."
+				""
+				"这个锅炉能够让你很快的生产蒸汽。"
+				""
+				"&7我承认它很快，但是，还有更快的。"
+			]
+			id: "05F26BEDD260EA49"
+			subtitle: "熔炉？这只是烧水的东西"
+			tasks: [{
+				id: "4355BFDAEA72025F"
+				item: "gtceu:lp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["6977067EDEE085C7"]
+			id: "13BF87537F52767C"
+			subtitle: "熔炉...好像不是"
+			tasks: [{
+				id: "41BC03F34A59C600"
+				item: "gtceu:lp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["13BF87537F52767C"]
+			id: "3D08BE82BB7C203A"
+			tasks: [{
+				id: "46C8D052F9896F21"
+				item: "gtceu:red_alloy_ingot"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3D08BE82BB7C203A"]
+			icon: "minecraft:piston"
+			id: "56E0C249EC48DBD2"
+			tasks: [{
+				id: "0AB69394E8C3FF5B"
+				item: "minecraft:piston"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56E0C249EC48DBD2"]
+			id: "1CB2042EF165EFC7"
+			tasks: [{
+				id: "3BC77268CF61DE1C"
+				item: "gtceu:lp_steam_macerator"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["56E0C249EC48DBD2"]
+			id: "49C90447102762A0"
+			tasks: [{
+				id: "76E4F0576E415CB8"
+				item: "gtceu:lp_steam_compressor"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["56E0C249EC48DBD2"]
+			id: "3120162DC895422F"
+			tasks: [{
+				id: "7A5A9EA901D21210"
+				item: "gtceu:lp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["56E0C249EC48DBD2"]
+			id: "6F50F9C47DD293A0"
+			tasks: [{
+				id: "30C17758588A70F4"
+				item: "gtceu:lp_steam_extractor"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6F50F9C47DD293A0"]
+			id: "079DC3A7AE17B840"
+			tasks: [{
+				id: "408821698E8AA4A1"
+				item: "gtceu:raw_rubber_dust"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["079DC3A7AE17B840"]
+			id: "391E5175BCCAD313"
+			subtitle: "好奇怪的气味"
+			tasks: [{
+				id: "2520EA88DB47A846"
+				item: "gtceu:rubber_ingot"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6977067EDEE085C7"]
+			description: [
+				"可以用泥土将木头包裹起来，然后用点火器点燃..."
+				""
+				"然后就可以得到大量的木炭了。"
+			]
+			id: "633745BFF3DD7B14"
+			subtitle: "从此不再缺少燃料"
+			tasks: [{
+				id: "0063196BBDA7D6F9"
+				item: "gtceu:charcoal_pile_igniter"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["05F26BEDD260EA49"]
+			dependency_requirement: "one_started"
+			description: ["如你所想，这是能更快的生产蒸汽的设备。"]
+			id: "33ACB832A6C039B6"
+			subtitle: "你还想更快的烧开水？"
+			tasks: [{
+				id: "3301C9D00F4D9E10"
+				item: "gtceu:hp_steam_solid_boiler"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["13BF87537F52767C"]
+			id: "14D8FCEBF9528671"
+			tasks: [{
+				id: "4D269B1426DA76B3"
+				item: "gtceu:hp_steam_alloy_smelter"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3120162DC895422F"]
+			id: "0D5422762E1AE91F"
+			tasks: [{
+				id: "1DD3FA5A0193C0C8"
+				item: "gtceu:hp_steam_forge_hammer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6F50F9C47DD293A0"]
+			id: "0A38BCC087AC2A1D"
+			tasks: [{
+				id: "5729CED3FD212E8E"
+				item: "gtceu:hp_steam_extractor"
+				type: "item"
+			}]
+			x: 8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["49C90447102762A0"]
+			id: "25709BD99EB7537B"
+			tasks: [{
+				id: "4F2534DAF11A978A"
+				item: "gtceu:hp_steam_compressor"
+				type: "item"
+			}]
+			x: 6.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["391E5175BCCAD313"]
+			id: "41B6D2577920830D"
+			tasks: [{
+				id: "1F9B4ECE77488E35"
+				item: "gtceu:lv_machine_hull"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1CB2042EF165EFC7"]
+			id: "00FF3E9F36BCAED0"
+			tasks: [{
+				id: "0332C7B15D092467"
+				item: "gtceu:hp_steam_macerator"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["391E5175BCCAD313"]
+			id: "49616B8E9773EDA8"
+			subtitle: "看起来像是电灯泡"
+			tasks: [{
+				id: "103D638086750A81"
+				item: "gtceu:vacuum_tube"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["391E5175BCCAD313"]
+			id: "3D9B41205BBAAB13"
+			tasks: [{
+				id: "762AE1D0C0962F46"
+				item: "gtceu:lv_electric_motor"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1CB2042EF165EFC7"]
+			description: [
+				"在海上航行多年，有时会遇到铁器损坏的问题，这是比较麻烦的事情..."
+				""
+				"在一次偶然间，我尝试用土方法来炼制铁，不小心混入了一些炭进去，结果却发现这样炼制出来的铁更加的坚硬了。"
+				""
+				"后来我在东方的天朝得知，这叫做钢，我用了一些资源换取了土高炉的制作方法来更有效地炼钢。"
+				""
+				"关于高炉相关知识，详情可参考："
+				"{\"text\": \"点击这里访问\", \"clickEvent\": {\"action\":  \"open_url\", \"value\": \"https://gtnh.huijiwiki.com/p/267\"},\"color\": \"blue\", \"underlined\": \"true\"}"
+			]
+			icon: "gtceu:primitive_blast_furnace"
+			icon_scale: 2.0d
+			id: "0573815E888D1020"
+			tasks: [
+				{
+					id: "55C348972FAF702C"
+					item: "gtceu:primitive_blast_furnace"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "5D5EB6C4F2291BC6"
+					item: "gtceu:firebricks"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "土法炼钢"
+			x: 8.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6977067EDEE085C7"]
+			icon: "gtceu:copper_small_fluid_pipe"
+			id: "71FFAB8BC3DD8F61"
+			subtitle: "我不到啊"
+			tasks: [{
+				id: "12C7EA4FC3278131"
+				type: "checkmark"
+			}]
+			title: "管道？这该怎么用？"
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["56E0C249EC48DBD2"]
+			id: "5DFDE48C2F2DC376"
+			tasks: [{
+				id: "438668933798577B"
+				item: "gtceu:lp_steam_rock_crusher"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5DFDE48C2F2DC376"]
+			id: "2884722FE7CA9FD3"
+			tasks: [{
+				id: "4E9A2AE6A230E566"
+				item: "gtceu:hp_steam_rock_crusher"
+				type: "item"
+			}]
+			x: 10.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["13BF87537F52767C"]
+			description: [
+				"我听闻有一种玻璃，可以用沙子直接烧制而成，嗯...但是用这种方法，我始终没有成功。"
+				""
+				"后来我对其改良了一下，将沙子仔细研磨，然后混入一些燧石粉进行烧制，这样就能制作出很清澈的玻璃了。"
+				""
+				"也许你也可以试试直接用沙子来烧制玻璃？反正我是从没有成功过。"
+			]
+			icon: "minecraft:glass"
+			id: "070BC665E52A1167"
+			subtitle: "难道不是烧沙子？"
+			tasks: [
+				{
+					id: "20406B38C5CC49B5"
+					item: "gtceu:glass_dust"
+					type: "item"
+				}
+				{
+					id: "67EFB1BA0F103B1F"
+					item: "minecraft:glass"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "玻璃？是这样做的吗？"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6977067EDEE085C7"]
+			id: "5EB6927E822C8536"
+			subtitle: "这个真的是熔炉了"
+			tasks: [{
+				id: "594F56FDF07629ED"
+				item: "gtceu:lp_steam_furnace"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5EB6927E822C8536"]
+			id: "696B0F87C8F7C744"
+			tasks: [{
+				id: "0847B9F922ECCDD1"
+				item: "gtceu:hp_steam_furnace"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["070BC665E52A1167"]
+			id: "19ACB6F0655D3DA5"
+			tasks: [{
+				id: "06BF73A96B83202C"
+				item: "gtceu:lp_steam_solar_boiler"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["070BC665E52A1167"]
+			id: "5027A3D12735BACB"
+			tasks: [{
+				id: "5FA73C6B446C47A8"
+				item: "gtceu:lp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5027A3D12735BACB"]
+			id: "47F8087C4E688883"
+			tasks: [{
+				id: "5012837C602175A6"
+				item: "gtceu:hp_steam_liquid_boiler"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["19ACB6F0655D3DA5"]
+			id: "5132A5DC3DF58FD7"
+			tasks: [{
+				id: "23C3AEF9B6FD7C7B"
+				item: "gtceu:hp_steam_solar_boiler"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6977067EDEE085C7"]
+			icon_scale: 2.0d
+			id: "32CFC6B8795D9430"
+			subtitle: "这简直就是奇迹"
+			tasks: [{
+				id: "331F0D0DDE4946C9"
+				item: "llrcore:martial_morality_eye"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5EB6927E822C8536"]
+			id: "3C48303C04A78360"
+			tasks: [{
+				id: "4141A0D5F3A30288"
+				item: "gtceu:steam_oven"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1CB2042EF165EFC7"]
+			id: "17FC50A9B6162D9F"
+			tasks: [{
+				id: "31DDAF7EC72A4B7C"
+				item: "gtceu:steam_grinder"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
+		}
+	]
+	title: "蒸汽时代"
+}

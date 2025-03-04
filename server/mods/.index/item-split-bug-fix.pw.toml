@@ -1,0 +1,16 @@
+filename = 'item_split_bug_fix-1.20.1-1.2.jar'
+name = 'Item Split Bug Fix'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '4a08ecf8c18627d3a87451eaa9374c6ff99eeb28'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5806246
+project-id = 1119284

@@ -1,0 +1,16 @@
+filename = 'woodenhopper-1.20.1-1.6.0.1.jar'
+name = 'Wooden Hopper'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '9f5214d27734a8c433a66579c28322a25a3f8858'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4705287
+project-id = 440985

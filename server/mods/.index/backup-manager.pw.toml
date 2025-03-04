@@ -1,0 +1,16 @@
+filename = 'BackupManager-forge-1.20-1.0.0.jar'
+name = 'Backup Manager'
+side = 'client'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = 'deac5a460ba1251ac72cccc7dab8cf9372f90bd9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5783054
+project-id = 1005239

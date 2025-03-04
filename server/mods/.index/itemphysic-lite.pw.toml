@@ -1,0 +1,16 @@
+filename = 'ItemPhysicLite_FORGE_v1.6.6_mc1.20.1.jar'
+name = 'ItemPhysic Lite'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '4fc87af53afb8610e77710b30340783fc6bd0ccf'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6045994
+project-id = 270441

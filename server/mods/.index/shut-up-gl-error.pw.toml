@@ -1,0 +1,16 @@
+filename = 'Shut Up GL Error-forge-1.20.1-1.0.0.jar'
+name = 'Shut Up GL Error'
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20', '1.20-Snapshot', '1.20.1', '1.20.2', '1.20.2-Snapshot' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '99a47ef4dcb152f276a69e2e2c16e6bae9f10155'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 4691165
+project-id = 900855

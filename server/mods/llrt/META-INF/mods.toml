@@ -1,0 +1,23 @@
+modLoader="lowcodefml"
+loaderVersion="*"
+issueTrackerURL=""
+license="MIT"
+[[mods]]
+    modId="llrt"
+    version="0.0.1"
+    displayName="LLRt"
+    description='''
+    
+    '''
+[[dependencies.tinkers_things]]
+    modId="tconstruct"
+    mandatory=true
+    versionRange="*"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.tinkers_things]]
+    modId="jsonthings"
+    mandatory=true
+    versionRange="*"
+    ordering="NONE"
+    side="BOTH"

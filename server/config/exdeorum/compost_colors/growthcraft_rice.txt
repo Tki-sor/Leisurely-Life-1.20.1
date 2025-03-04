@@ -1,0 +1,12 @@
+// Compost colors for growthcraft_rice. You may add your own colors, change existing ones, or remove colors that aren't needed.
+chicken_rice, #fee6ca
+cultivator, #fbf7ed
+knife, #aba597
+onigiri, #b2b5b1
+rice, #ffffff
+rice_cooked, #ffffff
+rice_crop, #73bc12
+rice_grains, #ffffff
+rice_stalk, #f4ff30
+sushi_roll, #47503e
+yeast_seishu, #acea8a

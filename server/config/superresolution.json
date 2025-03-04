@@ -1,0 +1,7 @@
+{
+  "includeEffects": true,
+  "enableUpscale": true,
+  "sharpness": 0.2,
+  "upscaleRatio": 1.7,
+  "upscaleAlgo": "fsr1"
+}

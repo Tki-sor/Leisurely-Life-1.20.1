@@ -1,0 +1,14 @@
+type = user_variables
+
+variable {
+  name = 233
+  value = 2
+  reset_on_launch = false
+}
+
+variable {
+  name = qwq
+  value = 1
+  reset_on_launch = false
+}
+

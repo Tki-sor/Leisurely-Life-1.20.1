@@ -1,0 +1,106 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0F15C5064CEC2054"
+	group: "22AB940A6CF0C6B8"
+	icon: "gtceu:vacuum_tube"
+	id: "0F15C5064CEC2054"
+	order_index: 2
+	quest_links: [{
+		id: "1468764349F81BB2"
+		linked_quest: "49616B8E9773EDA8"
+		x: -1.5d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			description: [
+				"在经过很长时间的研究，我对大自然的闪电十分向往，它象征着力量。"
+				""
+				"我想尝试着驾驭它，但显然不太可能，但已经有人尝试着驾驭电能了。"
+				""
+				"什么电磁感应？这大概是世界的规律吧。"
+			]
+			id: "4FEB3D976E0AC370"
+			subtitle: "你的第一台发电机？"
+			tasks: [{
+				id: "16F667758A9E70FB"
+				item: "createaddition:alternator"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["49616B8E9773EDA8"]
+			description: [
+				"通量只是所有能量的统一形式罢了。这是CoFH指北中提到的。"
+				""
+				"所有的能量都可以被转换为通量（FE），但是以现有的条件无法直接传输通量，只能将通量转换为交流电来传输。"
+				""
+				"&7嗯，格雷科技的导线可以自动将EU转换为FE。"
+			]
+			icon: "gtceu:lv_1a_energy_converter"
+			id: "711CF9E308E36427"
+			subtitle: "真正的工业时代？"
+			tasks: [{
+				id: "6CAF9EB2B73750D1"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "gtceu:ulv_1a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_1a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ulv_4a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_4a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ulv_8a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_8a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:ulv_16a_energy_converter"
+							}
+							{
+								Count: 1b
+								id: "gtceu:lv_16a_energy_converter"
+							}
+						]
+					}
+				}
+				type: "item"
+			}]
+			title: "交流的回响？"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			id: "7C05CC52565292E3"
+			tasks: [{
+				id: "4B4AF89EAC575773"
+				item: "mekanism:basic_control_circuit"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+	]
+	title: "工业时代？"
+}

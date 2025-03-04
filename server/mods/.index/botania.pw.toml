@@ -1,0 +1,16 @@
+filename = 'Botania-1.20.1-447-FORGE.jar'
+name = 'Botania'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '07afee866afb1ece0bebf2b5651e9e2309e3061b'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6172172
+project-id = 225643

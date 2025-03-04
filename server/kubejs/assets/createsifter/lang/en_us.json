@@ -1,0 +1,11 @@
+{
+    "item.createsifter.flint_mesh": "Flint Mesh",
+    "item.createsifter.wrought_iron_mesh": "Wrought Iron Mesh",
+    "item.createsifter.iron_mesh": "Iron Mesh",
+    "item.createsifter.golden_mesh": "Gold Mesh",
+    "item.createsifter.diamond_mesh": "Diamond Mesh",
+    "item.createsifter.netherite_mesh": "Netherite Mesh",
+    "item.createsifter.none_mesh": "None Mesh",
+    "item.createsifter.steel_mesh": "Steel Mesh",
+    "item.createsifter.stainless_steel_mesh": "Stainless Steel Mesh"
+}

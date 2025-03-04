@@ -1,0 +1,114 @@
+{
+    "net.satisfy.farm_and_charm.client.gui.handler.CookingPotGuiHandler": {
+        "playerSideOnly": true
+    },
+    "net.satisfy.vinery.client.gui.handler.FermentationBarrelGuiHandler": {
+        "playerSideOnly": true
+    },
+    "com.lowdragmc.lowdraglib.gui.modular.ModularUIGuiContainer": {
+        "ignore": true,
+        "playerSideOnly": true,
+        "buttonHints": {
+            "PROFILE_SELECTOR": {
+                "hide": true
+            }
+        },
+        "force": true
+    },
+    "org.cyclops.integratedscripting.client.gui.container.ContainerScreenTerminalScripting": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": 21
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 21
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 21
+            }
+        }
+    },
+    "org.cyclops.integratedscripting.client.gui.container.ContainerScreenScriptingDrive": {
+        "playerSideOnly": true
+    },
+    "org.cyclops.integratedtunnels.core.part.ContainerScreenInterfaceSettings": {
+        "playerSideOnly": true
+    },
+    "org.cyclops.integrateddynamics.core.client.gui.container.ContainerScreenPartOffset": {
+        "playerSideOnly": true
+    },
+    "org.cyclops.integrateddynamics.core.client.gui.container.ContainerScreenPartSettings": {
+        "playerSideOnly": true
+    },
+    "org.cyclops.integrateddynamics.core.client.gui.container.ContainerScreenAspectSettings": {
+        "playerSideOnly": true
+    },
+    "slimeknights.tconstruct.smeltery.client.screen.HeatingStructureScreen": {
+        "ignore": true
+    },
+    "forestry.core.gui.GuiEscritoire": {
+        "playerSideOnly": true
+    },
+    "mekanism.client.gui.machine.GuiElectricMachine": {
+        "playerSideOnly": true
+    },
+    "slimeknights.tconstruct.tables.client.inventory.ModifierWorktableScreen": {
+        "playerSideOnly": true,
+        "buttonHints": {
+            "SORT": {
+                "horizontalOffset": 41
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 41
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 41
+            }
+        }
+    },
+    "cech12.woodenhopper.client.WoodenHopperScreen": {
+        "playerSideOnly": true
+    },
+    "net.minecraft.client.gui.screens.inventory.ContainerScreen": {
+        "buttonHints": {
+            "SHOW_EDITOR": {
+                "top": 1
+            }
+        }
+    },
+    "forestry.factory.gui.GuiFabricator": {
+        "playerSideOnly": true
+    },
+    "thedarkcolour.exdeorum.client.screen.MechanicalSieveScreen": {
+        "ignore": true
+    },
+    "org.cyclops.colossalchests.client.gui.container.ContainerScreenColossalChest": {
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 3,
+                "bottom": -44
+            },
+            "MOVE_TO_PLAYER": {
+                "horizontalOffset": 18
+            },
+            "SORT": {
+                "horizontalOffset": 18
+            },
+            "SORT_COLUMNS": {
+                "horizontalOffset": 18
+            },
+            "SORT_ROWS": {
+                "horizontalOffset": 18
+            }
+        }
+    },
+    "mekanism.client.gui.machine.GuiElectrolyticSeparator": {
+        "ignore": true,
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 30
+            }
+        }
+    }
+}

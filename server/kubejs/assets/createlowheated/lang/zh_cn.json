@@ -1,0 +1,13 @@
+{
+  "block.createlowheated.basic_burner": "基本型燃烧室",
+  "block.createlowheated.basic_burner.tooltip": "基本型燃烧室",
+  "block.createlowheated.basic_burner.tooltip.behaviour1": "使用_煤炭或木炭_右击或使用_溜槽等_输入燃料.",
+  "block.createlowheated.basic_burner.tooltip.behaviour2": "使用_打火石_右击基本型燃烧室来_生火_。 只要还有燃料，燃烧室就会持续燃烧.",
+  "block.createlowheated.basic_burner.tooltip.behaviour3": "使用满速风扇对准燃烧室吹可以加强燃烧室的输出功率.\n\n所有使用_基本型燃烧室_加工的配方都可以使用_烈焰人燃烧室_处理",
+  "block.createlowheated.basic_burner.tooltip.condition1": "需要燃料",
+  "block.createlowheated.basic_burner.tooltip.condition2": "需要打火石",
+  "block.createlowheated.basic_burner.tooltip.condition3": "加强功率",
+  "block.createlowheated.basic_burner.tooltip.summary": "为_工作盆_提供_热量_。",
+  "create.recipe.heat_requirement.lowheated": "低温加热",
+  "itemGroup.createlowheated.base": "机械动力 低温加热"
+}

@@ -1,0 +1,228 @@
+[
+  {
+    "name": "Control",
+    "widgets": [
+      {
+        "type": "pause_button",
+        "offset": {
+          "x": -9,
+          "y": 0
+        },
+        "opacity": 0.6
+      },
+      {
+        "type": "chat_button",
+        "offset": {
+          "x": 9,
+          "y": 0
+        },
+        "opacity": 0.6
+      },
+      {
+        "type": "inventory_button"
+      }
+    ],
+    "condition": {}
+  },
+  {
+    "name": "Normal",
+    "widgets": [
+      {
+        "type": "dpad",
+        "offset": {
+          "x": 8,
+          "y": 8
+        },
+        "opacity": 0.6
+      },
+      {
+        "type": "jump_button",
+        "offset": {
+          "x": 42,
+          "y": 68
+        },
+        "opacity": 0.6
+      }
+    ],
+    "condition": {
+      "swimming": "never",
+      "flying": "never",
+      "riding": "never"
+    }
+  },
+  {
+    "name": "Swimming or flying",
+    "widgets": [
+      {
+        "type": "dpad",
+        "extraButton": "none",
+        "offset": {
+          "x": 8,
+          "y": 8
+        },
+        "opacity": 0.6
+      },
+      {
+        "type": "jump_button",
+        "texture": "classic_flying",
+        "offset": {
+          "x": 42,
+          "y": 68
+        },
+        "opacity": 0.6
+      },
+      {
+        "type": "ascend_button",
+        "offset": {
+          "x": 42,
+          "y": 116
+        },
+        "opacity": 0.6
+      },
+      {
+        "type": "descend_button",
+        "offset": {
+          "x": 42,
+          "y": 20
+        },
+        "opacity": 0.6
+      }
+    ],
+    "condition": {
+      "swimming": "want",
+      "flying": "want",
+      "riding": "never"
+    }
+  },
+  {
+    "name": "On minecart",
+    "widgets": [
+      {
+        "type": "dpad",
+        "extraButton": "dismount_double_click",
+        "offset": {
+          "x": 8,
+          "y": 8
+        },
+        "opacity": 0.6
+      }
+    ],
+    "condition": {
+      "on_minecart": "require"
+    }
+  },
+  {
+    "name": "On boat",
+    "widgets": [
+      {
+        "type": "boat_button",
+        "offset": {
+          "x": 16,
+          "y": 16
+        },
+        "opacity": 0.6
+      },
+      {
+        "type": "boat_button",
+        "side": "right",
+        "align": "RIGHT_BOTTOM",
+        "offset": {
+          "x": 16,
+          "y": 16
+        },
+        "opacity": 0.6
+      },
+      {
+        "type": "sneak_button",
+        "trigger": "single_click_trigger",
+        "align": "CENTER_BOTTOM",
+        "offset": {
+          "x": 0,
+          "y": 48
+        },
+        "opacity": 0.6
+      }
+    ],
+    "condition": {
+      "on_boat": "require"
+    }
+  },
+  {
+    "name": "On pig or strider",
+    "widgets": [
+      {
+        "type": "sneak_button",
+        "texture": "dismount",
+        "trigger": "double_click_trigger",
+        "align": "LEFT_BOTTOM",
+        "offset": {
+          "x": 68,
+          "y": 68
+        },
+        "opacity": 0.6
+      }
+    ],
+    "condition": {
+      "on_strider": "want"
+    }
+  },
+  {
+    "name": "On horse, camel or llama",
+    "widgets": [
+      {
+        "type": "dpad",
+        "extraButton": "dismount_double_click",
+        "offset": {
+          "x": 8,
+          "y": 8
+        },
+        "opacity": 0.6
+      },
+      {
+        "type": "jump_button",
+        "offset": {
+          "x": 42,
+          "y": 68
+        },
+        "opacity": 0.6
+      }
+    ],
+    "condition": {
+      "on_horse": "want",
+      "on_camel": "want",
+      "on_llama": "want"
+    }
+  },
+  {
+    "name": "Riding on entity",
+    "widgets": [
+      {
+        "type": "dpad",
+        "extraButton": "dismount_double_click",
+        "offset": {
+          "x": 8,
+          "y": 8
+        },
+        "opacity": 0.6
+      },
+      {
+        "type": "jump_button",
+        "offset": {
+          "x": 42,
+          "y": 68
+        },
+        "opacity": 0.6
+      }
+    ],
+    "condition": {
+      "on_minecart": "never",
+      "on_boat": "never",
+      "on_pig": "never",
+      "on_horse": "never",
+      "on_camel": "never",
+      "on_llama": "never",
+      "on_strider": "never",
+      "riding": "require"
+    }
+  }
+]

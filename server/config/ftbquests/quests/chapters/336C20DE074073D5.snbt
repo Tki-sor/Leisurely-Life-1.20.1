@@ -1,0 +1,489 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "336C20DE074073D5"
+	group: "3F8CCFD303D2A5E6"
+	icon: "create:wrench"
+	id: "336C20DE074073D5"
+	order_index: 0
+	quest_links: [{
+		id: "2229D332EA6E4A1C"
+		linked_quest: "5BEC60F5B7AD1D8E"
+		x: 11.0d
+		y: 0.0d
+	}]
+	quests: [
+		{
+			dependencies: ["2A7B2F2E3CD28955"]
+			description: [
+				"要是以前有人和我说，用一堆所谓的齿轮之类的东西，能造出一个庞然大物，我是绝对不会相信的。"
+				""
+				"但当我看到了那艘巨舰..."
+				""
+				"&7"
+			]
+			icon: "gtceu:andesite_alloy_ingot"
+			id: "5DD0EB2158686C45"
+			shape: "diamond"
+			tasks: [{
+				id: "41CBB7AAB682D70E"
+				item: "gtceu:andesite_alloy_ingot"
+				type: "item"
+			}]
+			title: "机械与幻想"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5DD0EB2158686C45"]
+			icon: "create:shaft"
+			id: "168377083F36C333"
+			tasks: [{
+				id: "2336B59BC7C55BC4"
+				item: "create:shaft"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["168377083F36C333"]
+			id: "061B969B94F08A30"
+			tasks: [{
+				id: "12FBF69E8F5BC803"
+				item: "create:cogwheel"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["061B969B94F08A30"]
+			id: "79893653057ED9D1"
+			tasks: [{
+				id: "0D380C7CB6324AD9"
+				item: "create:water_wheel"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["168377083F36C333"]
+			icon: "create:wrench"
+			id: "5C603DDFCD292B24"
+			tasks: [{
+				id: "7965F0124F6691B2"
+				item: "create:wrench"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["061B969B94F08A30"]
+			id: "60D9BF91291FED60"
+			tasks: [{
+				id: "56F59E2B03A97524"
+				item: "create:hand_crank"
+				type: "item"
+			}]
+			x: -7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2450307183B4953B"]
+			id: "047B31C41B935181"
+			tasks: [{
+				id: "0621C69ACB56DD21"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5DD0EB2158686C45"]
+			id: "2450307183B4953B"
+			tasks: [{
+				id: "1951B4F0D95759E7"
+				item: "create:andesite_casing"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2450307183B4953B"]
+			id: "56D46CEBD4869B89"
+			tasks: [{
+				id: "78C471E45C8B4695"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2450307183B4953B"]
+			description: [
+				"它看起来真危险..."
+				""
+				"也许可以用来切割一些东西？"
+				""
+				"如果用这个来砍树的话，效果也许会很好？"
+			]
+			id: "7D718FAF124C7341"
+			tasks: [{
+				id: "317A4BB8FEAFFC03"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["572B45696B557FE2"]
+			id: "593554C8D62D711B"
+			tasks: [{
+				id: "614397C933BB0FA0"
+				item: "gtceu:brass_plate"
+				type: "item"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"572B45696B557FE2"
+				"593554C8D62D711B"
+			]
+			id: "5160CBF54AB6AA9B"
+			tasks: [{
+				id: "69F97DC255F8B922"
+				item: "create:brass_casing"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5DD0EB2158686C45"]
+			id: "1D555A9E84038687"
+			tasks: [{
+				id: "2BB7288C257CA6C1"
+				item: "gtceu:andesite_alloy_plate"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1D555A9E84038687"]
+			id: "6CAA334398AAC7E4"
+			tasks: [{
+				id: "571DD0935D228400"
+				item: "create:basin"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5DD0EB2158686C45"]
+			description: ["将这个利用好就可以..."]
+			icon: "create:belt_connector"
+			id: "58891EE43E475646"
+			tasks: [{
+				id: "26A5557A78CBD6D0"
+				item: "create:belt_connector"
+				type: "item"
+			}]
+			title: "浪漫，无需多言"
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2450307183B4953B"]
+			id: "313A4882C6DFA453"
+			tasks: [{
+				id: "184CA589B534A5DA"
+				item: "create:encased_fan"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2450307183B4953B"]
+			id: "23AC5FCD5066BFAE"
+			tasks: [{
+				id: "53F2EBD5259D6498"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["23AC5FCD5066BFAE"]
+			dependency_requirement: "one_started"
+			id: "33CC6AD9B9FA244F"
+			tasks: [{
+				id: "0431B58232C6E8E8"
+				item: "create:mechanical_plough"
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2450307183B4953B"]
+			description: [
+				"我可不想让这东西扎在我身上！"
+				""
+				"但我感觉，这个也许可以破坏比较坚硬的东西？"
+			]
+			id: "60E3FF35146347FF"
+			tasks: [{
+				id: "3CEF696053C5A716"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2450307183B4953B"]
+			id: "5D84A2D6BC5E5BD7"
+			tasks: [{
+				id: "78816433C55F00A9"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["168377083F36C333"]
+			icon: "create:clutch"
+			id: "1C8D2D8E8E7B500A"
+			tasks: [{
+				id: "14728ACBF80E4BD3"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "create:gearbox"
+							}
+							{
+								Count: 1b
+								id: "create:vertical_gearbox"
+							}
+							{
+								Count: 1b
+								id: "create:clutch"
+							}
+							{
+								Count: 1b
+								id: "create:gearshift"
+							}
+							{
+								Count: 1b
+								id: "create:encased_chain_drive"
+							}
+							{
+								Count: 1b
+								id: "create:adjustable_chain_gearshift"
+							}
+						]
+					}
+				}
+				title: "任意 齿轮箱x1"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["572B45696B557FE2"]
+			id: "42F6691118204A8F"
+			tasks: [{
+				id: "0552F70DFC3C0A78"
+				item: "create:copper_casing"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["2450307183B4953B"]
+			id: "58ED63DD0132B707"
+			tasks: [{
+				id: "691544300ABCF6C0"
+				item: "create:chute"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["58ED63DD0132B707"]
+			id: "4F2DD7787C68D0D1"
+			tasks: [{
+				id: "50E549074EDF1AE9"
+				item: "create:portable_storage_interface"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2450307183B4953B"]
+			id: "1DB7A4A497DE008C"
+			tasks: [{
+				id: "2F0AD87446451007"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["58ED63DD0132B707"]
+			id: "6EE73ED8AA814CA6"
+			tasks: [{
+				id: "330EAE3599C91D10"
+				item: "create:smart_chute"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5160CBF54AB6AA9B"]
+			id: "2A8E39E59647F11D"
+			tasks: [{
+				id: "69C3EB186FDAFF51"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2A8E39E59647F11D"]
+			id: "3A4C5BF484926FCC"
+			tasks: [{
+				id: "22562E70A72662E1"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2A8E39E59647F11D"]
+			id: "2389ACBCF5012688"
+			tasks: [{
+				id: "0DBADDFEECC5C121"
+				item: "create:rotation_speed_controller"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5160CBF54AB6AA9B"]
+			description: [
+				"这看起来真的让人无法理解..."
+				""
+				"就好像我们的手一样，可以把东西搬走。"
+			]
+			id: "63288B9BC88B1B9A"
+			tasks: [{
+				id: "5BD4121015ECF4C7"
+				item: "create:mechanical_arm"
+				type: "item"
+			}]
+			x: 13.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5160CBF54AB6AA9B"]
+			id: "37105F96C2CADEEA"
+			tasks: [{
+				id: "271863D665129107"
+				item: "create:stockpile_switch"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3A4C5BF484926FCC"]
+			id: "0A5DA195E82142AF"
+			tasks: [{
+				id: "7F0E8E1CB2FE00D1"
+				item: "create:mechanical_roller"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1D555A9E84038687"]
+			id: "719C54690C0B9CAB"
+			tasks: [{
+				id: "4B396D15A601D588"
+				item: "createlowheated:basic_burner"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2450307183B4953B"]
+			id: "60300BBA1A26602E"
+			tasks: [{
+				id: "38709D62F5555EA0"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["061B969B94F08A30"]
+			id: "57C6127296220BCC"
+			tasks: [{
+				id: "08F4A12C636AED14"
+				item: "create:large_cogwheel"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -6.0d
+		}
+		{
+			description: [
+				"已知动能能够转化为电能..."
+				""
+				"反正就是，风车有助于发电。"
+			]
+			id: "102B96DD43E11F36"
+			subtitle: "大风车~"
+			tasks: [{
+				id: "1012B30D40FC923B"
+				item: "create:windmill_bearing"
+				type: "item"
+			}]
+			title: "挑战：风车？"
+			x: 6.0d
+			y: -1.5d
+		}
+	]
+	title: "灵巧器械"
+}

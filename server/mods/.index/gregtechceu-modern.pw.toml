@@ -1,0 +1,16 @@
+filename = 'gtceu-1.20.1-1.6.4.jar'
+name = 'GregTech'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = '8f9705cb309bc862f1abf684717bc6c87165604a'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6254458
+project-id = 890405

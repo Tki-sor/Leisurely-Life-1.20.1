@@ -1,0 +1,16 @@
+filename = 'alltheleaks-0.1.0-beta+1.20.1-forge.jar'
+name = 'AllTheLeaks (Memory Leak Fix)'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = 'cdffeccce5b083242eb735a7e338aa30a665a429'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5936734
+project-id = 1091339

@@ -1,0 +1,32 @@
+{
+  "name": "制作冰淇淋",
+  "icon": "growthcraft_milk:ice_cream_apple",
+  "category": "growthcraft:milk",
+  "sortnum": 6,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "在炎热的日子里，挖矿之后，挖出最后一块方块，你可能会感到需要休息。何不享用一些新鲜的冰淇淋呢？"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "growthcraft_milk:ice_cream_apple",
+      "recipe2": "growthcraft_milk:ice_cream_chocolate"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "growthcraft_milk:ice_cream_grape_purple",
+      "recipe2": "growthcraft_milk:ice_cream_grape_red"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "growthcraft_milk:ice_cream_grape_white",
+      "recipe2": "growthcraft_milk:ice_cream_honey"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "growthcraft_milk:ice_cream_pumpkin",
+      "recipe2": "growthcraft_milk:ice_cream_watermelon"
+    }
+  ]
+}

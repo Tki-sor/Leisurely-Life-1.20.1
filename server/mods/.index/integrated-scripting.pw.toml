@@ -1,0 +1,16 @@
+filename = 'IntegratedScripting-1.20.1-1.0.13.jar'
+name = 'IntegratedScripting'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '60b06f32ec2284589963bd539338c136caa7bf07'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6217491
+project-id = 889785

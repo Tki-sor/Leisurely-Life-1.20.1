@@ -1,0 +1,369 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4B925AFD2914392E"
+	group: "22AB940A6CF0C6B8"
+	id: "4B925AFD2914392E"
+	order_index: 4
+	quest_links: [
+		{
+			id: "47E18D7C85E088D9"
+			linked_quest: "782FADE177582406"
+			shape: "diamond"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			id: "7FA0DAD2D407D5EE"
+			linked_quest: "4D0A7AEB7956DDD1"
+			shape: "diamond"
+			x: 7.5d
+			y: -1.0d
+		}
+	]
+	quests: [
+		{
+			dependencies: ["4D0A7AEB7956DDD1"]
+			id: "6D1B081AF314BC4A"
+			tasks: [{
+				id: "546F1CF385390A8C"
+				item: "gtceu:mv_machine_hull"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6D1B081AF314BC4A"]
+			id: "6F1AD22DEEF394A0"
+			tasks: [{
+				id: "313F85654D535BF0"
+				item: "gtceu:mv_chemical_bath"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["782FADE177582406"]
+			id: "0FE4C192110717D4"
+			tasks: [
+				{
+					id: "6464734B9F29B5EF"
+					item: "gtceu:mv_conveyor_module"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2D3B3242A579F001"
+					item: "gtceu:mv_electric_pump"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0B5DCC701D8ABB0D"
+					item: "gtceu:mv_electric_motor"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "474B5719F7761D5A"
+					item: "gtceu:mv_electric_piston"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2500D8A5C27A0382"
+					item: "gtceu:mv_robot_arm"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6D1B081AF314BC4A"]
+			id: "077B907B61882D8F"
+			tasks: [{
+				id: "318139FAE1083A95"
+				item: "gtceu:mv_mixer"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["077B907B61882D8F"]
+			description: ["用高炉做好后用化学浸洗机冷却。"]
+			id: "45821F95366D1AF2"
+			tasks: [{
+				id: "488615FADDB3BFF1"
+				item: "gtceu:kanthal_dust"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["45821F95366D1AF2"]
+			id: "0A91483427AE7391"
+			tasks: [{
+				id: "3D974EE25AA3C366"
+				item: "gtceu:kanthal_coil_block"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["6D1B081AF314BC4A"]
+			id: "60E6B4B092258DC2"
+			tasks: [{
+				id: "037AE5E9144C7CAC"
+				item: "gtceu:mv_electrolyzer"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["60E6B4B092258DC2"]
+			id: "5F82E8AEE9D61D8A"
+			tasks: [{
+				id: "45D268627867A836"
+				item: "gtceu:silicon_dust"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["077B907B61882D8F"]
+			description: ["猛可以洗白钨获得"]
+			id: "471CE3B036FB9D2C"
+			tasks: [{
+				id: "441EE739AF7D7340"
+				item: "gtceu:stainless_steel_dust"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5F82E8AEE9D61D8A"]
+			dependency_requirement: "one_completed"
+			id: "4F56D6D9A4CEFFD8"
+			tasks: [{
+				id: "2F3503C2394D54F7"
+				item: "gtceu:silicon_boule"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6D1B081AF314BC4A"]
+			id: "50A27F507F7C7B33"
+			tasks: [{
+				id: "27FE25D8834E282F"
+				item: "gtceu:mv_cutter"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"4F56D6D9A4CEFFD8"
+				"50A27F507F7C7B33"
+			]
+			id: "07FF9BED98BD5E82"
+			tasks: [{
+				id: "5D555BAA7CB9040C"
+				item: "gtceu:silicon_wafer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["07FF9BED98BD5E82"]
+			id: "5D176E106A247474"
+			tasks: [{
+				id: "274B43057FBB7AAD"
+				item: "gtceu:ram_chip"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["07FF9BED98BD5E82"]
+			id: "388847CDFA4118D4"
+			tasks: [{
+				id: "2A050A6270D05C00"
+				item: "gtceu:cpu_chip"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["07FF9BED98BD5E82"]
+			id: "361BAB21CC83825D"
+			tasks: [{
+				id: "511A5754A66EEDF4"
+				item: "gtceu:ulpic_chip"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"471CE3B036FB9D2C"
+				"597BB41964BABD17"
+			]
+			id: "04389BB398BFBA59"
+			shape: "gear"
+			tasks: [{
+				id: "063C7E52FDC988B4"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"374E79778F4DA5EB"
+				"5D176E106A247474"
+				"782FADE177582406"
+			]
+			description: ["这东西的性能已经很高了..."]
+			id: "1568CEB9E1F5CFD4"
+			shape: "gear"
+			subtitle: "已非仅凭人力可制"
+			tasks: [{
+				id: "4C60702F40671DCC"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			title: "真正的集成电路"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["361BAB21CC83825D"]
+			id: "59120088301597F8"
+			tasks: [{
+				id: "3F8E01BAC7D7B3C1"
+				item: "gtceu:mv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["162E41AA492E7FF9"]
+			id: "53B71AD4910209C5"
+			tasks: [{
+				id: "04E30958D32CB544"
+				item: "gtceu:basic_integrated_circuit"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["53B71AD4910209C5"]
+			id: "374E79778F4DA5EB"
+			tasks: [{
+				id: "6F277709E90A1D5A"
+				item: "gtceu:good_integrated_circuit"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["07FF9BED98BD5E82"]
+			id: "162E41AA492E7FF9"
+			tasks: [{
+				id: "14515D423E03B8B8"
+				item: "gtceu:ilc_chip"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0FE4C192110717D4"]
+			id: "1B720E0C0726AE84"
+			tasks: [{
+				id: "1E4EFC9B764A0EFC"
+				item: "gtceu:mv_assembler"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0FE4C192110717D4"]
+			id: "0DFA0D2259B68EDA"
+			tasks: [{
+				id: "40176EB7B3163BC6"
+				item: "gtceu:mv_sifter"
+				type: "item"
+			}]
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["0DFA0D2259B68EDA"]
+			id: "676A137CEB8671B6"
+			tasks: [{
+				id: "7C4FCE34B1B55F58"
+				item: "gtceu:flawless_emerald_gem"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["676A137CEB8671B6"]
+			id: "222473D2A6349B47"
+			tasks: [{
+				id: "0C89666AA8D4A198"
+				item: "gtceu:mv_laser_engraver"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -3.0d
+		}
+		{
+			description: ["如果看不明白怎么做这个的话可以到&3化学反应&r章节查看如何制取。"]
+			id: "597BB41964BABD17"
+			tasks: [{
+				id: "2164B746D1C6BC8B"
+				item: "gtceu:polyethylene_plate"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["471CE3B036FB9D2C"]
+			id: "2F82CB5DD2770CFE"
+			tasks: [{
+				id: "504D8C0202DF9EB1"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.0d
+		}
+	]
+	title: "[MV]更高的电压"
+}

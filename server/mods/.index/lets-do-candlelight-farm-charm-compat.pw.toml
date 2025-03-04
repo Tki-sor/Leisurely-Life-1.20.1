@@ -1,0 +1,16 @@
+filename = 'letsdo-candlelight-forge-2.0.4.jar'
+name = "[Let's Do] Candlelight"
+side = 'both'
+x-prismlauncher-loaders = [ 'neoforge', 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'beta'
+
+[download]
+hash = '75e1c6bf4adb677fab0000f7019cec5adc481c6c'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6195385
+project-id = 1038117

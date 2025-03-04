@@ -1,0 +1,22 @@
+{
+  "name": "盘子",
+  "icon": "growthcraft_milk:pancheon",
+  "category": "growthcraft:milk",
+  "sortnum": 4,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "Growthcraft Milk 混合 vat 用于混合液体和物品，将它们加工成液体或物品结果，如奶酪和奶酪凝块。通过右键单击带有液体的桶，液体会被添加到混合 vat 中。该块的顶部或侧面可以访问两个液体处理器。"
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "growthcraft_milk:pancheon",
+      "title": "     ",
+      "text": "通过将物品丢弃到 vat 的桶区域来添加物品，或者如果启用了 GUI，则可以手动放置物品。为了使混合 vat 开始混合成分，"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "必须使用食谱中列出的激活工具进行右键激活。这通常是木剑或树枝。如果食谱的结果是物品，将有一个二次激活工具，在提取物品时会被消耗（奶酪凝块需要奶布）。"
+    }
+  ]
+}

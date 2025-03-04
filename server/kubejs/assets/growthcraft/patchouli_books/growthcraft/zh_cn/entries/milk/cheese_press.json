@@ -1,0 +1,29 @@
+{
+  "name": "奶酪压榨机",
+  "icon": "growthcraft_milk:cheese_press",
+  "category": "growthcraft:milk",
+  "sortnum": 1,
+  "pages": [
+    {
+      "type": "patchouli:text",
+      "text": "奶酪压榨机用于将排水后的奶酪凝乳压制成奶酪轮。$(br2)将排水后的奶酪凝乳放入压榨机中，方法是用主要手激活压榨机。将凝乳放入压榨机后，使用扳手将其拧紧。需要转几圈才能完全拧紧。"
+    },
+    {
+      "type": "patchouli:text",
+      "text": "在压榨机工作时，你应该能看到液体粒子从下方流出。$(br2)一旦粒子停止流出，按住Shift并用扳手激活压榨机以打开并取出生成的奶酪轮。"
+    },
+    {
+      "type": "image",
+      "border": true,
+      "images": [
+        "growthcraft:textures/patchouli/blocks/cheese_press_hanging_curds.png"
+      ],
+      "text": " "
+    },
+    {
+      "type": "patchouli:crafting",
+      "recipe": "growthcraft_milk:cheese_press",
+      "recipe2": "growthcraft:wrench"
+    }
+  ]
+}
