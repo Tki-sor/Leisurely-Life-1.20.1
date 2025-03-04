@@ -19,7 +19,7 @@ class ModpackPackager:
                 'server_root': Path('.server'),
                 'output_dir': Path('builds'),
                 'required_files': ['server.properties'],
-                'required_dirs': ['mods', 'config'],
+                'required_dirs': [],
                 'exclude_mods': [
                     'jei-1.20.1-fabric.jar',  # 举例排除客户端模组
                     'journeymap-1.20.1.jar'
