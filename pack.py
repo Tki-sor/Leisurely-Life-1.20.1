@@ -18,7 +18,7 @@ class ModpackPackager:
                 'pack_name': 'Leisurely Life Server 1.20.1',
                 'server_root': Path('.server'),
                 'output_dir': Path('builds'),
-                'required_files': ['server.properties'],
+                'required_files': [],
                 'required_dirs': [],
                 'exclude_mods': [
                     'jei-1.20.1-fabric.jar',  # 举例排除客户端模组
