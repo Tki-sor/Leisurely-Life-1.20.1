@@ -72,7 +72,14 @@ class ModpackPackager:
                         'sodiumextras*',
                         'sodiumoptionsapi*',
                         'sodiumoptionsmodcompat*',
-                        'spark*'
+                        'spark*',
+                        'BackupManager*',
+                        'BetterAdvancements*',
+                        'clientcrafting*',
+                        'inventoryhud*',
+                        'jecharacters*',
+                        'JustEnoughResources*',
+                        
                     ]
                 }
             }
