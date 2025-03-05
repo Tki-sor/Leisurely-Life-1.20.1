@@ -79,7 +79,7 @@ class ModpackPackager:
                         'inventoryhud*',
                         'jecharacters*',
                         'JustEnoughResources*',
-                        
+                        'ItemPhysicLite*'
                     ]
                 }
             }
