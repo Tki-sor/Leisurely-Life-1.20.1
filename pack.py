@@ -23,13 +23,56 @@ class ModpackPackager:
                 # 排除规则配置
                 'exclude': {
                     'patterns': [
-                        're:.*\.bak',            # 正则匹配备份文件
-                        'ClientOnlyMod*.jar',    # 通配符匹配
-                        'config/secret.cfg'      # 全路径匹配
+                        # 're:.*\.bak',            # 正则匹配备份文件
+                        # 'ClientOnlyMod*.jar',    # 通配符匹配
+                        # 'config/secret.cfg'      # 全路径匹配
                     ],
                     'mods_patterns': [          # mods目录专用排除规则
-                        're:.*-Forge-.*\.jar',
-                        'JourneyMap-*.jar'
+                        # 're:.*-Forge-.*\.jar',
+                        # 'JourneyMap-*.jar'
+                        '*Hide Key Binding*',
+                        '0Pack2Reload*',
+                        '0World2Create*',
+                        'BetterF3*',
+                        'bwncr*',
+                        'clienttweaks*',
+                        'Controlling*',
+                        'DefaultWorldType*',
+                        'drippyloadingscreen*',
+                        'embeddium*',
+                        'entity_model_features*',
+                        'entity_texture_features*',
+                        'entityculling*',
+                        'extrasounds*',
+                        'fancymenu*',
+                        'Fastquit*',
+                        'flerovium*',
+                        'gpumemleakfix*',
+                        'konkrete*',
+                        'mcwifipnp*',
+                        'melody*',
+                        'MiniEffects*',
+                        'ModernUI*',
+                        'MouseTweaks*',
+                        'MyServerIsCompatible*',
+                        'NekosEnchantedBooks*',
+                        'NonConflictKeys*',
+                        'notenoughcrashes*',
+                        'oculus*',
+                        'OverflowingBars*',
+                        'PickUpNotifier*',
+                        'probejs*',
+                        'Resourcify*',
+                        'rubidium*',
+                        'screenshot-to-clipboard*',
+                        'Searchables*',
+                        'Shut Up GL Error*',
+                        'skinlayers3d*',
+                        'sodiumdynamiclights*',
+                        'sodiumextras*',
+                        'sodiumoptionsapi*',
+                        'sodiumoptionsmodcompat*',
+                        'spark*'
                     ]
                 }
             }
@@ -91,11 +134,11 @@ class ModpackPackager:
                         all_excludes += mods_exclude
 
                     if self._should_exclude(relative_path, all_excludes):
-                        print(f"[-] 排除文件: {relative_path}")
+                        # print(f"[-] 排除文件: {relative_path}")
                         continue
 
                     zipf.write(file_path, arcname=relative_path)
-                    print(f"[+] 添加文件: {relative_path}")
+                    # print(f"[+] 添加文件: {relative_path}")
 
             print(f"\n✅ 服务端打包完成: {output_file}")
             self._generate_checksum(output_file)
@@ -126,7 +169,7 @@ class ModpackPackager:
                 for f in config['required_files']:
                     file_path = config['source_dir'] / f
                     zipf.write(file_path, arcname=f)
-                    print(f"[+] 添加文件: {f}")
+                    # print(f"[+] 添加文件: {f}")
 
                 # 添加包含目录
                 for d in config['include_dirs']:
@@ -135,7 +178,7 @@ class ModpackPackager:
                         if file_path.is_file():
                             arcname = file_path.relative_to(config['source_dir'])
                             zipf.write(file_path, arcname=arcname)
-                            print(f"[+] 添加文件: {arcname}")
+                            # print(f"[+] 添加文件: {arcname}")
 
             print(f"\n✅ 客户端打包完成: {output_file}")
             self._generate_checksum(output_file)
