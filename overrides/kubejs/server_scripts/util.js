@@ -43,7 +43,8 @@ const ores = {
     // 红宝石
     ruby: { item: '', tag: '' },
     // 青金石
-    lapis: { item: '', tag: '' }
+    lapis: { item: '', tag: '' },
+    redstone: { item: '', tag: '' }
 };
 
 // 动态生成 item 和 tag

@@ -7,7 +7,8 @@ ServerEvents.recipes(event => {
         ['lv', 'steel', 'tin'],
         ['mv', 'aluminium', 'copper'],
         ['hv', 'stainless_steel', 'gold'],
-        ['ev', 'titanium', 'aluminium']
+        ['ev', 'titanium', 'aluminium'],
+        ['iv', 'tungsten_steel', 'tungsten']
     ]
 
     // 防腐木
@@ -113,7 +114,7 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:phenolic_printed_circuit_board')
         .circuit(1)
         .duration(7.5 * 20)
-    
+
     // ulv机器方块
     event.remove({ input: 'gtceu:ulv_machine_casing' })
     event.remove({ output: 'gtceu:ulv_machine_casing' })
@@ -126,7 +127,7 @@ ServerEvents.recipes(event => {
     })
 
     // ulv机器外壳
-    event.remove({output: 'gtceu:ulv_machine_hull'})
+    event.remove({ output: 'gtceu:ulv_machine_hull' })
     event.shaped('gtceu:ulv_machine_hull', [
         'aaa',
         'C C',
@@ -244,9 +245,45 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:plastic_printed_circuit_board')
 
     // 切割机（MV）
-    event.replaceInput({output: 'gtceu:mv_cutter'}, 'gtceu:vanadium_steel_buzz_saw_blade', 'gtceu:steel_buzz_saw_blade')
+    event.replaceInput({ output: 'gtceu:mv_cutter' }, 'gtceu:vanadium_steel_buzz_saw_blade', 'gtceu:steel_buzz_saw_blade')
 
     // 锡铁合金粉
     event.shapeless('gtceu:tin_alloy_dust', ['#forge:dusts/tin', '#forge:dusts/iron'])
+
+    // 超净维护仓
+    event.remove({ output: 'gtceu:cleaning_maintenance_hatch' })
+    event.shaped('gtceu:cleaning_maintenance_hatch', [
+        'aba',
+        'cdc',
+        'eae'
+    ], {
+        a: '#gtceu:circuits/iv',
+        b: 'gtceu:auto_maintenance_hatch',
+        c: 'gtceu:iv_robot_arm',
+        d: 'gtceu:iv_machine_hull',
+        e: 'gtceu:samarium_iron_arsenic_oxide_single_wire'
+    })
+
+    // me样板总成
+    event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer' })
+    event.recipes.gtceu.assembly_line('gtceu:assembly_line/me_pattern_buffer' + getIncNum())
+        .EUt(7680)
+        .duration(30 * 20)
+        .itemInputs('gtceu:iv_input_hatch', 'gtceu:iv_input_bus', '2x #gtceu:circuits/iv',
+            '3x ae2:pattern_provider', '3x ae2:interface', '4x ae2:speed_card', '4x ae2:speed_card'
+        )
+        .inputFluids('gtceu:soldering_alloy 576', 'gtceu:lubricant 500')
+        .itemOutputs('gtceu:me_pattern_buffer')
+
+    // me样板总成镜像
+    event.remove({ id: 'gtceu:assembly_line/me_pattern_buffer_proxy' })
+    event.recipes.gtceu.assembly_line('gtceu:assembly_line/me_pattern_buffer_proxy' + getIncNum())
+        .EUt(7680)
+        .duration(60 * 20)
+        .itemInputs('gtceu:iv_machine_hull', '4x #gtceu:circuits/iv', 'gtceu:iv_emitter',
+            'ae2:quantum_link', '3x ae2:quantum_ring'
+        )
+        .inputFluids('gtceu:soldering_alloy 576', 'gtceu:lubricant 500')
+        .itemOutputs('gtceu:me_pattern_buffer_proxy')
 
 })

@@ -1,0 +1,19 @@
+{
+    "type": "mekanism:rotary",
+    "fluidInput": {
+        "amount": 1,
+        "fluid": "gtceu:ethylene"
+    },
+    "fluidOutput": {
+        "amount": 1,
+        "fluid": "gtceu:ethylene"
+    },
+    "gasInput": {
+        "amount": 1,
+        "gas": "mekanism:ethene"
+    },
+    "gasOutput": {
+        "amount": 1,
+        "gas": "mekanism:ethene"
+    }
+}

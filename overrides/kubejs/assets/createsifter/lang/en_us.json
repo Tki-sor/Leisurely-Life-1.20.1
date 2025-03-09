@@ -6,5 +6,6 @@
     "item.createsifter.diamond_mesh": "Diamond Mesh",
     "item.createsifter.netherite_mesh": "Netherite Mesh",
     "item.createsifter.none_mesh": "None Mesh",
-    "item.createsifter.steel_mesh": "Steel Mesh"
+    "item.createsifter.steel_mesh": "Steel Mesh",
+    "item.createsifter.stainless_steel_mesh": "Stainless Steel Mesh"
 }

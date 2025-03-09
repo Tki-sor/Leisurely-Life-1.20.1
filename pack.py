@@ -26,7 +26,6 @@ class ModpackPackager:
                         # 're:.*\.bak',            # 正则匹配备份文件
                         # 'ClientOnlyMod*.jar',    # 通配符匹配
                         # 'config/secret.cfg'      # 全路径匹配
-                        'mods/.index/**'
                     ],
                     'mods_patterns': [          # mods目录专用排除规则
                         # 're:.*-Forge-.*\.jar',
@@ -87,30 +86,23 @@ class ModpackPackager:
         }
 
     def _should_exclude(self, relative_path, patterns):
-        """判断是否应该排除文件/目录"""
+        """判断是否应该排除文件"""
         path_str = str(relative_path)
-        path_parts = path_str.split(os.sep)
+        name = relative_path.name
         
         for pattern in patterns:
             try:
-                # 处理目录匹配逻辑
-                if os.sep in pattern:
-                    # 将通配符转换为正则表达式
-                    regex = "^" + re.escape(pattern).replace(r'\*\*', '.*').replace(r'\*', '[^/]*') + "$"
-                    if re.search(regex, path_str):
-                        return True
-
                 # 正则表达式匹配
                 if pattern.startswith('re:'):
                     regex = pattern[3:]
-                    if re.search(regex, path_str):
+                    if re.fullmatch(regex, path_str) or re.fullmatch(regex, name):
                         return True
                 
-                # 通配符匹配（增强版）
+                # 通配符匹配（匹配路径或文件名）
                 elif '*' in pattern:
-                    # 转换为跨平台正则表达式
-                    regex = '^' + re.escape(pattern).replace(r'\*\*', '.*').replace(r'\*', '[^/]*') + '$'
-                    if re.match(regex, str(relative_path)):
+                    # 转换为正则表达式
+                    regex = re.escape(pattern).replace(r'\*', '.*') + '$'
+                    if re.match(regex, path_str) or re.match(regex, name):
                         return True
                 
                 # 完整路径匹配

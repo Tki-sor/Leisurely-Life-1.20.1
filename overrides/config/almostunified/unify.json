@@ -91,7 +91,9 @@
     "hepatizon",
     "energetic_alloy",
     "conductive_alloy",
-    "pulsating_alloy"
+    "pulsating_alloy",
+    "nether_quartz",
+    "certus_quartz"
   ],
   "priorityOverrides": {},
   "customTags": {},

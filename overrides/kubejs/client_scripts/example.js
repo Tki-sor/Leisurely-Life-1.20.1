@@ -11,16 +11,19 @@ JEIEvents.hideItems(event => {
 
 JEIEvents.information(event => {
     
-    let honey_comb = [
-        `
-        通过击杀蜜蜂（minecraft:bee）来获得蜜蜂。\n
-        当蜜蜂（growthcraft_apiary:bee）在蜂箱时，会生产空蜜蜂巢。\n
-        当蜂箱内有空蜜蜂巢时，蜜蜂会将蜂巢填满，将其变为满蜜蜂巢。
-        `
-    ]
-    event.addItem('growthcraft_apiary:bee', honey_comb)
-    event.addItem('growthcraft_apiary:honey_comb_empty', honey_comb)
-    event.addItem('growthcraft_apiary:honey_comb_full', honey_comb)
+    // let honey_comb = [
+    //     `
+    //     通过击杀蜜蜂（minecraft:bee）来获得蜜蜂。\n
+    //     当蜜蜂（growthcraft_apiary:bee）在蜂箱时，会生产空蜜蜂巢。\n
+    //     当蜂箱内有空蜜蜂巢时，蜜蜂会将蜂巢填满，将其变为满蜜蜂巢。
+    //     `
+    // ]
+    // event.addItem('growthcraft_apiary:bee', honey_comb)
+    // event.addItem('growthcraft_apiary:honey_comb_empty', honey_comb)
+    // event.addItem('growthcraft_apiary:honey_comb_full', honey_comb)
+    event.addItem('#progressivebosses:wither_invulnerable', [
+        '通过击杀凋零获取，概率5%'
+    ])
 })
 
 ItemEvents.tooltip(event => {

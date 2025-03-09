@@ -5,10 +5,12 @@
     "addChatAnimation": false
   },
   "Server": {
-    "enableHarderPlatinumLine": true,
-    "enableHarderNaquadahLine": true,
+    "enableHarderPlatinumLine": false,
+    "enableHarderNaquadahLine": false,
     "banCreateFanBlasting": false,
     "makesEMIBetter": true,
+    "isTurnOnEnderFluidCover": true,
+    "isTurnOnEnderItemCover": false,
     "skyblock": false,
     "gtOresMultiplyNum": 1.0,
     "timesOreVeins": 1

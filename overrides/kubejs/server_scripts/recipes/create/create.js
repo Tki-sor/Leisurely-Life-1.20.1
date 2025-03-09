@@ -230,11 +230,21 @@ ServerEvents.recipes(event => {
 
     // 大齿轮
     event.remove({ output: 'create:large_cogwheel' })
-    event.recipes.gtceu.assembler('create:large_cogwheel_1')
-        .EUt(30)
-        .duration(5 * 20)
-        .itemInputs('16x #minecraft:planks', 'create:shaft', '4x #forge:screws/steel')
-        .itemOutputs('create:large_cogwheel')
+    event.shaped('create:large_cogwheel', [
+        'aba',
+        'cdc',
+        'aca'
+    ], {
+        a: '#forge:screws/steel',
+        b: 'create:shaft',
+        c: '#minecraft:planks',
+        d: '#forge:gears/wood'
+    })
+    // event.recipes.gtceu.assembler('create:large_cogwheel_1')
+    //     .EUt(30)
+    //     .duration(5 * 20)
+    //     .itemInputs('16x #minecraft:planks', 'create:shaft', '4x #forge:screws/steel')
+    //     .itemOutputs('create:large_cogwheel')
 
     // 转速控制器
     event.remove({ output: 'create:rotation_speed_controller' })

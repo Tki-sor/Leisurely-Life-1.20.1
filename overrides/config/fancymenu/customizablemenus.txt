@@ -21,3 +21,6 @@ net.minecraft.client.gui.screens.ConnectScreen {
 net.minecraft.client.gui.screens.ProgressScreen {
 }
 
+net.minecraft.client.gui.screens.PauseScreen {
+}
+

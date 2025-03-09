@@ -19,6 +19,18 @@
 			x: -1.0d
 			y: -2.5d
 		}
+		{
+			id: "54BEA5AE5024C61E"
+			linked_quest: "3BBDFE8B56E6D1CB"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			id: "4E15C6AD26436B6C"
+			linked_quest: "79D0E6F195D64103"
+			x: -1.0d
+			y: 4.0d
+		}
 	]
 	quests: [
 		{
@@ -92,18 +104,7 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["0B1660533574B9A4"]
-			id: "75439EE02E26D50D"
-			tasks: [{
-				id: "6794C03266575395"
-				item: "gtceu:nichrome_coil_block"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["75439EE02E26D50D"]
+			dependencies: ["79D0E6F195D64103"]
 			id: "1C4C414B74AA2E08"
 			tasks: [{
 				id: "477F2293F2C129FC"
@@ -112,6 +113,16 @@
 			}]
 			x: -1.0d
 			y: 6.0d
+		}
+		{
+			id: "24AD6399D594334F"
+			tasks: [{
+				id: "59276583C41978E0"
+				item: "gtceu:bronze_large_boiler"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 2.0d
 		}
 	]
 	title: "多方块结构"

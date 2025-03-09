@@ -353,6 +353,17 @@
 			x: 13.5d
 			y: 3.0d
 		}
+		{
+			dependencies: ["471CE3B036FB9D2C"]
+			id: "2F82CB5DD2770CFE"
+			tasks: [{
+				id: "504D8C0202DF9EB1"
+				item: "gtceu:stainless_steel_ingot"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 1.0d
+		}
 	]
 	title: "[MV]更高的电压"
 }

@@ -12,7 +12,8 @@ ServerEvents.recipes(event => {
         "string",
         "flint",
         "wrought_iron",
-        "steel"
+        "steel",
+        "stainless_steel"
     ]
 
     const registerSieveRecipes = (sieveList) => {
@@ -378,7 +379,7 @@ ServerEvents.recipes(event => {
             output: [
                 { item: ores.tin.item, chance: 0.04 },
                 { item: ores.zinc.item, chance: 0.03 },
-                { item: ores.aluminium.item, chance: 0.025 },
+                { item: ores.aluminium.item, chance: 0.035 },
                 { item: 'minecraft:amethyst_shard', chance: 0.025 },
                 { item: 'gtceu:crushed_amethyst_ore', chance: 0.03 },
                 { item: ores.iron.item, chance: 0.02 },
@@ -393,7 +394,7 @@ ServerEvents.recipes(event => {
             output: [
                 { item: ores.tin.item, chance: 0.045 },
                 { item: ores.zinc.item, chance: 0.04 },
-                { item: ores.aluminium.item, chance: 0.03 },
+                { item: ores.aluminium.item, chance: 0.055 },
                 { item: 'gtceu:crushed_amethyst_ore', chance: 0.03 },
                 { item: ores.iron.item, chance: 0.025 },
                 { item: ores.copper.item, chance: 0.025 },
@@ -455,7 +456,8 @@ ServerEvents.recipes(event => {
                 { item: 'minecraft:glowstone_dust', chance: 0.03 },
                 { item: 'minecraft:blaze_powder', chance: 0.015 },
                 { item: 'minecraft:lapis_lazuli', chance: 0.06 },
-                { item: 'gtceu:sulfur_dust', chance: 0.03 }
+                { item: 'gtceu:sulfur_dust', chance: 0.03 },
+                { item: ores.redstone.item, chance: 0.02 }
             ]
         }
     ])
@@ -466,11 +468,11 @@ ServerEvents.recipes(event => {
             mesh: "string",
             input: ['minecraft:soul_sand'],
             output: [
-                { item: 'minecraft:quartz', chance: 0.025 },
-                { item: 'minecraft:blaze_powder', chance: 0.015 },
-                { item: 'minecraft:glowstone_dust', chance: 0.015 },
-                { item: ores.sapphire.item, chance: 0.01 },
-                { item: ores.ruby.item, chance: 0.01 },
+                { item: 'minecraft:quartz', chance: 0.04 },
+                { item: 'minecraft:blaze_powder', chance: 0.02 },
+                { item: 'minecraft:glowstone_dust', chance: 0.02 },
+                { item: ores.sapphire.item, chance: 0.02 },
+                { item: ores.ruby.item, chance: 0.02 },
                 { item: 'gtceu:crushed_nether_quartz_ore', chance: 0.03 }
             ]
         },
@@ -478,9 +480,9 @@ ServerEvents.recipes(event => {
             mesh: "flint",
             input: ['minecraft:soul_sand'],
             output: [
-                { item: 'minecraft:quartz', chance: 0.035 },
-                { item: 'minecraft:blaze_powder', chance: 0.025 },
-                { item: 'minecraft:glowstone_dust', chance: 0.025 },
+                { item: 'minecraft:quartz', chance: 0.05 },
+                { item: 'minecraft:blaze_powder', chance: 0.03 },
+                { item: 'minecraft:glowstone_dust', chance: 0.03 },
                 { item: 'gtceu:crushed_nether_quartz_ore', chance: 0.045 }
             ]
         },
@@ -488,21 +490,21 @@ ServerEvents.recipes(event => {
             mesh: "wrought_iron",
             input: ['minecraft:soul_sand'],
             output: [
-                { item: 'minecraft:quartz', chance: 0.045 },
-                { item: 'minecraft:blaze_powder', chance: 0.025 },
-                { item: 'minecraft:glowstone_dust', chance: 0.03 },
-                { item: ores.sapphire.item, chance: 0.03 },
-                { item: ores.ruby.item, chance: 0.03 },
+                { item: 'minecraft:quartz', chance: 0.065 },
+                { item: 'minecraft:blaze_powder', chance: 0.045 },
+                { item: 'minecraft:glowstone_dust', chance: 0.045 },
+                { item: ores.sapphire.item, chance: 0.04 },
+                { item: ores.ruby.item, chance: 0.04 },
                 { item: 'gtceu:crushed_nether_quartz_ore', chance: 0.06 },
                 { item: 'minecraft:lapis_lazuli', chance: 0.05 },
-                { item: 'gtceu:crushed_pyrolusite_ore', chance: 0.04 }
+                { item: 'gtceu:crushed_pyrolusite_ore', chance: 0.05 }
             ]
         },
         {
             mesh: "steel",
             input: ['minecraft:soul_sand'],
             output: [
-                { item: 'minecraft:quartz', chance: 0.055 },
+                { item: 'minecraft:quartz', chance: 0.08 },
                 { item: 'minecraft:blaze_powder', chance: 0.035 },
                 { item: 'minecraft:glowstone_dust', chance: 0.04 },
                 { item: ores.sulfur.item, chance: 0.005 },
@@ -557,6 +559,17 @@ ServerEvents.recipes(event => {
                 { item: 'gtceu:crushed_nether_quartz_ore', chance: 0.04 },
                 { item: 'gtceu:crushed_tetrahedrite_ore', chance: 0.04 }
             ]
+        },
+        {
+            mesh: "stainless_steel",
+            input: ['exdeorum:crushed_netherrack'],
+            output: [
+                { item: 'gtceu:crushed_neodymium_ore', chance: 0.03 },
+                { item: 'gtceu:crushed_tantalite_ore', chance: 0.04 },
+                { item: 'gtceu:crushed_molybdenite_ore', chance: 0.03 },
+                { item: 'gtceu:crushed_blue_topaz_ore', chance: 0.02 },
+                { item: 'gtceu:crushed_topaz_ore', chance: 0.02 }
+            ]
         }
     ])
 
@@ -567,7 +580,7 @@ ServerEvents.recipes(event => {
             input: ['exdeorum:crushed_end_stone'],
             output: [
                 { item: ores.silver.item, chance: 0.05 },
-                { item: ores.aluminium.item, chance: 0.03 },
+                { item: ores.aluminium.item, chance: 0.06 },
                 { item: ores.lead.item, chance: 0.04 },
                 { item: ores.sulfur.item, chance: 0.04 },
                 { item: ores.diamond.item, chance: 0.03 },
@@ -583,7 +596,7 @@ ServerEvents.recipes(event => {
             input: ['exdeorum:crushed_end_stone'],
             output: [
                 { item: ores.silver.item, chance: 0.07 },
-                { item: ores.aluminium.item, chance: 0.05 },
+                { item: ores.aluminium.item, chance: 0.08 },
                 { item: ores.lead.item, chance: 0.06 },
                 { item: ores.sulfur.item, chance: 0.06 },
                 { item: ores.diamond.item, chance: 0.05 },
@@ -593,6 +606,15 @@ ServerEvents.recipes(event => {
                 { item: 'gtceu:crushed_bauxite_ore', chance: 0.05 },
                 { item: 'gtceu:crushed_lepidolite_ore', chance: 0.05 },
                 { item: 'gtceu:crushed_stibnite_ore', chance: 0.03 }
+            ]
+        },
+        {
+            mesh: "stainless_steel",
+            input: ['exdeorum:crushed_end_stone'],
+            output: [
+                { item: 'gtceu:crushed_neodymium_ore', chance: 0.02 },
+                { item: 'gtceu:crushed_tantalite_ore', chance: 0.06 },
+                { item: 'gtceu:crushed_molybdenite_ore', chance: 0.02 }
             ]
         }
     ])

@@ -59,7 +59,6 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
         .flags(GTMaterialFlags.GENERATE_PLATE)
         .cableProperties(GTValues.V[GTValues.MV], 2, 0, true)
     
-    
 
 
     // event.create('signalum')

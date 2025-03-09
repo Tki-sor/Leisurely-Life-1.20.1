@@ -15,7 +15,8 @@ StartupEvents.registry("item", event => {
     let meshList = [
         "flint",
         "wrought_iron",
-        "steel"
+        "steel",
+        "stainless_steel"
     ]
 
     meshList.forEach(mesh => {
@@ -24,6 +25,10 @@ StartupEvents.registry("item", event => {
 
     // event.create("advanced_mesh","createsifter:advanced_mesh")
 
+})
+
+StartupEvents.registry("block", event => {
+    event.create('enriched_redstone_block')
 })
 
 const $EntityTravelToDimensionEvent = Java.loadClass("net.minecraftforge.event.entity.EntityTravelToDimensionEvent")

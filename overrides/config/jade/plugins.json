@@ -63,6 +63,9 @@
     "crucible": true,
     "sieve": true
   },
+  "mekanismcovers": {
+    "cover_component": true
+  },
   "gtceu": {
     "primitive_pump": true,
     "auto_output_info": true,

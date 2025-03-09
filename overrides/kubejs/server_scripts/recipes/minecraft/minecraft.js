@@ -27,15 +27,10 @@ ServerEvents.recipes(event => {
             A: `${mod}:${woodType}_planks`
         })
         event.recipes.create.cutting([Item.of(id, 2)], [`${mod}:${woodType}_planks`])
-
     })
 
     // 玻璃
     event.remove({ output: 'minecraft:glass', type: "smelting" })
-    // createmetallurgy.melting(Fluid.of('gtceu:glass', 144), 'gtceu:glass_dust', 12 * 20, 'lowheated')
-    // createmetallurgy.melting(Fluid.of('gtceu:glass', 144), 'minecraft:glass', 6 * 20, 'lowheated')
-    // createmetallurgy.casting_in_basin('minecraft:glass', Fluid.of('gtceu:glass', 144), 6 * 20)
-
     // 高炉
     event.replaceInput({ output: 'minecraft:blast_furnace' }, '#forge:ingots/iron', '#forge:ingots/andesite_alloy')
 
@@ -183,4 +178,18 @@ ServerEvents.recipes(event => {
         .addDataString("fluidA", "tconstruct:molten_ender")
         .addDataString("fluidB", "exdeorum:witch_water")
         .itemOutputs('minecraft:sand')
+
+    // 漏斗
+    event.remove({ id: 'gtceu:shaped/hopper' })
+    event.shaped('minecraft:hopper', [
+        'a a',
+        'aba',
+        ' a '
+    ], {
+        a: '#forge:plates/iron',
+        b: '#forge:chests/wooden'
+    })
+
+    // 木棍
+    event.remove({ id: 'enderio:stick' })
 })

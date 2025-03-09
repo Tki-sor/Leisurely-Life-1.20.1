@@ -6,11 +6,240 @@
 	id: "06983C4F4BCD2686"
 	order_index: 5
 	quest_links: [{
-		id: "41FD528C89D2AEB8"
-		linked_quest: "1568CEB9E1F5CFD4"
-		x: -0.5d
+		id: "1D2323FB7076B95F"
+		linked_quest: "2F82CB5DD2770CFE"
+		x: 1.5d
 		y: 0.0d
 	}]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["7591EA541BF44314"]
+			description: ["这个机器需要太多的输出了，建议使用ME输出总线。"]
+			icon_scale: 2.0d
+			id: "3BBDFE8B56E6D1CB"
+			rewards: [{
+				id: "7069EFA9973D15CA"
+				item: "gtceu:me_output_bus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7A1EEFADEADBC99F"
+				item: "llrcore:void_miner_1"
+				type: "item"
+			}]
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["2F82CB5DD2770CFE"]
+			id: "43EF29AEA026479C"
+			tasks: [{
+				id: "0A7B059657F31079"
+				item: "gtceu:hv_machine_hull"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["43EF29AEA026479C"]
+			id: "3DE0198028C558BF"
+			tasks: [{
+				id: "6CCF41703AC6B8CC"
+				item: "gtceu:cleanroom"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3DE0198028C558BF"]
+			id: "483CD51E043169CC"
+			tasks: [{
+				id: "374F44FC1E78ABA3"
+				item: "gtceu:micro_processor_computer"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["483CD51E043169CC"]
+			id: "6BC0CB30B3A1D7D5"
+			tasks: [{
+				id: "51675807377A6ECA"
+				item: "gtceu:hv_circuit_assembler"
+				type: "item"
+			}]
+			x: 3.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["6BC0CB30B3A1D7D5"]
+			id: "41E540B66652838A"
+			tasks: [{
+				id: "48E0BAD2A8FF53A2"
+				item: "gtceu:micro_processor_mainframe"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["43EF29AEA026479C"]
+			id: "7591EA541BF44314"
+			tasks: [{
+				id: "6661D5D81A7C1C91"
+				item: "gtceu:hv_assembler"
+				type: "item"
+			}]
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["43EF29AEA026479C"]
+			id: "52BF48FC4F5BD808"
+			tasks: [{
+				id: "1F8DD67D7EBECEB1"
+				item: "gtceu:large_chemical_reactor"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["43EF29AEA026479C"]
+			id: "107923D39EF17C64"
+			tasks: [{
+				id: "00F17BEEA3F8352A"
+				item: "gtceu:distillation_tower"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2F82CB5DD2770CFE"]
+			id: "16C3868D854F3BAC"
+			tasks: [{
+				id: "4A9675C72EC45B92"
+				item: "gtceu:hv_electric_pump"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["16C3868D854F3BAC"]
+			id: "2DEF2332BE5B90A3"
+			tasks: [{
+				id: "330758D61195B7D9"
+				item: "gtceu:vacuum_freezer"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2DEF2332BE5B90A3"]
+			id: "3115E5CCD3F97170"
+			tasks: [{
+				id: "5AED177ECF762468"
+				item: "gtceu:nichrome_ingot"
+				type: "item"
+			}]
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"3115E5CCD3F97170"
+				"0B1660533574B9A4"
+			]
+			id: "79D0E6F195D64103"
+			tasks: [{
+				id: "4E2080C827954054"
+				item: "gtceu:nichrome_coil_block"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["2DEF2332BE5B90A3"]
+			id: "3B246A2CEC0053DC"
+			tasks: [{
+				id: "02C2A39FCD7CADDD"
+				item: "gtceu:liquid_air_bucket"
+				type: "item"
+			}]
+			x: 3.5d
+			y: 4.0d
+		}
+		{
+			id: "4DE474A47EB67876"
+			tasks: [{
+				id: "75D1DCD95AFDDBDC"
+				item: "gtceu:hv_macerator"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			id: "1F3165840F42365E"
+			tasks: [{
+				id: "7779D405C09FBAE8"
+				item: "gtceu:hv_electric_motor"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["43EF29AEA026479C"]
+			id: "1837CC83D0DDBB20"
+			tasks: [{
+				id: "690269AB61BE1EBC"
+				item: "gtceu:hv_laser_engraver"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1837CC83D0DDBB20"]
+			id: "6FC2B6BC07A1A3F1"
+			tasks: [{
+				id: "5AE1F02E961C6AD0"
+				item: "gtceu:lpic_wafer"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["6FC2B6BC07A1A3F1"]
+			id: "5B5B847C2CCF867D"
+			tasks: [{
+				id: "08EBFD7419DE24D4"
+				item: "gtceu:lpic_chip"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["5B5B847C2CCF867D"]
+			id: "3084036F83DCC32D"
+			tasks: [{
+				id: "1FB3D1DB96CECCD7"
+				item: "gtceu:hv_energy_input_hatch"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 2.0d
+		}
+	]
 	title: "[HV]科技顶点？"
 }

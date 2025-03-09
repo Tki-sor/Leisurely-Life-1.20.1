@@ -102,5 +102,13 @@
                 "horizontalOffset": 18
             }
         }
+    },
+    "mekanism.client.gui.machine.GuiElectrolyticSeparator": {
+        "ignore": true,
+        "buttonHints": {
+            "MOVE_TO_CONTAINER": {
+                "horizontalOffset": 30
+            }
+        }
     }
 }

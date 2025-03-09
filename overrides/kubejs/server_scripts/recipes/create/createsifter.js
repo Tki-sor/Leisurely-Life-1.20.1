@@ -58,4 +58,11 @@ ServerEvents.recipes(event => {
         .itemInputs('9x gtceu:steel_single_wire', '12x #forge:screws/steel', '8x minecraft:stick')
         .itemOutputs('createsifter:steel_mesh')
         .duration(7.5 * 20)
+    
+    // 不锈钢筛网
+    event.recipes.gtceu.assembler("create:stainless_steel_sieve"+getIncNum())
+        .EUt(120)
+        .itemInputs('12x gtceu:kanthal_single_wire', '12x #forge:screws/stainless_steel', '8x minecraft:stick')
+        .itemOutputs('createsifter:stainless_steel_mesh')
+        .duration(15 * 20)
 })

@@ -172,8 +172,8 @@
 				item: "gtceu:charcoal_pile_igniter"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 2.0d
+			x: -3.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["05F26BEDD260EA49"]
@@ -186,8 +186,8 @@
 				item: "gtceu:hp_steam_solid_boiler"
 				type: "item"
 			}]
-			x: -1.5d
-			y: 2.0d
+			x: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["13BF87537F52767C"]
@@ -252,8 +252,8 @@
 				item: "gtceu:hp_steam_macerator"
 				type: "item"
 			}]
-			x: 8.5d
-			y: -2.0d
+			x: 8.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["391E5175BCCAD313"]
@@ -321,8 +321,8 @@
 				type: "checkmark"
 			}]
 			title: "管道？这该怎么用？"
-			x: -3.5d
-			y: -2.0d
+			x: -4.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["56E0C249EC48DBD2"]
@@ -395,8 +395,8 @@
 				item: "gtceu:hp_steam_furnace"
 				type: "item"
 			}]
-			x: 0.5d
-			y: 2.0d
+			x: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["070BC665E52A1167"]
@@ -454,6 +454,28 @@
 			}]
 			x: -5.5d
 			y: 0.0d
+		}
+		{
+			dependencies: ["5EB6927E822C8536"]
+			id: "3C48303C04A78360"
+			tasks: [{
+				id: "4141A0D5F3A30288"
+				item: "gtceu:steam_oven"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1CB2042EF165EFC7"]
+			id: "17FC50A9B6162D9F"
+			tasks: [{
+				id: "31DDAF7EC72A4B7C"
+				item: "gtceu:steam_grinder"
+				type: "item"
+			}]
+			x: 9.0d
+			y: -1.0d
 		}
 	]
 	title: "蒸汽时代"
