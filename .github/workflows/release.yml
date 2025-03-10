@@ -28,14 +28,20 @@ jobs:
 
     - name: Create Clean Artifacts
       run: |
+        # 构建日期
+        BUILD_DATE=$(date +'%Y.%m.%d')
+
         # 创建干净的构建目录
         mkdir -p release_artifacts
         
         # 打包客户端（固定名称）
-        (cd build/client && zip -r ../../release_artifacts/Leisurely-Life.zip .)
+        (cd build/client && zip -r ../../release_artifacts/Leisurely-Life-client.zip .)
         
         # 打包服务端（固定名称）
-        (cd build/server && zip -r ../../release_artifacts/Leisurely-Life-Server.zip .)
+        (cd build/server && zip -r ../../release_artifacts/Leisurely-Life-server.zip .)
+
+        # 生成日期
+        echo "BUILD_DATE=${BUILD_DATE}" >> $GITHUB_ENV
 
         # 验证文件存在
         ls -lh release_artifacts/
@@ -46,14 +52,16 @@ jobs:
         tag_name: ${{ github.ref_name }}
         name: ${{ github.ref_name }}
         body: |
-          ## 标准发布包
-          包含以下固定命名的整合包：
-          - `Leisurely-Life.zip` (客户端)
-          - `Leisurely-Life-Server.zip` (服务端)
+          ### 遗忘之海整合包 ${{ github.ref_name }}
+          **构建日期**: ${{ env.BUILD_DATE }}
+
+          包含以下整合包文件：
+          - `Leisurely-Life-client.zip` (客户端)
+          - `Leisurely-Life-server.zip` (服务端)
           
           版本标签：**${{ github.ref_name }}**
         files: |
-          release_artifacts/Leisurely-Life.zip
-          release_artifacts/Leisurely-Life-Server.zip
+          release_artifacts/Leisurely-Life-client.zip
+          release_artifacts/Leisurely-Life-server.zip
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
