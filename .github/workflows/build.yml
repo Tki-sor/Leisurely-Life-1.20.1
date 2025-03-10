@@ -31,46 +31,16 @@ jobs:
       run: |
         python pack.py
 
-    - name: Setup compression environment
-      run: |
-        mkdir -p builds
-        echo "VERSION=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
-
-    - name: Compress Client
-      run: |
-        cd build/client
-        zip -qr "../../builds/Leisurely Life 1.20.1-${{ env.VERSION }}.zip" .
-
-    - name: Compress Server
-      run: |
-        cd build/server
-        zip -qr "../../builds/Leisurely Life Server 1.20.1-${{ env.VERSION }}.zip" .
-
-    - name: Clean build directories
-      run: |
-        rm -rf build/client
-        rm -rf build/server
-
     - name: Upload Client Artifact
       uses: actions/upload-artifact@v4
       with:
         name: Leisurely-Life-Client-${{ github.run_id }}
-        path: builds/Leisurely Life 1.20.1-*.zip
+        path: builds/client/*
         retention-days: 7
-        if-no-files-found: error
 
     - name: Upload Server Artifact
       uses: actions/upload-artifact@v4
       with:
         name: Leisurely-Life-Server-${{ github.run_id }}
-        path: builds/Leisurely Life Server 1.20.1-*.zip
+        path: builds/server/*
         retention-days: 7
-        if-no-files-found: error
-
-    - name: Upload artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: Leisurely-Life-All-${{ github.run_id }}
-        path: builds/*.zip
-        retention-days: 7
-        if-no-files-found: error
