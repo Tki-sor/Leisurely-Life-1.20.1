@@ -1,0 +1,59 @@
+name: Release Static Name Packages
+
+on:
+  push:
+    tags:
+      - 'v*'  # 匹配任意v开头的标签
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: pip install -r requirements.txt
+
+    - name: Build packages
+      run: python pack.py
+
+    - name: Create Clean Artifacts
+      run: |
+        # 创建干净的构建目录
+        mkdir -p release_artifacts
+        
+        # 打包客户端（固定名称）
+        (cd build/client && zip -r ../../release_artifacts/Leisurely-Life.zip .)
+        
+        # 打包服务端（固定名称）
+        (cd build/server && zip -r ../../release_artifacts/Leisurely-Life-Server.zip .)
+
+        # 验证文件存在
+        ls -lh release_artifacts/
+
+    - name: Create GitHub Release
+      uses: softprops/action-gh-release@v1
+      with:
+        tag_name: ${{ github.ref_name }}
+        name: ${{ github.ref_name }}
+        body: |
+          ## 标准发布包
+          包含以下固定命名的整合包：
+          - `Leisurely-Life.zip` (客户端)
+          - `Leisurely-Life-Server.zip` (服务端)
+          
+          版本标签：**${{ github.ref_name }}**
+        files: |
+          release_artifacts/Leisurely-Life.zip
+          release_artifacts/Leisurely-Life-Server.zip
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
