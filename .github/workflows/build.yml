@@ -10,6 +10,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      client_zip: ${{ steps.set-client.outputs.client_zip }}
+      server_zip: ${{ steps.set-server.outputs.server_zip }}
+      all_zip: ${{ steps.set-all.outputs.all_zip }}
 
     steps:
     - name: Checkout code
