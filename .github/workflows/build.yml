@@ -32,27 +32,28 @@ jobs:
         python pack.py
 
    
-    - name: Upload Client Artifact
+    - name: Set client zip path
+      id: set-client
+      run: |
+        echo "::set-output name=client_zip::$(ls builds/Leisurely\ Life\ 1.20.1-*.zip)"
+      shell: bash
+
+    - name: Set server zip path
+      id: set-server
+      run: |
+        echo "::set-output name=server_zip::$(ls builds/Leisurely\ Life\ Server\ 1.20.1-*.zip)"
+      shell: bash
+
+    - name: Set all zip path
+      id: set-all
+      run: |
+        echo "::set-output name=all_zip::$(ls builds/*.zip)"
+      shell: bash
+
+    - name: Upload build artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: Leisurely-Life-Client-${{ github.run_id }}
-        path: builds/Leisurely Life 1.20.1-*.zip
+        name: build-artifacts
+        path: builds/
         retention-days: 7
         if-no-files-found: error
-        compress: false
-    - name: Upload Server Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: Leisurely-Life-Server-${{ github.run_id }}
-        path: builds/Leisurely Life Server 1.20.1-*.zip
-        retention-days: 7
-        if-no-files-found: error
-        compress: false
-    - name: Upload artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: Leisurely-Life-All-${{ github.run_id }}
-        path: builds/*.zip
-        retention-days: 7
-        if-no-files-found: error
-        compress: false
