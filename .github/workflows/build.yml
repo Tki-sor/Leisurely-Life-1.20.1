@@ -10,10 +10,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    outputs:
-      client_zip: ${{ steps.set-client.outputs.client_zip }}
-      server_zip: ${{ steps.set-server.outputs.server_zip }}
-      all_zip: ${{ steps.set-all.outputs.all_zip }}
 
     steps:
     - name: Checkout code
@@ -35,29 +31,34 @@ jobs:
       run: |
         python pack.py
 
-   
-    - name: Set client zip path
-      id: set-client
+    # 获取客户端 ZIP 文件路径
+    - name: Get client zip path
+      id: client_zip
       run: |
-        echo "::set-output name=client_zip::$(ls builds/Leisurely\ Life\ 1.20.1-*.zip)"
-      shell: bash
+        CLIENT_ZIP=$(ls builds/Leisurely\ Life\ 1.20.1-*.zip)
+        echo "::set-output name=client_zip::$CLIENT_ZIP"
 
-    - name: Set server zip path
-      id: set-server
+    # 获取服务端 ZIP 文件路径
+    - name: Get server zip path
+      id: server_zip
       run: |
-        echo "::set-output name=server_zip::$(ls builds/Leisurely\ Life\ Server\ 1.20.1-*.zip)"
-      shell: bash
+        SERVER_ZIP=$(ls builds/Leisurely\ Life\ Server\ 1.20.1-*.zip)
+        echo "::set-output name=server_zip::$SERVER_ZIP"
 
-    - name: Set all zip path
-      id: set-all
-      run: |
-        echo "::set-output name=all_zip::$(ls builds/*.zip)"
-      shell: bash
-
-    - name: Upload build artifacts
+    # 上传客户端 ZIP（直接指定文件路径，避免二次压缩）
+    - name: Upload Client Artifact
       uses: actions/upload-artifact@v4
       with:
-        name: build-artifacts
-        path: builds/
+        name: Leisurely-Life-Client-${{ github.run_id }}
+        path: ${{ steps.client_zip.outputs.client_zip }}
+        retention-days: 7
+        if-no-files-found: error
+
+    # 上传服务端 ZIP（直接指定文件路径，避免二次压缩）
+    - name: Upload Server Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: Leisurely-Life-Server-${{ github.run_id }}
+        path: ${{ steps.server_zip.outputs.server_zip }}
         retention-days: 7
         if-no-files-found: error
