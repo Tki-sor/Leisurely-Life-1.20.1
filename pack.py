@@ -128,7 +128,7 @@ class ModpackPackager:
             exclude_patterns = config['exclude']['patterns']
             mods_exclude = config['exclude']['mods_patterns']
 
-            with zipfile.ZipFile(output_file, 'w', zipfile.ZIP_DEFLATED) as zipf:
+            with zipfile.ZipFile(output_file, 'w', zipfile.ZIP_STORED) as zipf:
                 for file_path in config['source_dir'].rglob('*'):
                     if not file_path.is_file():
                         continue
@@ -171,7 +171,7 @@ class ModpackPackager:
             output_file = config['output_dir'] / f"{config['pack_name']}-{version}.zip"
             output_file.parent.mkdir(parents=True, exist_ok=True)
 
-            with zipfile.ZipFile(output_file, 'w', zipfile.ZIP_DEFLATED) as zipf:
+            with zipfile.ZipFile(output_file, 'w', zipfile.ZIP_STORED) as zipf:
                 # 添加清单文件
                 for f in config['required_files']:
                     file_path = config['source_dir'] / f
