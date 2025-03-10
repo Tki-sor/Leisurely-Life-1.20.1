@@ -31,34 +31,41 @@ jobs:
       run: |
         python pack.py
 
-    # 获取客户端 ZIP 文件路径
+    # 获取客户端 ZIP 文件路径（使用环境文件）
     - name: Get client zip path
-      id: client_zip
       run: |
         CLIENT_ZIP=$(ls builds/Leisurely\ Life\ 1.20.1-*.zip)
-        echo "::set-output name=client_zip::$CLIENT_ZIP"
+        echo "CLIENT_ZIP=$CLIENT_ZIP" >> $GITHUB_ENV
 
-    # 获取服务端 ZIP 文件路径
+    # 获取服务端 ZIP 文件路径（使用环境文件）
     - name: Get server zip path
-      id: server_zip
       run: |
         SERVER_ZIP=$(ls builds/Leisurely\ Life\ Server\ 1.20.1-*.zip)
-        echo "::set-output name=server_zip::$SERVER_ZIP"
+        echo "SERVER_ZIP=$SERVER_ZIP" >> $GITHUB_ENV
 
-    # 上传客户端 ZIP（直接指定文件路径，避免二次压缩）
+    # 上传客户端 Artifact（直接指定环境变量路径）
     - name: Upload Client Artifact
       uses: actions/upload-artifact@v4
       with:
         name: Leisurely-Life-Client-${{ github.run_id }}
-        path: ${{ steps.client_zip.outputs.client_zip }}
+        path: ${{ env.CLIENT_ZIP }}
         retention-days: 7
         if-no-files-found: error
 
-    # 上传服务端 ZIP（直接指定文件路径，避免二次压缩）
+    # 上传服务端 Artifact（直接指定环境变量路径）
     - name: Upload Server Artifact
       uses: actions/upload-artifact@v4
       with:
         name: Leisurely-Life-Server-${{ github.run_id }}
-        path: ${{ steps.server_zip.outputs.server_zip }}
+        path: ${{ env.SERVER_ZIP }}
+        retention-days: 7
+        if-no-files-found: error
+
+    # 上传所有 ZIP 文件（可选，保留原始行为）
+    - name: Upload All Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: Leisurely-Life-All-${{ github.run_id }}
+        path: builds/*.zip
         retention-days: 7
         if-no-files-found: error
