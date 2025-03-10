@@ -148,7 +148,7 @@ class ModpackPackager:
                     # print(f"[+] 添加文件: {relative_path}")
 
             print(f"\n✅ 服务端打包完成: {output_file}")
-            self._generate_checksum(output_file)
+            # self._generate_checksum(output_file)
             return 0
         except Exception as e:
             print(f"\n❌ 服务端打包失败: {str(e)}")
@@ -188,7 +188,7 @@ class ModpackPackager:
                             # print(f"[+] 添加文件: {arcname}")
 
             print(f"\n✅ 客户端打包完成: {output_file}")
-            self._generate_checksum(output_file)
+            # self._generate_checksum(output_file)
             return 0
         except Exception as e:
             print(f"\n❌ 客户端打包失败: {str(e)}")
