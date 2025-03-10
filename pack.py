@@ -3,6 +3,7 @@ import sys
 import zipfile
 import hashlib
 import re
+import shutil
 from datetime import datetime
 from pathlib import Path
 
@@ -86,26 +87,20 @@ class ModpackPackager:
         }
 
     def _should_exclude(self, relative_path, patterns):
-        """判断是否应该排除文件"""
+        """判断是否应该排除文件（保持原逻辑不变）"""
         path_str = str(relative_path)
         name = relative_path.name
         
         for pattern in patterns:
             try:
-                # 正则表达式匹配
                 if pattern.startswith('re:'):
                     regex = pattern[3:]
                     if re.fullmatch(regex, path_str) or re.fullmatch(regex, name):
                         return True
-                
-                # 通配符匹配（匹配路径或文件名）
                 elif '*' in pattern:
-                    # 转换为正则表达式
                     regex = re.escape(pattern).replace(r'\*', '.*') + '$'
                     if re.match(regex, path_str) or re.match(regex, name):
                         return True
-                
-                # 完整路径匹配
                 else:
                     if path_str == pattern:
                         return True
@@ -114,48 +109,8 @@ class ModpackPackager:
                 continue
         return False
 
-    def _package_server(self):
-        """打包服务端专用方法"""
-        config = self.config['server']
-        try:
-            if not config['source_dir'].exists():
-                raise FileNotFoundError(f"服务端目录不存在: {config['source_dir']}")
-
-            version = datetime.now().strftime("%Y.%m.%d")
-            output_file = config['output_dir'] / f"{config['pack_name']}-{version}.zip"
-            output_file.parent.mkdir(parents=True, exist_ok=True)
-
-            exclude_patterns = config['exclude']['patterns']
-            mods_exclude = config['exclude']['mods_patterns']
-
-            with zipfile.ZipFile(output_file, 'w', zipfile.ZIP_STORED) as zipf:
-                for file_path in config['source_dir'].rglob('*'):
-                    if not file_path.is_file():
-                        continue
-
-                    relative_path = file_path.relative_to(config['source_dir'])
-                    
-                    # 合并通用排除规则和mods专用排除规则
-                    all_excludes = exclude_patterns.copy()
-                    if relative_path.parts[0] == 'mods':
-                        all_excludes += mods_exclude
-
-                    if self._should_exclude(relative_path, all_excludes):
-                        # print(f"[-] 排除文件: {relative_path}")
-                        continue
-
-                    zipf.write(file_path, arcname=relative_path)
-                    # print(f"[+] 添加文件: {relative_path}")
-
-            print(f"\n✅ 服务端打包完成: {output_file}")
-            # self._generate_checksum(output_file)
-            return 0
-        except Exception as e:
-            print(f"\n❌ 服务端打包失败: {str(e)}")
-            return 1
-
     def _package_client(self):
-        """打包客户端"""
+        """新版客户端打包（目录复制）"""
         config = self.config['client']
         try:
             # 验证必要文件
@@ -167,53 +122,67 @@ class ModpackPackager:
             if missing:
                 raise FileNotFoundError("缺少必要文件:\n" + "\n".join(missing))
 
-            version = datetime.now().strftime("%Y.%m.%d")
-            output_file = config['output_dir'] / f"{config['pack_name']}-{version}.zip"
-            output_file.parent.mkdir(parents=True, exist_ok=True)
+            # 清理并创建构建目录
+            if config['build_dir'].exists():
+                shutil.rmtree(config['build_dir'])
+            config['build_dir'].mkdir(parents=True)
 
-            with zipfile.ZipFile(output_file, 'w', zipfile.ZIP_STORED) as zipf:
-                # 添加清单文件
-                for f in config['required_files']:
-                    file_path = config['source_dir'] / f
-                    zipf.write(file_path, arcname=f)
-                    # print(f"[+] 添加文件: {f}")
+            # 复制清单文件
+            for f in config['required_files']:
+                dest = config['build_dir'] / f
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(config['source_dir'] / f, dest)
 
-                # 添加包含目录
-                for d in config['include_dirs']:
-                    dir_path = config['source_dir'] / d
-                    for file_path in dir_path.rglob('*'):
-                        if file_path.is_file():
-                            arcname = file_path.relative_to(config['source_dir'])
-                            zipf.write(file_path, arcname=arcname)
-                            # print(f"[+] 添加文件: {arcname}")
+            # 复制覆盖目录
+            for d in config['include_dirs']:
+                src = config['source_dir'] / d
+                dest = config['build_dir'] / d
+                shutil.copytree(src, dest, dirs_exist_ok=True)
 
-            print(f"\n✅ 客户端打包完成: {output_file}")
-            # self._generate_checksum(output_file)
+            print(f"\n✅ 客户端文件准备完成: {config['build_dir']}")
             return 0
         except Exception as e:
-            print(f"\n❌ 客户端打包失败: {str(e)}")
+            print(f"\n❌ 客户端准备失败: {str(e)}")
             return 1
 
-    def _generate_checksum(self, file_path):
-        """生成校验文件"""
-        print("\n生成校验文件...")
-        hashes = {
-            'md5': hashlib.md5(),
-            'sha1': hashlib.sha1(),
-            'sha256': hashlib.sha256()
-        }
+    def _package_server(self):
+        """新版服务端打包（目录复制）"""
+        config = self.config['server']
+        try:
+            if not config['source_dir'].exists():
+                raise FileNotFoundError(f"服务端目录不存在: {config['source_dir']}")
 
-        with open(file_path, 'rb') as f:
-            while chunk := f.read(8192):
-                for algo in hashes.values():
-                    algo.update(chunk)
+            # 清理并创建构建目录
+            if config['build_dir'].exists():
+                shutil.rmtree(config['build_dir'])
+            config['build_dir'].mkdir(parents=True)
 
-        for algo_name, algo in hashes.items():
-            checksum = algo.hexdigest()
-            target = file_path.with_name(f"{file_path.name}.{algo_name}")
-            with open(target, 'w') as f:
-                f.write(f"{checksum}  {file_path.name}")
-            print(f"生成 {algo_name.upper()} 校验文件: {target}")
+            exclude_patterns = config['exclude']['patterns']
+            mods_exclude = config['exclude']['mods_patterns']
+
+            # 复制文件并应用排除规则
+            for file_path in config['source_dir'].rglob('*'):
+                if file_path.is_dir():
+                    continue
+
+                relative_path = file_path.relative_to(config['source_dir'])
+                all_excludes = exclude_patterns.copy()
+                
+                if relative_path.parts[0] == 'mods':
+                    all_excludes += mods_exclude
+                
+                if self._should_exclude(relative_path, all_excludes):
+                    continue
+
+                dest = config['build_dir'] / relative_path
+                dest.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy2(file_path, dest)
+
+            print(f"\n✅ 服务端文件准备完成: {config['build_dir']}")
+            return 0
+        except Exception as e:
+            print(f"\n❌ 服务端准备失败: {str(e)}")
+            return 1
 
     def package_all(self):
         """执行完整打包流程"""
@@ -222,8 +191,8 @@ class ModpackPackager:
         server_result = self._package_server()
         
         print("\n" + "="*40)
-        print(f"客户端打包: {'成功 ✅' if client_result == 0 else '失败 ❌'}")
-        print(f"服务端打包: {'成功 ✅' if server_result == 0 else '失败 ❌'}")
+        print(f"客户端准备: {'成功 ✅' if client_result == 0 else '失败 ❌'}")
+        print(f"服务端准备: {'成功 ✅' if server_result == 0 else '失败 ❌'}")
         return max(client_result, server_result)
 
 if __name__ == "__main__":
